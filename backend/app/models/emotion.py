@@ -18,6 +18,14 @@ class IntensityLevel(Enum):
     MEDIUM = "medium"
     HIGH = "high"
 
+class TrajectoryLabel(Enum):
+
+    IMPROVING = "improving"
+
+    STABLE = "stable"
+
+    WORSENING = "worsening"
+
 
 @dataclass
 class EmotionResult:
