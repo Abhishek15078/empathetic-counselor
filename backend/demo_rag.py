@@ -5,7 +5,8 @@ from app.services.rag import (
 rag = RAGService()
 
 results = rag.retrieve(
-    "I feel anxious and overwhelmed"
+    query="I feel anxious and overwhelmed",
+    emotion_label="fear"
 )
 
 for doc, meta in results:
@@ -22,6 +23,7 @@ print("\nCombined Context:\n")
 
 print(
     rag.get_context(
-        "I feel anxious and overwhelmed"
+        query="I feel anxious and overwhelmed",
+        emotion_label="fear"
     )
 )

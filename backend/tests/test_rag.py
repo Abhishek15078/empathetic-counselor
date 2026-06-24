@@ -1,4 +1,6 @@
-from app.services.rag import RAGService
+from app.services.rag import (
+    RAGService
+)
 
 
 def test_rag_retrieval():
@@ -6,7 +8,8 @@ def test_rag_retrieval():
     rag = RAGService()
 
     results = rag.retrieve(
-        "I feel anxious and overwhelmed"
+        query="I feel anxious and overwhelmed",
+        emotion_label="fear"
     )
 
     assert len(results) > 0

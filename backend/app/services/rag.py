@@ -1,10 +1,9 @@
+from pathlib import Path
 import chromadb
 
 from sentence_transformers import (
     SentenceTransformer
 )
-
-
 class RAGService:
 
     def __init__(self):
@@ -14,10 +13,16 @@ class RAGService:
                 "all-MiniLM-L6-v2"
             )
         )
+        db_path = (
+            Path(__file__)
+            .resolve()
+            .parent.parent.parent.parent
+            / "chroma_db"
+            )
 
         self.client = (
             chromadb.PersistentClient(
-                path="../chroma_db"
+                path=str(db_path)
             )
         )
 
@@ -30,14 +35,20 @@ class RAGService:
     def retrieve(
         self,
         query: str,
+        emotion_label: str,
         n_results: int = 3
     ):
 
-        results = (
-            self.collection.query(
-                query_texts=[query],
-                n_results=n_results
-            )
+        search_query = (
+            f"{emotion_label} "
+            f"{query}"
+        )
+
+        results = self.collection.query(
+            query_texts=[
+                search_query
+            ],
+            n_results=n_results
         )
 
         documents = (
@@ -58,12 +69,14 @@ class RAGService:
     def get_context(
         self,
         query: str,
+        emotion_label: str,
         n_results: int = 3
     ):
 
         retrieved_docs = (
             self.retrieve(
                 query,
+                emotion_label,
                 n_results
             )
         )
