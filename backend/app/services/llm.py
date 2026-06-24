@@ -25,8 +25,8 @@ class LLMCaller:
     def __init__(self):
 
         self.api_key = os.getenv(
-    "GROQ_API_KEY"
-)
+            "GROQ_API_KEY"
+        )
 
         if not self.api_key:
 
@@ -36,6 +36,10 @@ class LLMCaller:
 
         self.client = Groq(
             api_key=self.api_key
+        )
+
+        self.model_name = (
+            "llama-3.3-70b-versatile"
         )
 
         app_dir = (
@@ -108,11 +112,13 @@ class LLMCaller:
             user_message=user_message
         )
 
-        response = self.client.chat.completions.create(
-            model="llama-3.3-70b-versatile",
-            messages=messages,
-            temperature=0.6,
-            max_tokens=250
+        response = (
+            self.client.chat.completions.create(
+                model=self.model_name,
+                messages=messages,
+                temperature=0.6,
+                max_tokens=250
+            )
         )
 
         return (
@@ -121,6 +127,64 @@ class LLMCaller:
             .message
             .content
         )
+
+    # ----------------------------------
+    # Phase 8
+    # Semantic Crisis Detection
+    # ----------------------------------
+
+    def classify_crisis(
+        self,
+        message: str
+    ) -> bool:
+
+        app_dir = (
+            Path(__file__).parent.parent
+        )
+
+        crisis_prompt_path = (
+            app_dir
+            / "prompts"
+            / "crisis_classifier.txt"
+        )
+
+        prompt_template = (
+            crisis_prompt_path.read_text(
+                encoding="utf-8"
+            )
+        )
+
+        prompt = (
+            prompt_template.replace(
+                "{message}",
+                message
+            )
+        )
+
+        response = (
+            self.client.chat.completions.create(
+                model=self.model_name,
+                messages=[
+                    {
+                        "role": "user",
+                        "content": prompt
+                    }
+                ],
+                temperature=0,
+                max_tokens=5
+            )
+        )
+
+        result = (
+            response
+            .choices[0]
+            .message
+            .content
+            .strip()
+            .upper()
+        )
+
+        return result == "YES"
 
 
 if __name__ == "__main__":
@@ -143,4 +207,14 @@ if __name__ == "__main__":
         )
     )
 
+    print("\nCounselor Response:\n")
     print(reply)
+
+    print("\n" + "=" * 50)
+
+    crisis_result = llm.classify_crisis(
+        "I don't know if I can keep going anymore."
+    )
+
+    print("\nCrisis Detection Result:")
+    print(crisis_result)

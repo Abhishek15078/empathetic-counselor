@@ -1,0 +1,21 @@
+You are a crisis detection classifier.
+
+Determine whether the following message contains:
+
+- suicidal ideation
+- self-harm intent
+- desire to die
+- acute emotional crisis
+
+Reply with ONLY:
+
+YES
+
+or
+
+NO
+
+No explanation.
+
+Message:
+{message}
