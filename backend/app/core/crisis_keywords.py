@@ -17,7 +17,6 @@ CRISIS_KEYWORDS = [
     "kill myself",
     "end my life",
     "want to die",
-    "die",
     "self harm",
     "hurt myself",
     "cut myself",

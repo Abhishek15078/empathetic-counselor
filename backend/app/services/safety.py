@@ -11,10 +11,6 @@ from app.models.safety import (
     SafetyResult
 )
 
-from app.services.llm import (
-    LLMCaller
-)
-
 
 class SafetyService:
     """
@@ -24,15 +20,12 @@ class SafetyService:
 
     def __init__(self):
         """
-        Load keywords, patterns,
-        and LLM service once.
+        Load keywords and patterns once.
         """
 
         self.keywords = CRISIS_KEYWORDS
 
         self.patterns = CRISIS_PATTERNS
-
-        self.llm = LLMCaller()
 
     def keyword_check(
         self,
@@ -98,13 +91,13 @@ class SafetyService:
         text: str
     ) -> bool:
         """
-        Semantic crisis detection
-        using a separate LLM call.
+        Semantic crisis detection.
+
+        Disabled during
+        Phase 9 integration.
         """
 
-        return self.llm.classify_crisis(
-            text
-        )
+        return False
 
     def load_safe_response(
         self
@@ -159,16 +152,15 @@ class SafetyService:
 
         # -------------------
         # Stage 2
+        # Disabled
         # -------------------
 
-        if self.stage_two_detection(
-            text
-        ):
-
-            return SafetyResult(
-                is_crisis=True,
-                reason="semantic_detection"
-            )
+        # if self.stage_two_detection(text):
+        #
+        #     return SafetyResult(
+        #         is_crisis=True,
+        #         reason="semantic_detection"
+        #     )
 
         # -------------------
         # Safe

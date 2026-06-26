@@ -1,16 +1,19 @@
 import os
 from pathlib import Path
+from datetime import datetime
 
 from dotenv import load_dotenv
 from groq import Groq
-
-from datetime import datetime
 
 from app.models.emotion import (
     EmotionResult,
     EmotionLabel,
     IntensityLevel
 )
+
+# -------------------------------------------------
+# Load .env
+# -------------------------------------------------
 
 env_path = (
     Path(__file__).parent.parent.parent
@@ -21,6 +24,9 @@ load_dotenv(env_path)
 
 
 class LLMCaller:
+    """
+    Handles all communication with Groq LLM.
+    """
 
     def __init__(self):
 
@@ -70,6 +76,10 @@ class LLMCaller:
             )
         )
 
+    # -------------------------------------------------
+    # Build Prompt
+    # -------------------------------------------------
+
     def build_messages(
         self,
         emotion_result: EmotionResult,
@@ -85,10 +95,12 @@ class LLMCaller:
         )
 
         messages = [
+
             {
                 "role": "system",
                 "content": self.system_prompt
             },
+
             {
                 "role": "user",
                 "content": (
@@ -97,9 +109,14 @@ class LLMCaller:
                     + user_message
                 )
             }
+
         ]
 
         return messages
+
+    # -------------------------------------------------
+    # Standard LLM Response
+    # -------------------------------------------------
 
     def generate_response(
         self,
@@ -108,8 +125,8 @@ class LLMCaller:
     ):
 
         messages = self.build_messages(
-            emotion_result=emotion_result,
-            user_message=user_message
+            emotion_result,
+            user_message
         )
 
         response = (
@@ -128,10 +145,40 @@ class LLMCaller:
             .content
         )
 
-    # ----------------------------------
+    # -------------------------------------------------
+    # Phase 9
+    # Used by AIOrchestrator
+    # -------------------------------------------------
+
+    def generate_from_messages(
+        self,
+        messages
+    ):
+        """
+        Generates a response from an already
+        prepared message list.
+        """
+
+        response = (
+            self.client.chat.completions.create(
+                model=self.model_name,
+                messages=messages,
+                temperature=0.6,
+                max_tokens=250
+            )
+        )
+
+        return (
+            response
+            .choices[0]
+            .message
+            .content
+        )
+
+    # -------------------------------------------------
     # Phase 8
     # Semantic Crisis Detection
-    # ----------------------------------
+    # -------------------------------------------------
 
     def classify_crisis(
         self,
@@ -187,6 +234,10 @@ class LLMCaller:
         return result == "YES"
 
 
+# -------------------------------------------------
+# Manual Testing
+# -------------------------------------------------
+
 if __name__ == "__main__":
 
     test_emotion = EmotionResult(
@@ -199,22 +250,47 @@ if __name__ == "__main__":
 
     llm = LLMCaller()
 
+    print("=" * 60)
+    print("STANDARD RESPONSE")
+    print("=" * 60)
+
     reply = llm.generate_response(
         emotion_result=test_emotion,
         user_message=(
             "I have been feeling overwhelmed "
-            "and unable to focus on my work lately."
+            "and unable to focus on work."
         )
     )
 
-    print("\nCounselor Response:\n")
     print(reply)
 
-    print("\n" + "=" * 50)
+    print("\n" + "=" * 60)
+    print("CRISIS CLASSIFIER")
+    print("=" * 60)
 
-    crisis_result = llm.classify_crisis(
+    crisis = llm.classify_crisis(
         "I don't know if I can keep going anymore."
     )
 
-    print("\nCrisis Detection Result:")
-    print(crisis_result)
+    print(crisis)
+
+    print("\n" + "=" * 60)
+    print("MESSAGE LIST API")
+    print("=" * 60)
+
+    messages = [
+        {
+            "role": "system",
+            "content": "You are a helpful assistant."
+        },
+        {
+            "role": "user",
+            "content": "Hello"
+        }
+    ]
+
+    print(
+        llm.generate_from_messages(
+            messages
+        )
+    )
