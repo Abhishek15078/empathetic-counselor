@@ -1,4 +1,6 @@
-from app.services.memory import SessionManager
+"""
+Application dependencies.
 
-# Shared SessionManager instance
-session_manager = SessionManager()
+This file is kept for future shared dependency instances.
+Currently no shared runtime dependencies are required.
+"""

@@ -1,6 +1,18 @@
 import time
 
-from app.core.dependencies import session_manager
+from app.database import SessionLocal
+
+from app.repositories.session_repository import (
+    SessionRepository
+)
+
+from app.repositories.message_repository import (
+    MessageRepository
+)
+
+from app.repositories.emotion_repository import (
+    EmotionRepository
+)
 
 from app.services.safety import SafetyService
 from app.services.emotion import EmotionClassifier
@@ -24,9 +36,17 @@ class AIOrchestrator:
             EmotionClassifier()
         )
 
-        # Shared SessionManager
-        self.memory_manager = (
-            session_manager
+        # Database repositories
+        self.session_repo = (
+            SessionRepository()
+        )
+
+        self.message_repo = (
+            MessageRepository()
+        )
+
+        self.emotion_repo = (
+            EmotionRepository()
         )
 
         self.trajectory_tracker = (
@@ -88,147 +108,192 @@ class AIOrchestrator:
         # STEP 2: LOAD SESSION
         # =====================================
 
-        session = (
-            self.memory_manager.get_session(
-                session_id
-            )
-        )
-
-        # =====================================
-        # STEP 3: EMOTION DETECTION
-        # =====================================
-
-        emotion_result = (
-            self.emotion_classifier.classify(
-                user_message
-            )
-        )
-
-        # =====================================
-        # STEP 4: SAVE EMOTION
-        # =====================================
-
-        session.add_emotion(
-            emotion_result
-        )
-
-        # =====================================
-        # STEP 5: TRAJECTORY ANALYSIS
-        # =====================================
-
-        trajectory = (
-            self.trajectory_tracker.analyze(
-                session.get_emotion_log()
-            )
-        )
-
-        # =====================================
-        # STEP 6: RAG RETRIEVAL
-        # =====================================
+        db = SessionLocal()
 
         try:
 
-            rag_chunks = (
-                self.rag_service.retrieve(
-                    user_message,
-                    emotion_result.label.value
+            session = (
+                self.session_repo.get_session(
+                    db,
+                    session_id
                 )
             )
 
-        except Exception:
+            if session is None:
+                raise Exception(
+                    "Session not found."
+                )
 
-            rag_chunks = []
+            # Everything else in process_message()
+            # stays inside this try block.
 
-        # =====================================
-        # STEP 7: BUILD CONTEXT
-        # =====================================
+            # =====================================
+            # STEP 3: EMOTION DETECTION
+            # =====================================
 
-        messages = (
-            self.context_builder.build(
-                session,
-                emotion_result,
-                rag_chunks
-            )
-        )
-
-        # =====================================
-        # STEP 8: GENERATE RESPONSE
-        # =====================================
-
-        try:
-
-            response = (
-                self.llm.generate_from_messages(
-                    messages
+            emotion_result = (
+                self.emotion_classifier.classify(
+                    user_message
                 )
             )
 
-        except Exception as e:
-
-            print("\n========== LLM ERROR ==========")
-            print(e)
-            print("===============================\n")
-
-            response = (
-                "I apologize, but I am having "
-                "trouble generating a response "
-                "right now. Please try again."
+            user_message_record = (
+                self.message_repo.create_message(
+                    db=db,
+                    session_id=session.id,
+                    role="user",
+                    content=user_message,
+                    turn_number=(
+                        self.message_repo.get_last_turn_number(
+                            db,
+                            session.id
+                        ) + 1
+                    )
+                )
             )
 
-        # =====================================
-        # STEP 9: SAVE CONVERSATION
-        # =====================================
+            self.emotion_repo.create_emotion_log(
+                db=db,
+                session_id=session.id,
+                message_id=user_message_record.id,
+                label=emotion_result.label.value,
+                score=emotion_result.score,
+                intensity=emotion_result.intensity.value,
+                trajectory="unknown"
+            )
 
-        session.add_message(
-            "user",
-            user_message
-        )
+            # =====================================
+            # STEP 5: TRAJECTORY ANALYSIS
+            # =====================================
 
-        session.add_message(
-            "assistant",
-            response
-        )
+            emotion_history = (
+                self.emotion_repo.get_emotion_logs(
+                    db,
+                    session.id
+                )
+            )
 
-        # =====================================
-        # STEP 10: DOCUMENT LIST
-        # =====================================
+            trajectory = (
+                self.trajectory_tracker.analyze(
+                    emotion_history
+                )
+            )
 
-        rag_documents_used = []
+            # =====================================
+            # STEP 6: RAG RETRIEVAL
+            # =====================================
 
-        for doc, metadata in rag_chunks:
+            try:
 
-            if (
-                isinstance(metadata, dict)
-                and "source" in metadata
-            ):
-
-                rag_documents_used.append(
-                    metadata["source"]
+                rag_chunks = (
+                    self.rag_service.retrieve(
+                        user_message,
+                        emotion_result.label.value
+                    )
                 )
 
-        # =====================================
-        # STEP 11: PROCESSING TIME
-        # =====================================
+            except Exception:
 
-        end_time = time.time()
+                rag_chunks = []
 
-        processing_time_ms = int(
-            (end_time - start_time)
-            * 1000
+            # =====================================
+            # STEP 7: BUILD CONTEXT
+            # =====================================
+
+            messages = (
+                self.context_builder.build(
+                    session,
+                    emotion_result,
+                    rag_chunks
+                )
+            )
+
+            # =====================================
+            # STEP 8: GENERATE RESPONSE
+            # =====================================
+
+            try:
+
+                response = (
+                    self.llm.generate_from_messages(
+                        messages
+                    )
+                )
+
+            except Exception as e:
+
+                print("\n========== LLM ERROR ==========")
+                print(e)
+                print("===============================\n")
+
+                response = (
+                    "I apologize, but I am having "
+                    "trouble generating a response "
+                    "right now. Please try again."
+                )
+
+            assistant_message = (
+    self.message_repo.create_message(
+        db=db,
+        session_id=session.id,
+        role="assistant",
+        content=response,
+        turn_number=(
+            self.message_repo.get_last_turn_number(
+                db,
+                session.id
+            ) + 1
         )
+    )
+)
 
-        # =====================================
-        # STEP 12: RETURN RESULT
-        # =====================================
+            # =====================================
+            # STEP 10: DOCUMENT LIST
+            # =====================================
 
-        return PipelineResult(
-            response_text=response,
-            emotion_result=emotion_result,
-            trajectory=trajectory,
-            rag_documents_used=rag_documents_used,
-            safety_triggered=False,
-            turn_number=len(
-                session.messages
-            ),
-            processing_time_ms=processing_time_ms
-        )
+            rag_documents_used = []
+
+            for doc, metadata in rag_chunks:
+
+                if (
+                    isinstance(metadata, dict)
+                    and "source" in metadata
+                ):
+
+                    rag_documents_used.append(
+                        metadata["source"]
+                    )
+
+            # =====================================
+            # STEP 11: PROCESSING TIME
+            # =====================================
+
+            end_time = time.time()
+
+            processing_time_ms = int(
+                (end_time - start_time)
+                * 1000
+            )
+
+            # =====================================
+            # STEP 12: RETURN RESULT
+            # =====================================
+
+            return PipelineResult(
+                response_text=response,
+                emotion_result=emotion_result,
+                trajectory=trajectory,
+                rag_documents_used=rag_documents_used,
+                safety_triggered=False,
+                turn_number=(
+                    self.message_repo.get_last_turn_number(
+                        db,
+                        session.id
+                    )
+                ),
+                processing_time_ms=processing_time_ms
+            )
+
+        finally:
+
+            db.close()

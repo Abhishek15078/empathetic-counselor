@@ -1,14 +1,24 @@
 from pathlib import Path
 
+from app.models.db_models import Session
+
 
 class ContextBuilder:
+    """
+    Builds the complete conversation context
+    that is sent to the LLM.
+    """
 
     def build(
         self,
-        session,
+        session: Session,
         emotion_result,
         rag_chunks
     ):
+
+        # ----------------------------------
+        # Load System Prompt
+        # ----------------------------------
 
         prompt_path = (
             Path(__file__).parent.parent
@@ -29,6 +39,10 @@ class ContextBuilder:
             }
         ]
 
+        # ----------------------------------
+        # Emotion Context
+        # ----------------------------------
+
         emotion_context = f"""
 Detected Emotion:
 {emotion_result.label.value}
@@ -44,32 +58,55 @@ Intensity:
             }
         )
 
+        # ----------------------------------
+        # RAG Context
+        # ----------------------------------
+
         rag_context = ""
 
         for doc, meta in rag_chunks:
+
             meta = meta or {}
+
             category = meta.get(
                 "category",
                 "unknown"
-                )
+            )
 
             rag_context += (
                 f"\nRelevant Coping Strategy "
                 f"({category}):\n"
                 f"{doc}\n"
-                )
-
-        messages.append(
-            {
-                "role": "system",
-                "content": rag_context
-            }
-        )
-
-        messages.extend(
-            session.get_history(
-                max_turns=10
             )
+
+        if rag_context:
+
+            messages.append(
+                {
+                    "role": "system",
+                    "content": rag_context
+                }
+            )
+
+        # ----------------------------------
+        # Conversation History
+        # ----------------------------------
+
+        conversation = sorted(
+            session.messages,
+            key=lambda message: message.turn_number
         )
+
+        # Keep only the last 10 messages
+        conversation = conversation[-10:]
+
+        for message in conversation:
+
+            messages.append(
+                {
+                    "role": message.role,
+                    "content": message.content
+                }
+            )
 
         return messages

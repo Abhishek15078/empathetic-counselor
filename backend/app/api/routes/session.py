@@ -1,28 +1,38 @@
 from fastapi import (
     APIRouter,
+    Depends,
     HTTPException
 )
+
+from sqlalchemy.orm import Session
+
+from app.database import get_db
 
 from app.models.schemas import (
     SessionResponse
 )
 
-from app.api.dependencies import (
-    orchestrator
+from app.repositories.session_repository import (
+    SessionRepository
 )
 
 router = APIRouter(
     tags=["Session"]
 )
 
+session_repository = SessionRepository()
+
 
 @router.post(
     "/session",
     response_model=SessionResponse
 )
-async def create_session():
+async def create_session(
+    db: Session = Depends(get_db)
+):
     """
-    Create a new conversation session.
+    Create a new conversation session
+    and store it in SQLite.
 
     Returns
     -------
@@ -32,14 +42,12 @@ async def create_session():
 
     try:
 
-        session = (
-            orchestrator
-            .memory_manager
-            .create_session()
+        session = session_repository.create_session(
+            db
         )
 
         return SessionResponse(
-            session_id=session.session_id
+            session_id=session.id
         )
 
     except Exception as e:
