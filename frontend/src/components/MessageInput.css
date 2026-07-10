@@ -1,0 +1,53 @@
+.message-input-container{
+
+    display:flex;
+
+    gap:10px;
+
+    padding:15px;
+
+    border-top:1px solid #ddd;
+
+    background:white;
+
+}
+
+.message-input-container input{
+
+    flex:1;
+
+    padding:12px;
+
+    font-size:16px;
+
+    border:1px solid #bbb;
+
+    border-radius:8px;
+
+    outline:none;
+
+}
+
+.message-input-container button{
+
+    padding:12px 20px;
+
+    background:#2563eb;
+
+    color:white;
+
+    border:none;
+
+    border-radius:8px;
+
+    cursor:pointer;
+
+    font-size:15px;
+
+}
+
+.message-input-container button:hover{
+
+    background:#1d4ed8;
+
+}

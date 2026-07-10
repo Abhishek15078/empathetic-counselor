@@ -37,15 +37,20 @@ class MessageRepository:
 
         return message
 
-    # -----------------------------
-    # Get All Messages
-    # -----------------------------
+    # --------------------------------------------------
+    # Get Messages By Session (NEW - Lesson 11.5)
+    # --------------------------------------------------
 
-    def get_messages(
+    def get_messages_by_session(
         self,
         db: Session,
         session_id: str
     ) -> list[Message]:
+        """
+        Returns every message belonging
+        to a conversation session,
+        ordered by turn number.
+        """
 
         return (
 
@@ -56,11 +61,29 @@ class MessageRepository:
             )
 
             .order_by(
-                Message.turn_number
+                Message.turn_number.asc()
             )
 
             .all()
 
+        )
+
+    # -----------------------------
+    # Get All Messages
+    # -----------------------------
+
+    def get_messages(
+        self,
+        db: Session,
+        session_id: str
+    ) -> list[Message]:
+        """
+        Backward-compatible wrapper.
+        """
+
+        return self.get_messages_by_session(
+            db,
+            session_id
         )
 
     # -----------------------------

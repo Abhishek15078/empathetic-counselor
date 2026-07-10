@@ -1,0 +1,61 @@
+.emotion-badge {
+
+    display: inline-block;
+
+    margin-bottom: 6px;
+
+    padding: 4px 10px;
+
+    border-radius: 12px;
+
+    font-size: 12px;
+
+    font-weight: bold;
+
+    color: white;
+
+}
+
+/* ---------- Emotion Colors ---------- */
+
+.joy {
+
+    background: #16a34a;
+
+}
+
+.love {
+
+    background: #db2777;
+
+}
+
+.fear {
+
+    background: #dc2626;
+
+}
+
+.sadness {
+
+    background: #2563eb;
+
+}
+
+.anger {
+
+    background: #ea580c;
+
+}
+
+.surprise {
+
+    background: #7c3aed;
+
+}
+
+.neutral {
+
+    background: #6b7280;
+
+}

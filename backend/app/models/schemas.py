@@ -1,4 +1,4 @@
-from pydantic import BaseModel
+from pydantic import BaseModel, ConfigDict
 
 
 # --------------------------------------------------
@@ -40,6 +40,35 @@ class MessageResponse(BaseModel):
     safety_triggered: bool
 
     processing_time_ms: int
+
+
+# --------------------------------------------------
+# Message History (NEW)
+# --------------------------------------------------
+
+class MessageHistoryItem(BaseModel):
+    """
+    Represents a single stored message.
+    """
+
+    role: str
+
+    content: str
+
+    turn_number: int
+
+    model_config = ConfigDict(
+        from_attributes=True
+    )
+
+
+class MessageHistoryResponse(BaseModel):
+    """
+    Response returned by
+    GET /api/messages/{session_id}
+    """
+
+    messages: list[MessageHistoryItem]
 
 
 # --------------------------------------------------

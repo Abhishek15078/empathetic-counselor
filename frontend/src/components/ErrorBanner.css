@@ -1,0 +1,43 @@
+.error-banner {
+
+    background: #ffe5e5;
+
+    color: #b00020;
+
+    border: 1px solid #ffb3b3;
+
+    border-radius: 8px;
+
+    padding: 12px 16px;
+
+    margin-bottom: 12px;
+
+    display: flex;
+
+    justify-content: space-between;
+
+    align-items: center;
+
+}
+
+.error-banner button {
+
+    background: #b00020;
+
+    color: white;
+
+    border: none;
+
+    padding: 6px 12px;
+
+    border-radius: 6px;
+
+    cursor: pointer;
+
+}
+
+.error-banner button:hover {
+
+    opacity: 0.9;
+
+}

@@ -15,6 +15,9 @@ from app.api.routes.message import (
 from app.api.routes.summary import (
     router as summary_router
 )
+from app.api.routes.export import (
+    router as export_router
+)
 
 app = FastAPI(
     title="Empathetic Counselor API",
@@ -41,6 +44,11 @@ app.include_router(
 
 app.include_router(
     summary_router,
+    prefix="/api"
+)
+
+app.include_router(
+    export_router,
     prefix="/api"
 )
 
