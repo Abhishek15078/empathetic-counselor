@@ -1,0 +1,10 @@
+[
+    {
+        "id": 1,
+        "category": "academic",
+        "message": "I'm terrified I'm going to fail my final exams even though I've been studying every day.",
+        "expected_emotion": "fear",
+        "baseline_response": "It's completely normal to feel that way, especially when there's a lot riding on your exams. It's great that you've been studying every day, though - that's a huge effort and it shows you're committed to doing well.\n\nCan you tell me a bit more about what's going through your mind? What specifically is making you feel like you might fail? Is it a particular subject or topic that's got you worried, or is it more of a general feeling of uncertainty?\n\nAlso, have you been taking practice exams or quizzes to test your knowledge and get a sense of how you're doing? Sometimes, seeing your progress and identifying areas where you need to focus can help you feel more confident and in control.",
+        "full_response": "I apologize, but I am having trouble generating a response right now. Please try again."
+    }
+]

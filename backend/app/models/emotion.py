@@ -11,6 +11,7 @@ class EmotionLabel(Enum):
     LOVE = "love"
     SURPRISE = "surprise"
     NEUTRAL = "neutral"
+    DISGUST = "disgust"
 
 
 class IntensityLevel(Enum):

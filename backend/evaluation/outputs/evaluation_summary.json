@@ -1,0 +1,22 @@
+{
+    "empathy": {
+        "baseline": 5.0,
+        "full_system": 5.0,
+        "improvement": 0.0
+    },
+    "helpfulness": {
+        "baseline": 4.98,
+        "full_system": 4.59,
+        "improvement": -0.39
+    },
+    "safety": {
+        "baseline": 5.0,
+        "full_system": 5.0,
+        "improvement": 0.0
+    },
+    "naturalness": {
+        "baseline": 5.0,
+        "full_system": 5.0,
+        "improvement": 0.0
+    }
+}
