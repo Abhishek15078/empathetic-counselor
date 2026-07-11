@@ -1,20 +1,19 @@
 import { useEffect, useState } from "react";
 
 import {
-
     createSession,
-
     sendMessage as sendMessageAPI,
-
     getMessageHistory,
-
     getSummary,
-
-    downloadConversation
-
+    downloadConversation,
+    getTimeline
 } from "../services/api";
 
 function useChat() {
+
+    // -------------------------------
+    // Chat
+    // -------------------------------
 
     const [messages, setMessages] = useState([]);
 
@@ -30,16 +29,32 @@ function useChat() {
 
     const [lastMessage, setLastMessage] = useState("");
 
+    // -------------------------------
+    // AI Insights
+    // -------------------------------
+
     const [emotion, setEmotion] = useState(null);
 
     const [trajectory, setTrajectory] = useState(null);
 
     const [processingTime, setProcessingTime] = useState(null);
 
+    // -------------------------------
+    // Summary
+    // -------------------------------
+
     const [summary, setSummary] = useState(null);
 
+    // -------------------------------
+    // Timeline
+    // -------------------------------
+
+    const [timeline, setTimeline] = useState([]);
+
     useEffect(() => {
+
         initializeSession();
+
     }, []);
 
     // =======================================
@@ -50,11 +65,10 @@ function useChat() {
 
         try {
 
-            const savedSession = localStorage.getItem("sessionId");
+            const savedSession =
+                localStorage.getItem("sessionId");
 
             if (savedSession) {
-
-                console.log("Loaded existing session:", savedSession);
 
                 setSessionId(savedSession);
 
@@ -69,14 +83,13 @@ function useChat() {
 
                     }
 
+                    await loadTimeline(savedSession);
+
                 }
 
                 catch (err) {
 
-                    console.error(
-                        "Failed to load history.",
-                        err
-                    );
+                    console.error(err);
 
                 }
 
@@ -87,16 +100,14 @@ function useChat() {
             const response =
                 await createSession();
 
-            console.log(
-                "Session Created:",
-                response.session_id
-            );
-
             setSessionId(response.session_id);
 
             localStorage.setItem(
+
                 "sessionId",
+
                 response.session_id
+
             );
 
         }
@@ -106,7 +117,9 @@ function useChat() {
             console.error(err);
 
             setError(
+
                 "Unable to create session."
+
             );
 
         }
@@ -120,9 +133,10 @@ function useChat() {
     async function sendMessage(messageText = null) {
 
         const text = (messageText ?? input).trim();
+
         setLastMessage(text);
 
-        if (text === "") return;
+        if (!text) return;
 
         if (isLoading) return;
 
@@ -142,9 +156,9 @@ function useChat() {
 
         };
 
-        setMessages(previous => [
+        setMessages(prev => [
 
-            ...previous,
+            ...prev,
 
             userMessage
 
@@ -155,9 +169,13 @@ function useChat() {
         try {
 
             const response =
+
                 await sendMessageAPI(
+
                     sessionId,
+
                     text
+
                 );
 
             const assistantMessage = {
@@ -169,38 +187,51 @@ function useChat() {
                 content: response.response_text
 
             };
-            setEmotion(response.emotion);
 
-            setTrajectory(response.trajectory);
- 
-            setProcessingTime(response.processing_time_ms);
+            setMessages(prev => [
 
-            setMessages(previous => [
-
-                ...previous,
+                ...prev,
 
                 assistantMessage
 
             ]);
 
-            if (response.safety_triggered) {
+            setEmotion(response.emotion);
+
+            setTrajectory(response.trajectory);
+
+            setProcessingTime(
+
+                response.processing_time_ms
+
+            );
+
+            if (
+
+                response.safety_triggered
+
+            ) {
 
                 setSafetyTriggered(true);
 
             }
 
+            // Load newest timeline AFTER backend stores emotion
+
+            await loadTimeline();
+
         }
 
         catch (err) {
 
-            console.error(
-                "Message API Error:",
-                err
-            );
+            console.error(err);
 
             setError(
+
                 err.message ||
+
                 "Something went wrong."
+
             );
 
         }
@@ -212,164 +243,216 @@ function useChat() {
         }
 
     }
+
+    // =======================================
+    // Retry
+    // =======================================
+
     async function retryLastMessage() {
 
-    if (!lastMessage) {
+        if (!lastMessage) return;
 
-        return;
-
-    }
-
-    await sendMessage(lastMessage);
-
-   }
-   async function loadSummary() {
-
-    if (!sessionId) return;
-
-    try {
-
-        const result = await getSummary(
-
-            sessionId
-
-        );
-
-        setSummary(result);
+        await sendMessage(lastMessage);
 
     }
 
-    catch (err) {
+    // =======================================
+    // Summary
+    // =======================================
 
-        console.error(
+    async function loadSummary() {
 
-            err
+        if (!sessionId) return;
 
-        );
+        try {
 
-    }
+            const result =
 
-}
-   async function exportConversation() {
+                await getSummary(sessionId);
 
-    if (!sessionId) {
+            setSummary(result);
 
-        return;
+        }
 
-    }
+        catch (err) {
 
-    try {
+            console.error(err);
 
-        await downloadConversation(sessionId);
-
-    }
-
-    catch (err) {
-
-        console.error(err);
-
-        setError("Unable to download conversation.");
+        }
 
     }
 
-}
+    // =======================================
+    // Export Conversation
+    // =======================================
 
-// =======================================
-// Start New Conversation
-// =======================================
+    async function exportConversation() {
 
-async function startNewConversation() {
+        if (!sessionId) return;
 
-    try {
+        try {
 
-        // Remove previous session
-        localStorage.removeItem("sessionId");
+            await downloadConversation(
 
-        // Clear UI
-        setMessages([]);
-        setSummary(null);
+                sessionId
 
-        setEmotion(null);
-        setTrajectory(null);
-        setProcessingTime(null);
+            );
 
-        setSafetyTriggered(false);
-        setError(null);
+        }
 
-        setInput("");
+        catch (err) {
 
-        // Create brand new backend session
-        const response = await createSession();
+            console.error(err);
 
-        setSessionId(response.session_id);
+            setError(
 
-        localStorage.setItem(
+                "Unable to download conversation."
 
-            "sessionId",
+            );
 
-            response.session_id
-
-        );
-
-        console.log(
-
-            "New session created:",
-
-            response.session_id
-
-        );
+        }
 
     }
 
-    catch (err) {
+    // =======================================
+    // Start New Conversation
+    // =======================================
 
-        console.error(err);
+    async function startNewConversation() {
 
-        setError(
+        try {
 
-            "Unable to start a new conversation."
+            localStorage.removeItem("sessionId");
 
-        );
+            setMessages([]);
+
+            setSummary([]);
+
+            setTimeline([]);
+
+            setEmotion(null);
+
+            setTrajectory(null);
+
+            setProcessingTime(null);
+
+            setSafetyTriggered(false);
+
+            setError(null);
+
+            setInput("");
+
+            const response =
+
+                await createSession();
+
+            setSessionId(
+
+                response.session_id
+
+            );
+
+            localStorage.setItem(
+
+                "sessionId",
+
+                response.session_id
+
+            );
+
+        }
+
+        catch (err) {
+
+            console.error(err);
+
+            setError(
+
+                "Unable to start a new conversation."
+
+            );
+
+        }
 
     }
 
-}
+    // =======================================
+    // Timeline
+    // =======================================
+
+    async function loadTimeline(id = sessionId) {
+
+        if (!id) return;
+
+        try {
+
+            const result =
+
+                await getTimeline(id);
+
+            setTimeline(
+
+                result.timeline
+
+            );
+
+        }
+
+        catch (err) {
+
+            console.error(
+
+                "Timeline Error:",
+
+                err
+
+            );
+
+        }
+
+    }
+
+    // =======================================
 
     return {
 
-    sessionId,
+        sessionId,
 
-    messages,
+        messages,
 
-    input,
+        input,
 
-    setInput,
+        setInput,
 
-    sendMessage,
+        sendMessage,
 
-    retryLastMessage,
+        retryLastMessage,
 
-    isLoading,
+        isLoading,
 
-    error,
+        error,
 
-    safetyTriggered,
+        safetyTriggered,
 
-    emotion,
+        emotion,
 
-    trajectory,
+        trajectory,
 
-    processingTime,
+        processingTime,
 
-    summary,
+        summary,
 
-    loadSummary,
+        loadSummary,
 
-    exportConversation,
+        exportConversation,
 
-    startNewConversation
+        startNewConversation,
 
-};
+        timeline,
+
+        loadTimeline
+
+    };
 
 }
 

@@ -18,6 +18,7 @@ from app.api.routes.summary import (
 from app.api.routes.export import (
     router as export_router
 )
+from app.api.routes.timeline import router as timeline_router
 
 app = FastAPI(
     title="Empathetic Counselor API",
@@ -52,6 +53,13 @@ app.include_router(
     prefix="/api"
 )
 
+app.include_router(
+
+    timeline_router,
+
+    prefix="/api"
+
+)
 
 @app.get("/health")
 async def health():

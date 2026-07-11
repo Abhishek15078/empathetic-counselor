@@ -1,4 +1,6 @@
 import "./AnalyticsPanel.css";
+import EmotionTimeline from "./EmotionTimeline";
+import SessionSummary from "./SessionSummary";
 
 function AnalyticsPanel({
 
@@ -12,9 +14,11 @@ function AnalyticsPanel({
 
     summary,
 
+    timeline,
+
     onLoadSummary,
 
-    onExportConversation
+    onExportConversation,
 
 }) {
 
@@ -96,6 +100,10 @@ function AnalyticsPanel({
 
             </div>
 
+            <EmotionTimeline
+            timeline={timeline}
+            />
+
             {/* Generate Summary Button */}
 
             <div className="analytics-card">
@@ -130,127 +138,9 @@ function AnalyticsPanel({
 
             {/* Conversation Summary */}
 
-            {
-
-                summary && (
-
-                    <div className="analytics-card">
-
-                        <h4>
-
-                            Conversation Summary
-
-                        </h4>
-
-                        <p>
-
-                            <strong>
-
-                                Turns:
-
-                            </strong>{" "}
-
-                            {summary.turn_count}
-
-                        </p>
-
-                        <p>
-
-                            <strong>
-
-                                Trajectory:
-
-                            </strong>{" "}
-
-                            {summary.trajectory}
-
-                        </p>
-
-                        <p>
-
-                            <strong>
-
-                                Emotion Arc
-
-                            </strong>
-
-                        </p>
-
-                        <ul>
-
-                            {
-
-                                summary.emotion_arc.map(
-
-                                    (item, index) => (
-
-                                        <li key={index}>
-
-                                            {item}
-
-                                        </li>
-
-                                    )
-
-                                )
-
-                            }
-
-                        </ul>
-
-                        <p>
-
-                            <strong>
-
-                                Key Moments
-
-                            </strong>
-
-                        </p>
-
-                        <ul>
-
-                            {
-
-                                summary.key_moments.length > 0
-
-                                    ? (
-
-                                        summary.key_moments.map(
-
-                                            (item, index) => (
-
-                                                <li key={index}>
-
-                                                    {item}
-
-                                                </li>
-
-                                            )
-
-                                        )
-
-                                    )
-
-                                    : (
-
-                                        <li>
-
-                                            No key moments yet.
-
-                                        </li>
-
-                                    )
-
-                            }
-
-                        </ul>
-
-                    </div>
-
-                )
-
-            }
+            <SessionSummary
+            summary={summary}
+            />
 
         </div>
 

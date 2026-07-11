@@ -203,3 +203,28 @@ export async function downloadConversation(
     window.URL.revokeObjectURL(url);
 
 }
+// =======================================
+// Emotion Timeline
+// =======================================
+
+export async function getTimeline(sessionId) {
+
+    const response = await fetch(
+
+        `${BASE_URL}/api/session/${sessionId}/timeline`
+
+    );
+
+    if (!response.ok) {
+
+        throw new Error(
+
+            "Failed to load timeline."
+
+        );
+
+    }
+
+    return await response.json();
+
+}

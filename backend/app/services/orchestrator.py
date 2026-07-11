@@ -1,3 +1,4 @@
+
 import time
 
 from app.database import SessionLocal
@@ -160,7 +161,7 @@ class AIOrchestrator:
                 score=emotion_result.score,
                 intensity=emotion_result.intensity.value,
                 trajectory="unknown"
-            )
+                )
 
             # =====================================
             # STEP 5: TRAJECTORY ANALYSIS

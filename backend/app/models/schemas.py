@@ -92,6 +92,32 @@ class SummaryResponse(BaseModel):
 
 
 # --------------------------------------------------
+# Emotion Timeline
+# --------------------------------------------------
+
+class TimelinePoint(BaseModel):
+    """
+    Represents one emotion point
+    in the conversation.
+    """
+
+    turn: int
+
+    emotion: str
+
+    score: float
+
+
+class TimelineResponse(BaseModel):
+    """
+    Response returned by
+    GET /api/session/{session_id}/timeline
+    """
+
+    timeline: list[TimelinePoint]
+
+
+# --------------------------------------------------
 # Health
 # --------------------------------------------------
 

@@ -1,6 +1,6 @@
 from sqlalchemy.orm import Session
 
-from app.models.db_models import EmotionLog
+from app.models.db_models import EmotionLog, Message
 
 
 class EmotionRepository:
@@ -34,9 +34,7 @@ class EmotionRepository:
         )
 
         db.add(emotion)
-
         db.commit()
-
         db.refresh(emotion)
 
         return emotion
@@ -63,14 +61,14 @@ class EmotionRepository:
         )
 
     # ----------------------------------
-    # Get Latest Emotion
+    # Latest Emotion
     # ----------------------------------
 
     def get_latest_emotion(
         self,
         db: Session,
         session_id: str
-    ) -> EmotionLog | None:
+    ):
 
         return (
             db.query(EmotionLog)
@@ -84,14 +82,14 @@ class EmotionRepository:
         )
 
     # ----------------------------------
-    # Get Emotion Arc
+    # Emotion Arc
     # ----------------------------------
 
     def get_emotion_arc(
         self,
         db: Session,
         session_id: str
-    ) -> list[str]:
+    ):
 
         logs = self.get_emotion_logs(
             db,
@@ -104,14 +102,14 @@ class EmotionRepository:
         ]
 
     # ----------------------------------
-    # Count Emotions
+    # Count
     # ----------------------------------
 
     def count_emotions(
         self,
         db: Session,
         session_id: str
-    ) -> int:
+    ):
 
         return (
             db.query(EmotionLog)
@@ -122,14 +120,14 @@ class EmotionRepository:
         )
 
     # ----------------------------------
-    # Delete Emotion Log
+    # Delete
     # ----------------------------------
 
     def delete_emotion_log(
         self,
         db: Session,
         emotion_id: int
-    ) -> bool:
+    ):
 
         emotion = (
             db.query(EmotionLog)
@@ -140,11 +138,55 @@ class EmotionRepository:
         )
 
         if emotion is None:
-
             return False
 
         db.delete(emotion)
-
         db.commit()
 
         return True
+
+    # ----------------------------------
+    # Timeline
+    # ----------------------------------
+
+    def get_timeline(
+        self,
+        db: Session,
+        session_id: str
+    ):
+
+        return (
+
+            db.query(
+
+                Message.turn_number,
+
+                EmotionLog.label,
+
+                EmotionLog.score
+
+            )
+
+            .join(
+
+                Message,
+
+                EmotionLog.message_id == Message.id
+
+            )
+
+            .filter(
+
+                EmotionLog.session_id == session_id
+
+            )
+
+            .order_by(
+
+                Message.turn_number
+
+            )
+
+            .all()
+
+        )

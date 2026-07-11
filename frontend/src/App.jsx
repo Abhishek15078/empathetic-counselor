@@ -39,8 +39,10 @@ function App() {
 
     exportConversation,
 
-    startNewConversation
+    startNewConversation,
 
+    timeline
+    
 } = useChat();
 
     return (
@@ -134,6 +136,8 @@ function App() {
     onLoadSummary={loadSummary}
 
     onExportConversation={exportConversation}
+
+    timeline={timeline}
 
 />
 
