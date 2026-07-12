@@ -1,166 +1,229 @@
+# 🧠 Empathetic Counselor
+
+An AI-powered empathetic counseling assistant built with **FastAPI**,
+**React**, **Groq LLM**, **Hugging Face Transformers**, **ChromaDB**,
+**SQLite**, and **Docker**.
+
+![Python](https://img.shields.io/badge/Python-3.13-blue)
+![FastAPI](https://img.shields.io/badge/FastAPI-Latest-green)
+![React](https://img.shields.io/badge/React-19-61DAFB)
+![Docker](https://img.shields.io/badge/Docker-Containerized-2496ED)
+![License](https://img.shields.io/badge/License-MIT-yellow)
+
+------------------------------------------------------------------------
+
+# Overview
+
+Empathetic Counselor is a full-stack Generative AI application that
+provides emotionally aware conversations. The assistant detects
+emotions, maintains conversation history, retrieves supportive knowledge
+using Retrieval-Augmented Generation (RAG), performs safety checks, and
+generates empathetic responses using a Large Language Model.
+
+## Key Features
+
+-   Emotion Detection (Hugging Face Transformers)
+-   Emotion Trajectory Tracking
+-   Safety Detection
+-   Conversation Memory
+-   Retrieval-Augmented Generation (ChromaDB)
+-   Groq LLM Response Generation
+-   Session Summary
+-   Emotion Timeline
+-   Conversation Export
+-   REST API (FastAPI)
+-   Modern React Frontend
+-   SQLite Persistence
+-   Docker & Docker Compose
+
+------------------------------------------------------------------------
+
+# Architecture
+
+``` text
+React Frontend
+      │
+      ▼
+ FastAPI Backend
+      │
+ ┌────┼─────────────┐
+ │    │             │
+ ▼    ▼             ▼
+Safety Emotion   Memory
+      │
+      ▼
+ Context Builder
+      │
+      ▼
+   RAG Service
+      │
+      ▼
+   ChromaDB
+      │
+      ▼
+ Prompt Builder
+      │
+      ▼
+   Groq LLM
+      │
+      ▼
+ Assistant Response
+      │
+      ▼
+ SQLite Database
+```
+
+# Tech Stack
+
+## Backend
+
+-   FastAPI
+-   SQLAlchemy
+-   SQLite
+-   Uvicorn
+
+## AI
+
+-   Groq API
+-   Hugging Face Transformers
+-   Sentence Transformers
+-   ChromaDB
+
+## Frontend
+
+-   React
+-   Vite
+-   Recharts
+
+## DevOps
+
+-   Docker
+-   Docker Compose
+
+# Project Structure
+
+``` text
+empathetic-counselor/
+├── backend/
+│   └── app/
+│       ├── api/
+│       ├── core/
+│       ├── models/
+│       ├── repositories/
+│       ├── services/
+│       └── database.py
+├── frontend/
+│   └── src/
+│       ├── components/
+│       ├── hooks/
+│       └── services/
+├── docs/
+├── docker-compose.yml
+└── README.md
+```
+
+# Installation
+
+## Clone
 
-# Empathetic Counselor
+``` bash
+git clone https://github.com/Abhishek15078/empathetic-counselor.git
+cd empathetic-counselor
+```
 
-An AI-powered emotional support system that combines emotion detection, emotion-aware prompting, memory, and contextual conversation management to generate empathetic responses.
+## Backend
 
----
+``` bash
+cd backend
+python -m venv .venv
+source .venv/bin/activate   # Windows: .venv\Scripts\activate
+pip install -r requirements.txt
+uvicorn app.main:app --reload
+```
 
-## Project Objective
+## Frontend
 
-The goal of this project is to build an emotionally intelligent conversational assistant capable of:
+``` bash
+cd frontend
+npm install
+npm run dev
+```
 
-* Detecting user emotions from text
-* Estimating emotional intensity
-* Identifying concerning emotional states
-* Generating empathetic responses conditioned on detected emotions
-* Maintaining conversational memory
-* Providing emotionally aware contextual interactions
+# Docker
 
----
+``` bash
+docker compose build
+docker compose up
+```
 
-## Technology Stack
+Frontend: `http://localhost:3000`
 
-### Backend
+Backend: `http://localhost:8000`
 
-* Python
-* FastAPI
-* Hugging Face Transformers
-* Groq API
-* PyTest
-* Python Dataclasses
-* Enums
+Swagger: `http://localhost:8000/docs`
 
-### Frontend
+# Environment Variables
 
-* React
-* Vite
+Backend:
 
----
+``` env
+GROQ_API_KEY=your_key
+HF_TOKEN=your_token
+```
 
-## Project Architecture
+Frontend:
 
-User Message
+``` env
+VITE_API_BASE_URL=http://localhost:8000
+```
 
-↓
+# API Endpoints
 
-Emotion Analysis Service
+  Method   Endpoint                     Description
+  -------- ---------------------------- ----------------------
+  POST     /api/session                 Create Session
+  POST     /api/message                 Send Message
+  GET      /api/messages/{id}           Conversation History
+  GET      /api/session/{id}/summary    Session Summary
+  GET      /api/session/{id}/timeline   Emotion Timeline
+  GET      /api/session/{id}/export     Export Conversation
 
-↓
+# Screenshots
 
-Emotion Result
+Add screenshots under `docs/screenshots/`.
 
-* Emotion Label
-* Confidence Score
-* Intensity
-* Concerning Flag
-* Timestamp
+``` text
+01_home.png
+02_chat.png
+03_emotion_timeline.png
+04_summary.png
+05_download.png
+```
 
-↓
+# Resume Highlights
 
-Prompt Builder
+-   Built a full-stack AI counseling assistant using FastAPI and React.
+-   Implemented emotion detection using Hugging Face Transformers.
+-   Integrated Groq LLM for empathetic response generation.
+-   Developed Retrieval-Augmented Generation using ChromaDB.
+-   Implemented conversation memory, safety layer, summaries, analytics,
+    and export.
+-   Containerized the application using Docker and Docker Compose.
 
-↓
+# Future Improvements
 
-Emotion Context Injection
+-   User authentication
+-   Voice conversations
+-   Multilingual support
+-   Cloud deployment
+-   Long-term memory
+-   Therapist dashboard
 
-↓
+# License
 
-LLM (Llama 3.3 70B via Groq)
+MIT License
 
-↓
+# Author
 
-Empathetic Response
+**Abhishek Kumar Singh**
 
----
-
-## Completed Phases
-
-### Phase 0 — Project Setup
-
-Completed
-
-Features:
-
-* Project structure creation
-* Virtual environment setup
-* Dependency management
-* Backend/frontend separation
-
----
-
-### Phase 1 — Emotion Classification
-
-Completed
-
-Features:
-
-* Hugging Face emotion model integration
-* Emotion detection service
-* Unit testing
-* Confidence score extraction
-
-Model:
-
-j-hartmann/emotion-english-distilroberta-base
-
----
-
-### Phase 2 — Emotion Analysis Service
-
-Completed
-
-Features:
-
-* EmotionLabel Enum
-* IntensityLevel Enum
-* EmotionResult Dataclass
-* Concerning emotion detection
-* Intensity mapping
-* Structured emotion output
-
----
-
-### Phase 3 — Empathetic Response Generation
-
-Completed
-
-Features:
-
-* Groq LLM integration
-* Prompt engineering
-* Emotion-conditioned prompting
-* Response formatter
-* System prompts
-* Prompt experiment notebook
-
-Experiment:
-
-The same user message was evaluated under anxiety, sadness, and neutral emotional contexts. Different responses were generated for each emotion, demonstrating successful emotion-conditioned prompting.
-
----
-
-## Testing
-
-Run:
-
-pytest -v
-
-Expected:
-
-20+ tests passing
-
----
-
-## Future Phases
-
-* Phase 4 — Memory Layer
-* Phase 5 — Safety Layer
-* Phase 6 — Conversation Manager
-* Phase 7 — Context Builder
-* Phase 8 — Full System Integration
-
----
-
-## Author
-
-Abhishek Kumar Singh
