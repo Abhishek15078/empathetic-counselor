@@ -48,13 +48,20 @@ Base = declarative_base()
 # ======================================================
 
 def init_database():
-    """
-    Creates all database tables.
-    """
+
+    print("=" * 60)
+    print("INIT DATABASE CALLED")
+    print("=" * 60)
 
     from app.models import db_models
 
+    print(Base.metadata.tables.keys())
+
     Base.metadata.create_all(bind=engine)
+
+    print("=" * 60)
+    print("TABLES CREATED")
+    print("=" * 60)
 
 # ======================================================
 # Database Dependency

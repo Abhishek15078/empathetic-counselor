@@ -27,10 +27,13 @@ function SessionSummary({ summary }) {
 
     }
 
+    const emotionArc = summary?.emotion_arc ?? [];
+    const keyMoments = summary?.key_moments ?? [];
+
     const dominantEmotion =
-        summary.emotion_arc.length > 0
-            ? summary.emotion_arc.at(-1)
-            : "Unknown";
+    emotionArc.length
+        ? emotionArc.at(-1)
+        : "Unknown";
 
     return (
 
@@ -85,7 +88,7 @@ function SessionSummary({ summary }) {
                         </small>
 
                         <TrajectoryIndicator
-                        trajectory={summary.trajectory}
+                        trajectory={summary?.trajectory}
                         />
 
                     </div>
@@ -110,7 +113,7 @@ function SessionSummary({ summary }) {
 
                         <h4>
 
-                            {summary.turn_count}
+                            {summary?.turn_count ?? 0}
 
                         </h4>
 
@@ -132,7 +135,7 @@ function SessionSummary({ summary }) {
 
                 {
 
-                    summary.emotion_arc.map(
+                    emotionArc.map(
 
                         (emotion, index) => (
 
@@ -178,7 +181,7 @@ function SessionSummary({ summary }) {
 
                 {
 
-                    summary.key_moments.map(
+                    keyMoments.map(
 
                         (moment, index) => (
 

@@ -1,0 +1,32 @@
+# Python cache
+__pycache__/
+*.py[cod]
+*.pyo
+
+# Virtual environments
+venv/
+.venv/
+
+# Environment file (Docker Compose provides it)
+.env
+
+# Git
+.git
+.gitignore
+
+# IDEs
+.vscode/
+.idea/
+
+# Tests
+tests/
+evaluation/
+.pytest_cache/
+
+# Local database (optional)
+*.db
+*.sqlite3
+
+# OS files
+.DS_Store
+Thumbs.db

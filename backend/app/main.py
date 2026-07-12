@@ -1,5 +1,4 @@
 from fastapi import FastAPI
-
 from fastapi.middleware.cors import (
     CORSMiddleware
 )
@@ -20,10 +19,21 @@ from app.api.routes.export import (
 )
 from app.api.routes.timeline import router as timeline_router
 
+from app.database import init_database
+
 app = FastAPI(
     title="Empathetic Counselor API",
     version="1.0.0"
 )
+
+@app.on_event("startup")
+async def startup():
+
+    print("STARTUP CALLED")
+
+    init_database()
+
+    print("STARTUP FINISHED")
 
 app.add_middleware(
     CORSMiddleware,

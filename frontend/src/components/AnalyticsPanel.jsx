@@ -100,9 +100,7 @@ function AnalyticsPanel({
 
             </div>
 
-            <EmotionTimeline
-            timeline={timeline}
-            />
+            <EmotionTimeline timeline={timeline ?? []} />
 
             {/* Generate Summary Button */}
 
@@ -138,9 +136,7 @@ function AnalyticsPanel({
 
             {/* Conversation Summary */}
 
-            <SessionSummary
-            summary={summary}
-            />
+            <SessionSummary summary={summary ?? null} />
 
         </div>
 

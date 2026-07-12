@@ -142,7 +142,9 @@ timeline=[]
 
 }){
 
-if(timeline.length<2){
+const data = timeline ?? [];
+
+if (data.length < 2){
 
 return(
 
@@ -180,11 +182,7 @@ height={280}
 
 >
 
-<LineChart
-
-data={timeline}
-
->
+<LineChart data={data}>
 
 <CartesianGrid
 

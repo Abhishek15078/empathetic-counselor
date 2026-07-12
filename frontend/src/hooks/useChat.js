@@ -320,61 +320,56 @@ function useChat() {
 
     async function startNewConversation() {
 
-        try {
+    try {
 
-            localStorage.removeItem("sessionId");
+        setIsLoading(true);
 
-            setMessages([]);
+        const response = await createSession();
 
-            setSummary([]);
+        localStorage.setItem(
+            "sessionId",
+            response.session_id
+        );
 
-            setTimeline([]);
+        setSessionId(response.session_id);
 
-            setEmotion(null);
+        setMessages([]);
 
-            setTrajectory(null);
+        setSummary(null);
 
-            setProcessingTime(null);
+        setTimeline([]);
 
-            setSafetyTriggered(false);
+        setEmotion(null);
 
-            setError(null);
+        setTrajectory(null);
 
-            setInput("");
+        setProcessingTime(null);
 
-            const response =
+        setSafetyTriggered(false);
 
-                await createSession();
+        setError(null);
 
-            setSessionId(
-
-                response.session_id
-
-            );
-
-            localStorage.setItem(
-
-                "sessionId",
-
-                response.session_id
-
-            );
-
-        }
-
-        catch (err) {
-
-            console.error(err);
-
-            setError(
-
-                "Unable to start a new conversation."
-
-            );
-
-        }
+        setInput("");
 
     }
+
+    catch (err) {
+
+        console.error(err);
+
+        setError(
+            "Unable to start a new conversation."
+        );
+
+    }
+
+    finally {
+
+        setIsLoading(false);
+
+    }
+
+}
 
     // =======================================
     // Timeline

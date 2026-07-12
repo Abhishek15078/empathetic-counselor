@@ -4,7 +4,71 @@
         "category": "academic",
         "message": "I'm terrified I'm going to fail my final exams even though I've been studying every day.",
         "expected_emotion": "fear",
-        "baseline_response": "It's completely normal to feel that way, especially when there's a lot riding on your exams. It's great that you've been studying every day, though - that's a huge effort and it shows you're committed to doing well.\n\nCan you tell me a bit more about what's going through your mind? What specifically is making you feel like you might fail? Is it a particular subject or topic that's got you worried, or is it more of a general feeling of uncertainty?\n\nAlso, have you been taking practice exams or quizzes to test your knowledge and get a sense of how you're doing? Sometimes, seeing your progress and identifying areas where you need to focus can help you feel more confident and in control.",
+        "baseline_response": "It's normal to feel that way, especially when there's a lot riding on your exams. It sounds like you've been putting in a lot of effort, studying every day, which is great. However, it's also important to remember that it's okay to feel anxious or unsure, even with all that preparation.\n\nCan you tell me a bit more about what's specifically worrying you? Is it a particular subject or topic that you're struggling with, or is it more of a general feeling of \"what if I'm not good enough\"? Sometimes talking through your concerns can help clarify things and make them feel more manageable. \n\nAlso, have you considered taking some practice exams or quizzes to help you get a sense of your knowledge and identify any areas where you might need to focus your studying? And are you taking care of yourself during this time, getting enough sleep, eating well, and taking breaks when you need them? Remember, taking care of your physical and mental well-being is just as important as studying for your exams.",
+        "full_response": "It sounds like you're feeling terrified, and that's completely understandable given the high stakes of your final exams. It's great that you've been studying every day, which shows your dedication and commitment to doing well. However, it's clear that despite your efforts, the fear of failure is still weighing heavily on you.\n\nI want to acknowledge that your fear is valid, and it's normal to feel this way, especially when so much is on the line. It might be helpful to explore some coping strategies to manage your exam anxiety, such as breaking down your study sessions into smaller, more manageable tasks, or practicing relaxation techniques like deep breathing or grounding exercises.\n\nWhat is it about failing your exams that scares you the most?"
+    },
+    {
+        "id": 2,
+        "category": "academic",
+        "message": "I can't concentrate on my assignments anymore.",
+        "expected_emotion": "sadness",
+        "baseline_response": "It can be really tough to stay focused, especially when you've got a lot on your plate. Have you tried breaking your assignments down into smaller, more manageable tasks? Sometimes, when a task seems too big, it's hard to know where to start, and that can be overwhelming.\n\nAlso, are you taking breaks and giving yourself time to rest and recharge? It's easy to get burned out if you're pushing yourself too hard. Maybe try setting a timer for, say, 25 minutes of focused work, and then take a 5-minute break to stretch, grab a snack, or do something you enjoy.\n\nWhat kind of assignments are you working on, by the way? Is there something specific that's giving you trouble or making it hard to concentrate? I'm here to listen and help if I can!",
+        "full_response": "It sounds like you're feeling frustrated and overwhelmed, which is making it difficult for you to focus on your assignments. This can be a really challenging and demotivating experience, especially when you're trying to meet deadlines.\n\nWhat is the first thing that comes to mind when you think about what's distracting you or making it hard for you to concentrate on your assignments?"
+    },
+    {
+        "id": 3,
+        "category": "academic",
+        "message": "Everyone in my class seems smarter than me.",
+        "expected_emotion": "sadness",
+        "baseline_response": "It can be really tough to feel like you're the only one who doesn't understand something, especially when it seems like everyone around you is grasping the material easily. But here's the thing: everyone feels that way at some point, even the people who seem like they're acing everything.\n\nIt's possible that your classmates are just better at hiding their struggles or that they're more comfortable asking for help. Or maybe they've just had more experience with the subject matter before. But that doesn't mean you're not capable of learning and succeeding too.\n\nInstead of comparing yourself to others, try to focus on your own progress and what you can do to improve. Are there specific areas where you're struggling? Are there resources available to help you catch up, like tutoring or online study groups? \n\nRemember that intelligence is not just about being book-smart, it's also about being resourceful, determined, and willing to learn. You have your own unique strengths and abilities, and with the right mindset and support, you can achieve your goals.\n\nSo, don't be too hard on yourself, okay? You're not alone, and you're not defined by how you're doing in one particular class. You're capable of growth and learning",
+        "full_response": "It sounds like you're feeling insecure and perhaps a bit intimidated by your classmates, which can be a really tough and isolating experience. It's understandable to have these feelings, especially in an academic setting where it's easy to compare ourselves to others.\n\nWhat is it about your classmates that makes you feel like they're smarter than you?"
+    },
+    {
+        "id": 4,
+        "category": "academic",
+        "message": "I panic every time I think about tomorrow's exam.",
+        "expected_emotion": "fear",
+        "baseline_response": "It sounds like you're really feeling the pressure about your exam tomorrow. That's completely normal, by the way. It's natural to feel some level of anxiety when you're facing a big test.\n\nCan you tell me a bit more about what's going through your mind when you think about the exam? Is it the material itself that's got you worried, or is it more about the unknowns, like how you'll perform or what the questions will be like?\n\nSometimes talking through your concerns can help you feel a bit more in control and prepared. I'm here to listen and offer any help or advice I can.",
+        "full_response": "It sounds like you're feeling overwhelmed with fear, and that's completely understandable when facing a significant exam. It's normal to feel panicked when thinking about something that's important to you and your future.\n\nWhat is the first thing that comes to mind when you start thinking about the exam and feeling panicked?"
+    },
+    {
+        "id": 5,
+        "category": "academic",
+        "message": "My grades keep dropping no matter how hard I study.",
+        "expected_emotion": "sadness",
+        "baseline_response": "I'm so sorry to hear that you're struggling with your grades. It can be really frustrating when you feel like you're putting in the effort, but not seeing the results you want.\n\nCan you tell me a bit more about what's been going on? What subjects are you struggling with, and what kind of studying have you been doing? Are you attending classes regularly, taking notes, and completing all your assignments?\n\nSometimes, it's not just about the amount of time you're studying, but also the quality of your study habits. Maybe we can brainstorm some new strategies together to help you better retain the information and understand the material.\n\nAlso, are you feeling overwhelmed or stressed about your grades? That can definitely impact your performance. We can talk about some ways to manage your stress and anxiety, too.\n\nRemember, you're not alone in this. Lots of students struggle with their grades at some point, and it's totally possible to turn things around. Let's work together to figure out what's going on and find a solution that works for you.",
+        "full_response": "I apologize, but I am having trouble generating a response right now. Please try again."
+    },
+    {
+        "id": 6,
+        "category": "academic",
+        "message": "I'm overwhelmed with assignments and deadlines.",
+        "expected_emotion": "fear",
+        "baseline_response": "It can be really stressful when you have a lot on your plate. Let's break it down together. Can you tell me a bit more about what's going on? What are some of the assignments and deadlines that are feeling overwhelming to you? Sometimes just talking through it can help clarify things and make it feel more manageable.",
+        "full_response": "I apologize, but I am having trouble generating a response right now. Please try again."
+    },
+    {
+        "id": 7,
+        "category": "academic",
+        "message": "I feel like disappointing my parents.",
+        "expected_emotion": "fear",
+        "baseline_response": "It can be really tough to feel like you're letting your parents down. Can you tell me a bit more about what's going on and how you're feeling? What specifically is making you feel like you're disappointing them? Is it something related to school, your career, or personal choices? Sometimes talking about it can help clarify things and give us a better idea of how to move forward. I'm here to listen and offer support if you need it.",
+        "full_response": "I apologize, but I am having trouble generating a response right now. Please try again."
+    },
+    {
+        "id": 8,
+        "category": "academic",
+        "message": "I failed another test today.",
+        "expected_emotion": "sadness",
+        "baseline_response": "I'm so sorry to hear that. Failing a test can be really frustrating and disappointing. But here's the thing: it's not a reflection of your worth or intelligence. Everyone has bad days and struggles with certain subjects.\n\nWhat subject was the test in, if you don't mind me asking? And do you think there was something specific that tripped you up, or was it just a tough test in general? Maybe we can brainstorm some ways to help you prepare better for the next one.",
+        "full_response": "I apologize, but I am having trouble generating a response right now. Please try again."
+    },
+    {
+        "id": 12,
+        "category": "academic",
+        "message": "I study all day but remember nothing.",
+        "expected_emotion": "sadness",
+        "baseline_response": "That can be really frustrating. It sounds like you're putting in the effort to study, but the information just isn't sticking. There are a few things you might want to try to help improve your retention.\n\nFirst, are you taking breaks while you study? Sometimes, our brains can get overwhelmed if we're trying to focus for too long. Breaking up your study sessions into shorter chunks with breaks in between can help you stay focused and retain more information.\n\nAnother thing to consider is how you're studying. Are you just re-reading your notes over and over, or are you actively engaging with the material? Trying to summarize what you've read in your own words, making concept maps or flashcards, or discussing the material with a friend or study group can help make the information more memorable.\n\nIt might also be helpful to identify what's causing the problem. Is it that you're not understanding the material in the first place, or is it that you're just not able to recall it later? If it's the former, you might want to try seeking out additional resources, like video lectures or tutoring, to help clarify things. If it's the latter, you might want to try practicing recall techniques, like quizzing yourself or trying to",
         "full_response": "I apologize, but I am having trouble generating a response right now. Please try again."
     }
 ]

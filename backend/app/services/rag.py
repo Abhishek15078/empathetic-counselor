@@ -1,35 +1,40 @@
 from pathlib import Path
-import chromadb
 
-from sentence_transformers import (
-    SentenceTransformer
-)
+import chromadb
+from sentence_transformers import SentenceTransformer
+
+
 class RAGService:
 
     def __init__(self):
 
-        self.model = (
-            SentenceTransformer(
-                "all-MiniLM-L6-v2"
-            )
+        self.model = SentenceTransformer(
+            "all-MiniLM-L6-v2"
         )
+
         db_path = (
             Path(__file__)
             .resolve()
-            .parent.parent.parent.parent
+            .parents[2]
             / "chroma_db"
-            )
-
-        self.client = (
-            chromadb.PersistentClient(
-                path=str(db_path)
-            )
         )
 
-        self.collection = (
-            self.client.get_collection(
-                "counseling_kb"
-            )
+        print("=" * 60)
+        print("RAG DATABASE PATH")
+        print(db_path)
+        print("=" * 60)
+
+        self.client = chromadb.PersistentClient(
+            path=str(db_path)
+        )
+
+        print("=" * 60)
+        print("AVAILABLE COLLECTIONS")
+        print(self.client.list_collections())
+        print("=" * 60)
+
+        self.collection = self.client.get_collection(
+            name="counseling_kb"
         )
 
     def retrieve(
@@ -39,32 +44,17 @@ class RAGService:
         n_results: int = 3
     ):
 
-        search_query = (
-            f"{emotion_label} "
-            f"{query}"
-        )
+        search_query = f"{emotion_label} {query}"
 
         results = self.collection.query(
-            query_texts=[
-                search_query
-            ],
+            query_texts=[search_query],
             n_results=n_results
         )
 
-        documents = (
-            results["documents"][0]
-        )
+        documents = results["documents"][0]
+        metadatas = results["metadatas"][0]
 
-        metadatas = (
-            results["metadatas"][0]
-        )
-
-        return list(
-            zip(
-                documents,
-                metadatas
-            )
-        )
+        return list(zip(documents, metadatas))
 
     def get_context(
         self,
@@ -73,22 +63,12 @@ class RAGService:
         n_results: int = 3
     ):
 
-        retrieved_docs = (
-            self.retrieve(
-                query,
-                emotion_label,
-                n_results
-            )
+        retrieved = self.retrieve(
+            query,
+            emotion_label,
+            n_results
         )
 
-        context_parts = []
-
-        for doc, _ in retrieved_docs:
-
-            context_parts.append(
-                doc
-            )
-
         return "\n\n".join(
-            context_parts
+            doc for doc, _ in retrieved
         )
