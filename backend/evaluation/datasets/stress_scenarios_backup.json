@@ -1,0 +1,302 @@
+[
+    {
+        "id": 1,
+        "category": "academic",
+        "message": "I'm terrified I'm going to fail my final exams even though I've been studying every day.",
+        "expected_emotion": "fear"
+    },
+    {
+        "id": 2,
+        "category": "academic",
+        "message": "I can't concentrate on my assignments anymore.",
+        "expected_emotion": "sadness"
+    },
+    {
+        "id": 3,
+        "category": "academic",
+        "message": "Everyone in my class seems smarter than me.",
+        "expected_emotion": "sadness"
+    },
+    {
+        "id": 4,
+        "category": "academic",
+        "message": "I panic every time I think about tomorrow's exam.",
+        "expected_emotion": "fear"
+    },
+    {
+        "id": 5,
+        "category": "academic",
+        "message": "My grades keep dropping no matter how hard I study.",
+        "expected_emotion": "sadness"
+    },
+    {
+        "id": 6,
+        "category": "academic",
+        "message": "I'm overwhelmed with assignments and deadlines.",
+        "expected_emotion": "fear"
+    },
+    {
+        "id": 7,
+        "category": "academic",
+        "message": "I feel like disappointing my parents.",
+        "expected_emotion": "fear"
+    },
+    {
+        "id": 8,
+        "category": "academic",
+        "message": "I failed another test today.",
+        "expected_emotion": "sadness"
+    },
+    {
+        "id": 9,
+        "category": "academic",
+        "message": "I don't think I'm smart enough for engineering.",
+        "expected_emotion": "sadness"
+    },
+    {
+        "id": 10,
+        "category": "academic",
+        "message": "Every exam makes me feel sick with anxiety.",
+        "expected_emotion": "fear"
+    },
+    {
+        "id": 11,
+        "category": "academic",
+        "message": "I'm afraid I chose the wrong career path.",
+        "expected_emotion": "fear"
+    },
+    {
+        "id": 12,
+        "category": "academic",
+        "message": "I study all day but remember nothing.",
+        "expected_emotion": "sadness"
+    },
+    {
+        "id": 13,
+        "category": "academic",
+        "message": "My classmates always outperform me.",
+        "expected_emotion": "sadness"
+    },
+    {
+        "id": 14,
+        "category": "academic",
+        "message": "I'm exhausted trying to balance college and life.",
+        "expected_emotion": "neutral"
+    },
+    {
+        "id": 15,
+        "category": "academic",
+        "message": "I don't know how I'll finish this semester.",
+        "expected_emotion": "fear"
+    },
+    {
+        "id": 16,
+        "category": "workplace",
+        "message": "My boss constantly criticizes my work.",
+        "expected_emotion": "sadness"
+    },
+    {
+        "id": 17,
+        "category": "workplace",
+        "message": "I'm afraid I'll lose my job.",
+        "expected_emotion": "fear"
+    },
+    {
+        "id": 18,
+        "category": "workplace",
+        "message": "My workload keeps increasing every week.",
+        "expected_emotion": "anger"
+    },
+    {
+        "id": 19,
+        "category": "workplace",
+        "message": "Nobody appreciates the effort I put in.",
+        "expected_emotion": "sadness"
+    },
+    {
+        "id": 20,
+        "category": "workplace",
+        "message": "I dread going to work every morning.",
+        "expected_emotion": "fear"
+    },
+    {
+        "id": 21,
+        "category": "workplace",
+        "message": "I'm struggling with burnout.",
+        "expected_emotion": "sadness"
+    },
+    {
+        "id": 22,
+        "category": "workplace",
+        "message": "I feel stuck in my current role.",
+        "expected_emotion": "neutral"
+    },
+    {
+        "id": 23,
+        "category": "workplace",
+        "message": "My coworkers ignore my ideas.",
+        "expected_emotion": "anger"
+    },
+    {
+        "id": 24,
+        "category": "workplace",
+        "message": "I can't keep up with deadlines anymore.",
+        "expected_emotion": "fear"
+    },
+    {
+        "id": 25,
+        "category": "workplace",
+        "message": "Work stress is affecting my sleep.",
+        "expected_emotion": "fear"
+    },
+    {
+        "id": 26,
+        "category": "social",
+        "message": "I'm scared people are judging me.",
+        "expected_emotion": "fear"
+    },
+    {
+        "id": 27,
+        "category": "social",
+        "message": "I avoid social gatherings because I get anxious.",
+        "expected_emotion": "fear"
+    },
+    {
+        "id": 28,
+        "category": "social",
+        "message": "I never know what to say to people.",
+        "expected_emotion": "sadness"
+    },
+    {
+        "id": 29,
+        "category": "social",
+        "message": "I think everyone secretly dislikes me.",
+        "expected_emotion": "fear"
+    },
+    {
+        "id": 30,
+        "category": "social",
+        "message": "Talking to strangers makes me panic.",
+        "expected_emotion": "fear"
+    },
+    {
+        "id": 31,
+        "category": "social",
+        "message": "I feel lonely even around friends.",
+        "expected_emotion": "sadness"
+    },
+    {
+        "id": 32,
+        "category": "social",
+        "message": "I overthink every conversation.",
+        "expected_emotion": "fear"
+    },
+    {
+        "id": 33,
+        "category": "social",
+        "message": "I hate speaking in public.",
+        "expected_emotion": "fear"
+    },
+    {
+        "id": 34,
+        "category": "social",
+        "message": "I'm afraid of embarrassing myself.",
+        "expected_emotion": "fear"
+    },
+    {
+        "id": 35,
+        "category": "social",
+        "message": "I always compare myself to others.",
+        "expected_emotion": "sadness"
+    },
+    {
+        "id": 36,
+        "category": "relationship",
+        "message": "My partner doesn't seem to understand me anymore.",
+        "expected_emotion": "sadness"
+    },
+    {
+        "id": 37,
+        "category": "relationship",
+        "message": "We argue almost every day.",
+        "expected_emotion": "anger"
+    },
+    {
+        "id": 38,
+        "category": "relationship",
+        "message": "I'm scared my relationship is ending.",
+        "expected_emotion": "fear"
+    },
+    {
+        "id": 39,
+        "category": "relationship",
+        "message": "I feel ignored by someone I love.",
+        "expected_emotion": "sadness"
+    },
+    {
+        "id": 40,
+        "category": "relationship",
+        "message": "My best friend stopped talking to me.",
+        "expected_emotion": "sadness"
+    },
+    {
+        "id": 41,
+        "category": "relationship",
+        "message": "I don't know if I should end my relationship.",
+        "expected_emotion": "neutral"
+    },
+    {
+        "id": 42,
+        "category": "relationship",
+        "message": "I feel guilty after hurting someone close to me.",
+        "expected_emotion": "sadness"
+    },
+    {
+        "id": 43,
+        "category": "relationship",
+        "message": "I miss someone who left my life.",
+        "expected_emotion": "sadness"
+    },
+    {
+        "id": 44,
+        "category": "overwhelm",
+        "message": "Everything feels like too much lately.",
+        "expected_emotion": "sadness"
+    },
+    {
+        "id": 45,
+        "category": "overwhelm",
+        "message": "I don't know where to start anymore.",
+        "expected_emotion": "neutral"
+    },
+    {
+        "id": 46,
+        "category": "overwhelm",
+        "message": "I'm mentally exhausted.",
+        "expected_emotion": "sadness"
+    },
+    {
+        "id": 47,
+        "category": "overwhelm",
+        "message": "Every day feels harder than the last.",
+        "expected_emotion": "sadness"
+    },
+    {
+        "id": 48,
+        "category": "overwhelm",
+        "message": "I'm constantly worrying about everything.",
+        "expected_emotion": "fear"
+    },
+    {
+        "id": 49,
+        "category": "overwhelm",
+        "message": "I feel trapped by my responsibilities.",
+        "expected_emotion": "sadness"
+    },
+    {
+        "id": 50,
+        "category": "overwhelm",
+        "message": "Nothing seems to be going right.",
+        "expected_emotion": "sadness"
+    }
+]

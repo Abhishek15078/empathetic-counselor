@@ -4,6 +4,7 @@ from pathlib import Path
 from app.database import SessionLocal
 from app.repositories.session_repository import SessionRepository
 from app.services.orchestrator import AIOrchestrator
+from app.services.emotion import EmotionClassifier
 
 from evaluation.baseline import BaselineSystem
 
@@ -19,6 +20,8 @@ class EvaluationRunner:
         self.baseline = BaselineSystem()
 
         self.orchestrator = AIOrchestrator()
+
+        self.emotion_classifier = EmotionClassifier()
 
         self.session_repo = SessionRepository()
 
@@ -112,6 +115,12 @@ class EvaluationRunner:
 
                     session = self.session_repo.create_session(db)
 
+                    emotion_result = self.emotion_classifier.classify(
+                            scenario["message"]
+                            )
+
+                    predicted_emotion = emotion_result.label
+
                     pipeline_result = (
                         self.orchestrator.process_message(
                             session.id,
@@ -138,6 +147,7 @@ class EvaluationRunner:
                         "category": scenario["category"],
                         "message": scenario["message"],
                         "expected_emotion": scenario["expected_emotion"],
+                        "predicted_emotion": predicted_emotion.value,
                         "baseline_response": baseline_response,
                         "full_response": full_response
                     }

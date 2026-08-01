@@ -1,74 +1,1082 @@
 [
     {
         "id": 1,
-        "category": "academic",
-        "message": "I'm terrified I'm going to fail my final exams even though I've been studying every day.",
+        "category": "finance",
+        "message": "I'm worried about losing my job.",
         "expected_emotion": "fear",
-        "baseline_response": "It's normal to feel that way, especially when there's a lot riding on your exams. It sounds like you've been putting in a lot of effort, studying every day, which is great. However, it's also important to remember that it's okay to feel anxious or unsure, even with all that preparation.\n\nCan you tell me a bit more about what's specifically worrying you? Is it a particular subject or topic that you're struggling with, or is it more of a general feeling of \"what if I'm not good enough\"? Sometimes talking through your concerns can help clarify things and make them feel more manageable. \n\nAlso, have you considered taking some practice exams or quizzes to help you get a sense of your knowledge and identify any areas where you might need to focus your studying? And are you taking care of yourself during this time, getting enough sleep, eating well, and taking breaks when you need them? Remember, taking care of your physical and mental well-being is just as important as studying for your exams.",
-        "full_response": "It sounds like you're feeling terrified, and that's completely understandable given the high stakes of your final exams. It's great that you've been studying every day, which shows your dedication and commitment to doing well. However, it's clear that despite your efforts, the fear of failure is still weighing heavily on you.\n\nI want to acknowledge that your fear is valid, and it's normal to feel this way, especially when so much is on the line. It might be helpful to explore some coping strategies to manage your exam anxiety, such as breaking down your study sessions into smaller, more manageable tasks, or practicing relaxation techniques like deep breathing or grounding exercises.\n\nWhat is it about failing your exams that scares you the most?"
+        "predicted_emotion": "fear",
+        "baseline_response": "That can be really stressful and unsettling. Have you noticed any changes at work that are making you feel this way, or is there something specific that's causing your concern? Sometimes talking about it can help clarify things and we can explore possible steps you can take to feel more secure or prepared for any outcome. What's been going on that's got you worried about your job?",
+        "full_response": "It sounds like you're feeling fearful and uncertain about your job security, and that's completely understandable given the current circumstances. It's normal to feel this way when the future of your employment is unclear.\n\nWhat specific aspects of potentially losing your job are causing you the most concern right now?"
     },
     {
         "id": 2,
-        "category": "academic",
-        "message": "I can't concentrate on my assignments anymore.",
-        "expected_emotion": "sadness",
-        "baseline_response": "It can be really tough to stay focused, especially when you've got a lot on your plate. Have you tried breaking your assignments down into smaller, more manageable tasks? Sometimes, when a task seems too big, it's hard to know where to start, and that can be overwhelming.\n\nAlso, are you taking breaks and giving yourself time to rest and recharge? It's easy to get burned out if you're pushing yourself too hard. Maybe try setting a timer for, say, 25 minutes of focused work, and then take a 5-minute break to stretch, grab a snack, or do something you enjoy.\n\nWhat kind of assignments are you working on, by the way? Is there something specific that's giving you trouble or making it hard to concentrate? I'm here to listen and help if I can!",
-        "full_response": "It sounds like you're feeling frustrated and overwhelmed, which is making it difficult for you to focus on your assignments. This can be a really challenging and demotivating experience, especially when you're trying to meet deadlines.\n\nWhat is the first thing that comes to mind when you think about what's distracting you or making it hard for you to concentrate on your assignments?"
+        "category": "family",
+        "message": "I'm scared I won't be able to pay my bills.",
+        "expected_emotion": "fear",
+        "predicted_emotion": "fear",
+        "baseline_response": "It can be really overwhelming and stressful when you're worried about paying your bills. First, take a deep breath and know that you're not alone. Many people have been in your shoes before and have found a way to get back on track.\n\nCan you tell me a bit more about what's going on? What bills are you struggling to pay, and when are they due? Sometimes, talking through the details can help us come up with a plan to tackle them. I'm here to listen and help in any way I can.",
+        "full_response": "It sounds like you're feeling fearful, and that's a completely understandable emotion when faced with financial uncertainty. It's normal to worry about being able to cover your expenses, and it's great that you're acknowledging and expressing your concerns.\n\nWhat specific bills or expenses are causing you the most worry and stress right now?"
     },
     {
         "id": 3,
         "category": "academic",
-        "message": "Everyone in my class seems smarter than me.",
-        "expected_emotion": "sadness",
-        "baseline_response": "It can be really tough to feel like you're the only one who doesn't understand something, especially when it seems like everyone around you is grasping the material easily. But here's the thing: everyone feels that way at some point, even the people who seem like they're acing everything.\n\nIt's possible that your classmates are just better at hiding their struggles or that they're more comfortable asking for help. Or maybe they've just had more experience with the subject matter before. But that doesn't mean you're not capable of learning and succeeding too.\n\nInstead of comparing yourself to others, try to focus on your own progress and what you can do to improve. Are there specific areas where you're struggling? Are there resources available to help you catch up, like tutoring or online study groups? \n\nRemember that intelligence is not just about being book-smart, it's also about being resourceful, determined, and willing to learn. You have your own unique strengths and abilities, and with the right mindset and support, you can achieve your goals.\n\nSo, don't be too hard on yourself, okay? You're not alone, and you're not defined by how you're doing in one particular class. You're capable of growth and learning",
-        "full_response": "It sounds like you're feeling insecure and perhaps a bit intimidated by your classmates, which can be a really tough and isolating experience. It's understandable to have these feelings, especially in an academic setting where it's easy to compare ourselves to others.\n\nWhat is it about your classmates that makes you feel like they're smarter than you?"
+        "message": "I'm so angry that my teammates never do their share of the work.",
+        "expected_emotion": "anger",
+        "predicted_emotion": "anger",
+        "baseline_response": "I can totally understand why you'd feel that way. It's really frustrating when you feel like you're shouldering all the responsibility and others aren't pulling their weight. Have you talked to your teammates about how you're feeling? Sometimes, people aren't even aware that they're not doing their share, and having an open and honest conversation can really help clear the air. \n\nIf you haven't already, you might want to consider having a calm and non-accusatory conversation with your team to discuss the workload and see if you can come up with a more balanced plan. It's also a good idea to set clear expectations and deadlines, so everyone knows what's expected of them.\n\nAdditionally, you might want to think about whether there are any underlying issues that might be contributing to the problem. For example, are your teammates struggling with their own workloads or are there any communication breakdowns that are causing the issue?\n\nRemember, you don't have to tackle this alone. You can also consider speaking with a supervisor or manager if you feel like the issue is persisting and you need some additional support. How do you think you'll approach the situation?",
+        "full_response": "It sounds like you're feeling extremely angry, and that's completely understandable given the frustration of shouldering the workload alone. It's normal to feel resentful when you feel like others aren't pulling their weight.\n\nWhat specific situation or incident triggered your anger about your teammates' lack of contribution?"
     },
     {
         "id": 4,
-        "category": "academic",
-        "message": "I panic every time I think about tomorrow's exam.",
-        "expected_emotion": "fear",
-        "baseline_response": "It sounds like you're really feeling the pressure about your exam tomorrow. That's completely normal, by the way. It's natural to feel some level of anxiety when you're facing a big test.\n\nCan you tell me a bit more about what's going through your mind when you think about the exam? Is it the material itself that's got you worried, or is it more about the unknowns, like how you'll perform or what the questions will be like?\n\nSometimes talking through your concerns can help you feel a bit more in control and prepared. I'm here to listen and offer any help or advice I can.",
-        "full_response": "It sounds like you're feeling overwhelmed with fear, and that's completely understandable when facing a significant exam. It's normal to feel panicked when thinking about something that's important to you and your future.\n\nWhat is the first thing that comes to mind when you start thinking about the exam and feeling panicked?"
+        "category": "finance",
+        "message": "It hurts seeing everyone else happy.",
+        "expected_emotion": "sadness",
+        "predicted_emotion": "sadness",
+        "baseline_response": "It can be really tough to see others around you seeming so happy and fulfilled when you're not feeling the same way. It's like everyone else has found their place in the world, and you're still trying to figure things out.\n\nFirst of all, just know that you're not alone in feeling this way. Lots of people struggle with feelings of sadness, inadequacy, or discontent, even when it seems like everyone else has it all together. Social media can be especially tough, because it's easy to get caught up in comparing our behind-the-scenes moments to everyone else's highlight reels.\n\nBut here's the thing: everyone has their own struggles, even if they don't always show it. People may be putting on a happy face, but that doesn't mean they're not dealing with their own challenges or doubts. And it's okay to feel sad or overwhelmed sometimes – it's a normal part of life.\n\nIf you're feeling like you're stuck in a rut, or like you just can't seem to catch a break, maybe we can brainstorm some ways to help you shift your focus and find some happiness of your own. Would you like to talk about what's been going on and see if we can come up with some ideas",
+        "full_response": "It sounds like you're feeling a deep sense of sadness and possibly even loneliness, and it's especially painful when you see others around you who seem happy and fulfilled. It's completely understandable to feel this way, and it takes a lot of courage to acknowledge and express these emotions.\n\nWhat is it about seeing others' happiness that feels particularly hurtful to you right now?"
     },
     {
         "id": 5,
-        "category": "academic",
-        "message": "My grades keep dropping no matter how hard I study.",
-        "expected_emotion": "sadness",
-        "baseline_response": "I'm so sorry to hear that you're struggling with your grades. It can be really frustrating when you feel like you're putting in the effort, but not seeing the results you want.\n\nCan you tell me a bit more about what's been going on? What subjects are you struggling with, and what kind of studying have you been doing? Are you attending classes regularly, taking notes, and completing all your assignments?\n\nSometimes, it's not just about the amount of time you're studying, but also the quality of your study habits. Maybe we can brainstorm some new strategies together to help you better retain the information and understand the material.\n\nAlso, are you feeling overwhelmed or stressed about your grades? That can definitely impact your performance. We can talk about some ways to manage your stress and anxiety, too.\n\nRemember, you're not alone in this. Lots of students struggle with their grades at some point, and it's totally possible to turn things around. Let's work together to figure out what's going on and find a solution that works for you.",
-        "full_response": "I apologize, but I am having trouble generating a response right now. Please try again."
+        "category": "health",
+        "message": "I fear being judged by other people.",
+        "expected_emotion": "fear",
+        "predicted_emotion": "fear",
+        "baseline_response": "It can be really tough to deal with the fear of being judged by others. It's a common fear that many people experience, and it can hold you back from being your true self and pursuing your goals.\n\nFirst of all, let's acknowledge that it's okay to feel this way. It's normal to care about what others think of us, and it's natural to want to be liked and accepted. But it's also important to remember that you can't control how others think or feel about you. What you can control is how you think and feel about yourself.\n\nOne thing that might help is to try to focus on your own self-acceptance and self-compassion. Instead of worrying about what others might think, try to focus on what you think and feel about yourself. What are your strengths and weaknesses? What are your values and goals? What makes you unique and special?\n\nIt's also important to remember that everyone has their own opinions and biases, and not everyone will like or agree with you. And that's okay! You don't need everyone's approval to be worthy or valid. You are enough, just as you are.\n\nAdditionally, it might be helpful to practice self-care and self-compassion. Take time",
+        "full_response": "It sounds like you're feeling fearful, and that's completely understandable when worrying about how others might perceive you. It's normal to have concerns about being judged, and it takes a lot of courage to acknowledge and express this fear.\n\nWhat situations or interactions tend to trigger this fear of being judged in you?"
     },
     {
         "id": 6,
-        "category": "academic",
-        "message": "I'm overwhelmed with assignments and deadlines.",
-        "expected_emotion": "fear",
-        "baseline_response": "It can be really stressful when you have a lot on your plate. Let's break it down together. Can you tell me a bit more about what's going on? What are some of the assignments and deadlines that are feeling overwhelming to you? Sometimes just talking through it can help clarify things and make it feel more manageable.",
-        "full_response": "I apologize, but I am having trouble generating a response right now. Please try again."
+        "category": "finance",
+        "message": "I got selected for my dream internship.",
+        "expected_emotion": "joy",
+        "predicted_emotion": "joy",
+        "baseline_response": "That's amazing news. Congratulations on getting selected for your dream internship. How does it feel to have achieved this goal? What are you most looking forward to about the internship?",
+        "full_response": "It sounds like you're feeling joyful, and that's completely understandable given the exciting news about your dream internship. This is a huge accomplishment, and it's great that your hard work has paid off.\n\nWhat are you most looking forward to experiencing or learning during this internship?"
     },
     {
         "id": 7,
-        "category": "academic",
-        "message": "I feel like disappointing my parents.",
-        "expected_emotion": "fear",
-        "baseline_response": "It can be really tough to feel like you're letting your parents down. Can you tell me a bit more about what's going on and how you're feeling? What specifically is making you feel like you're disappointing them? Is it something related to school, your career, or personal choices? Sometimes talking about it can help clarify things and give us a better idea of how to move forward. I'm here to listen and offer support if you need it.",
-        "full_response": "I apologize, but I am having trouble generating a response right now. Please try again."
+        "category": "relationships",
+        "message": "I was amazed when I finished first in the race.",
+        "expected_emotion": "surprise",
+        "predicted_emotion": "surprise",
+        "baseline_response": "That's terrific. Finishing first in a race can be an incredible feeling, a huge confidence booster. What kind of race was it, by the way? Was it a running race, a cycling event, or something else entirely?",
+        "full_response": "It sounds like you're feeling surprised and thrilled, which is completely understandable given the exciting news of finishing first in the race. Achieving something like that can be a tremendous confidence booster and a great source of pride.\n\nWhat did you do to prepare for the race that you think contributed to your success?"
     },
     {
         "id": 8,
-        "category": "academic",
-        "message": "I failed another test today.",
+        "category": "health",
+        "message": "The room was covered in dust and mold.",
+        "expected_emotion": "disgust",
+        "predicted_emotion": "disgust",
+        "baseline_response": "That sounds like a pretty unpleasant environment. It's likely that the room has been neglected or unused for a while, allowing the dust and mold to build up. Mold can be especially problematic, as it can pose health risks and be difficult to get rid of. Do you think the room is going to be cleaned and restored, or is it going to remain in this state?",
+        "full_response": "It sounds like you're feeling disgusted, which is a completely natural response to being surrounded by dust and mold. The thought of being in a space with such poor air quality can be really unsettling and even disturbing.\n\nWhat triggered your discovery of the dust and mold in the room?"
+    },
+    {
+        "id": 9,
+        "category": "social",
+        "message": "I was completely caught off guard by the announcement.",
+        "expected_emotion": "surprise",
+        "predicted_emotion": "surprise",
+        "baseline_response": "That can be really shocking and unsettling. What kind of announcement was it, if you don't mind me asking? Was it related to work, personal life, or something else?",
+        "full_response": "It sounds like you're feeling surprised, and that's completely understandable given that the announcement was unexpected. It's normal to feel caught off guard when something happens without warning, and it can take some time to process your thoughts and emotions.\n\nWhat was it about the announcement that surprised you the most?"
+    },
+    {
+        "id": 10,
+        "category": "daily_life",
+        "message": "Today has been one of the happiest days of my life.",
+        "expected_emotion": "joy",
+        "predicted_emotion": "joy",
+        "baseline_response": "That's wonderful to hear. It's great that you've had such a positive experience. What made today so special for you? Was there something in particular that happened, or was it just a general feeling of happiness and contentment? I'm all ears if you'd like to share.",
+        "full_response": "It sounds like you're feeling an overwhelming sense of joy, and that's wonderful to hear that today has been one of the happiest days of your life. It's great that you're experiencing such a positive and uplifting emotion, and I'm happy to be a part of sharing in your joy.\n\nWhat specifically happened today that made it so special and memorable for you?"
+    },
+    {
+        "id": 11,
+        "category": "family",
+        "message": "I miss the way things used to be.",
         "expected_emotion": "sadness",
-        "baseline_response": "I'm so sorry to hear that. Failing a test can be really frustrating and disappointing. But here's the thing: it's not a reflection of your worth or intelligence. Everyone has bad days and struggles with certain subjects.\n\nWhat subject was the test in, if you don't mind me asking? And do you think there was something specific that tripped you up, or was it just a tough test in general? Maybe we can brainstorm some ways to help you prepare better for the next one.",
-        "full_response": "I apologize, but I am having trouble generating a response right now. Please try again."
+        "predicted_emotion": "sadness",
+        "baseline_response": "It can be really tough when things change and we feel like we're losing something that was important to us. It's totally normal to feel nostalgic for the way things used to be. Can you tell me more about what you're missing? Is it a specific time period, a place, or maybe a relationship that's changed? Sometimes talking about it can help clarify things and give us a new perspective.",
+        "full_response": "It sounds like you're feeling a deep sense of nostalgia and longing for the past, which can be a really painful and melancholic experience. It's completely understandable to miss the way things used to be, especially if it was a time that held a lot of happiness and significance for you.\n\nWhat is it specifically about the past that you're missing the most right now?"
     },
     {
         "id": 12,
-        "category": "academic",
-        "message": "I study all day but remember nothing.",
+        "category": "career",
+        "message": "I lost someone very important to me.",
         "expected_emotion": "sadness",
-        "baseline_response": "That can be really frustrating. It sounds like you're putting in the effort to study, but the information just isn't sticking. There are a few things you might want to try to help improve your retention.\n\nFirst, are you taking breaks while you study? Sometimes, our brains can get overwhelmed if we're trying to focus for too long. Breaking up your study sessions into shorter chunks with breaks in between can help you stay focused and retain more information.\n\nAnother thing to consider is how you're studying. Are you just re-reading your notes over and over, or are you actively engaging with the material? Trying to summarize what you've read in your own words, making concept maps or flashcards, or discussing the material with a friend or study group can help make the information more memorable.\n\nIt might also be helpful to identify what's causing the problem. Is it that you're not understanding the material in the first place, or is it that you're just not able to recall it later? If it's the former, you might want to try seeking out additional resources, like video lectures or tutoring, to help clarify things. If it's the latter, you might want to try practicing recall techniques, like quizzing yourself or trying to",
-        "full_response": "I apologize, but I am having trouble generating a response right now. Please try again."
+        "predicted_emotion": "sadness",
+        "baseline_response": "I'm so sorry to hear that. Losing someone important can be one of the most difficult experiences we go through. It's okay to feel overwhelmed, sad, and maybe even a little lost right now. \n\nIf you feel like talking about the person you lost, I'm here to listen. Sometimes sharing memories or stories about them can help you process your emotions. If not, that's okay too - we can just take things one step at a time. What do you need right now?",
+        "full_response": "It sounds like you're feeling overwhelming sadness and grief, which is a completely natural response to losing someone who was very important to you. It's okay to feel this way, and it's essential to allow yourself to process these emotions.\n\nWhat is one memory or aspect of the person you lost that you're finding yourself thinking about the most right now?"
+    },
+    {
+        "id": 13,
+        "category": "finance",
+        "message": "I feel deeply loved by my family.",
+        "expected_emotion": "love",
+        "predicted_emotion": "joy",
+        "baseline_response": "That's wonderful to hear. Having a supportive and loving family can make all the difference in our lives. It's great that you feel valued and appreciated by them. Family love can bring a sense of security, comfort, and belonging, and it's something to be cherished. Do you have any special memories or traditions with your family that make you feel especially loved and connected to them?",
+        "full_response": "It sounds like you're feeling joyful and grateful, which is wonderful to experience, especially when it comes to the love and support of your family. It's great that you have a strong sense of connection and belonging with them.\n\nWhat is it about your family's love and support that makes you feel the most seen and appreciated right now?"
+    },
+    {
+        "id": 14,
+        "category": "career",
+        "message": "I feel deeply loved by my family.",
+        "expected_emotion": "love",
+        "predicted_emotion": "joy",
+        "baseline_response": "That's wonderful to hear. Having a supportive and loving family can make a huge difference in our lives. It's great that you feel appreciated and cared for by them. What's something special that your family does to show you love and support?",
+        "full_response": "It sounds like you're feeling joyful and appreciated, which is a truly wonderful emotion to experience, especially when it comes from the people closest to you.\n\nWhat is it about your family's love and support that makes you feel most seen and valued right now?"
+    },
+    {
+        "id": 15,
+        "category": "health",
+        "message": "I feel like giving up sometimes.",
+        "expected_emotion": "sadness",
+        "predicted_emotion": "sadness",
+        "baseline_response": "It can be really tough to keep going when things feel overwhelming or hopeless. It's completely normal to have those feelings, and it doesn't mean you're weak or that there's anything wrong with you. Sometimes, it's just a sign that you need to take a step back, recharge, and remind yourself of your strengths and the things that make you resilient.\n\nWhat's been going on that's making you feel like giving up? Is it something specific, like a challenge at work or school, or is it more of a general feeling? Talking about it can help you process your emotions and gain a fresh perspective. I'm here to listen and offer support, so feel free to share as much or as little as you'd like.",
+        "full_response": "It sounds like you're feeling overwhelmed and hopeless, which can be a really tough and isolating experience. It's completely understandable to have those feelings, especially when things seem insurmountable. \n\nWhat is one thing that you think might help you feel a sense of hope or renewal when you're feeling like giving up?"
+    },
+    {
+        "id": 16,
+        "category": "career",
+        "message": "Everything today has been making me lose my temper.",
+        "expected_emotion": "anger",
+        "predicted_emotion": "anger",
+        "baseline_response": "I'm so sorry to hear that. It can be really overwhelming when everything seems to be going wrong and pushing your buttons. It's like the whole world is conspiring against you to make you feel frustrated and angry.\n\nTake a deep breath and let's try to calm down together. Sometimes, all we need is a moment to step back, breathe, and reassess the situation. Would you like to talk about what's been happening today that's got you feeling so frustrated? Sometimes sharing what's on your mind can help you feel better and gain a new perspective. I'm here to listen!",
+        "full_response": "It sounds like you're feeling angry, and it's completely overwhelming when everything seems to be triggering that anger. It's like you're at your breaking point, and it's understandable to feel that way.\n\nWhat was the first thing that happened today that made you feel like you were losing your temper?"
+    },
+    {
+        "id": 17,
+        "category": "health",
+        "message": "I'm irritated because my hard work goes unnoticed.",
+        "expected_emotion": "anger",
+        "predicted_emotion": "anger",
+        "baseline_response": "It can be really frustrating when you feel like your efforts aren't being recognized or appreciated. It's like you're putting in all this time and energy, and nobody seems to notice or care.\n\nFirst of all, let me just say that I see you and I appreciate all your hard work. It's not going unnoticed by me, at least! But I know that's not the same as getting recognition from the people you're working with or for.\n\nCan you tell me more about what's been going on and how you've been feeling? Is it a specific project or task that you're feeling underappreciated for, or is it more of a general feeling? Sometimes talking about it can help clarify things and give us a better idea of what's going on.",
+        "full_response": "It sounds like you're feeling angry and frustrated, which is completely understandable when you feel that your efforts are not being recognized or appreciated. It's normal to want acknowledgment for your hard work, and it can be really disheartening when that doesn't happen.\n\nWhat specific situations or interactions have led you to feel like your hard work is going unnoticed?"
+    },
+    {
+        "id": 18,
+        "category": "academic",
+        "message": "The news today completely surprised me.",
+        "expected_emotion": "surprise",
+        "predicted_emotion": "surprise",
+        "baseline_response": "What happened? Was it something local or a big international story that caught you off guard? I'm all ears if you want to talk about it.",
+        "full_response": "It sounds like you're feeling surprised, and that can be quite overwhelming, especially when it comes to unexpected news. It's completely normal to feel this way, and it's okay to take a moment to process your emotions.\n\nWhat was it about the news that caught you off guard the most?"
+    },
+    {
+        "id": 19,
+        "category": "family",
+        "message": "I was amazed when I finished first in the race.",
+        "expected_emotion": "surprise",
+        "predicted_emotion": "surprise",
+        "baseline_response": "Congratulations on your win. How did it feel crossing that finish line and knowing you came out on top? Was it a tough competition or did you feel pretty confident throughout the race?",
+        "full_response": "It sounds like you're feeling surprised and thrilled, which is completely understandable given the exciting news of finishing first in the race. Achieving something like this can be a huge confidence booster and a great source of pride.\n\nWhat did you do to prepare for the race that you think contributed to your success?"
+    },
+    {
+        "id": 20,
+        "category": "daily_life",
+        "message": "I didn't expect to enjoy the event so much.",
+        "expected_emotion": "surprise",
+        "predicted_emotion": "joy",
+        "baseline_response": "Sometimes the best experiences come from unexpected places. What was it about the event that really surprised you and made it so enjoyable? Was it the people, the activities, or something else entirely?",
+        "full_response": "It sounds like you're feeling joyful, and that's wonderful. It's great that the event turned out to be a pleasant surprise for you, and you were able to enjoy it more than you expected.\n\nWhat was it about the event that exceeded your expectations and brought you so much joy?"
+    },
+    {
+        "id": 21,
+        "category": "relationships",
+        "message": "I spent an hour reading a novel.",
+        "expected_emotion": "neutral",
+        "predicted_emotion": "disgust",
+        "baseline_response": "That sounds like a lovely way to spend an hour. Did you get lost in the story, or was it a book you've been meaning to get back to for a while?",
+        "full_response": "It sounds like you're feeling disgusted, and that's a strong emotion that can be really overwhelming.\n\nWhat triggered this feeling of disgust, was it something you read in the novel or something else entirely?"
+    },
+    {
+        "id": 22,
+        "category": "career",
+        "message": "The library was quiet today.",
+        "expected_emotion": "neutral",
+        "predicted_emotion": "sadness",
+        "baseline_response": "That sounds like a great environment for studying or getting some reading done. Libraries can be so peaceful when they're quiet, can't they? Did you find a good book or get a lot of work done while you were there?",
+        "full_response": "It sounds like you're feeling a sense of calmness and serenity, which is lovely, especially in a typically bustling environment like a library.\n\nWhat did you do during your time in the quiet library today?"
+    },
+    {
+        "id": 23,
+        "category": "health",
+        "message": "I was amazed by the opportunity that came my way.",
+        "expected_emotion": "surprise",
+        "predicted_emotion": "surprise",
+        "baseline_response": "That sounds exciting. What kind of opportunity was it? Was it related to your work, a hobby, or something entirely new? I'm happy to listen and help if you'd like to share more about it.",
+        "full_response": "It sounds like you're feeling surprised and amazed, which is completely natural when something unexpected and exciting happens. It's great that you're experiencing a strong positive emotion, and it's likely that you're feeling energized and motivated right now.\n\nWhat specifically about the opportunity is causing you to feel the most surprised and amazed?"
+    },
+    {
+        "id": 24,
+        "category": "social",
+        "message": "I can't stop smiling today.",
+        "expected_emotion": "joy",
+        "predicted_emotion": "joy",
+        "baseline_response": "That's great to hear. What's putting a smile on your face today? Did something good happen, or are you just feeling extra happy and carefree?",
+        "full_response": "It sounds like you're feeling joyful, and that's wonderful. It's great to see that you're experiencing such a positive emotion, and I'm happy to hear that you can't stop smiling.\n\nWhat triggered this joyful feeling for you today?"
+    },
+    {
+        "id": 25,
+        "category": "finance",
+        "message": "Knowing someone believes in me gives me strength.",
+        "expected_emotion": "love",
+        "predicted_emotion": "joy",
+        "baseline_response": "That's so beautiful. Having someone believe in you can be a powerful motivator and a great source of confidence. It's like having a constant reminder that you're capable and that your efforts are valued. When someone believes in you, it can help you overcome self-doubt and push through challenges that might otherwise seem insurmountable. It's a wonderful feeling to know that someone has faith in your abilities and is rooting for your success. Who is it that believes in you, if you don't mind me asking?",
+        "full_response": "It sounds like you're feeling joyful and uplifted, which is wonderful when someone's support and belief in you can be such a powerful motivator.\n\nWhat is it about having someone believe in you that gives you the most strength and confidence?"
+    },
+    {
+        "id": 26,
+        "category": "career",
+        "message": "There was a terrible smell in the classroom all day.",
+        "expected_emotion": "disgust",
+        "predicted_emotion": "disgust",
+        "baseline_response": "That sounds really unpleasant. Did anyone figure out what was causing the smell, or is it still a mystery? Was it a strong odor like something was rotten or more like a chemical smell?",
+        "full_response": "It sounds like you're feeling disgusted, and that's completely understandable given the unpleasant odor you had to endure in the classroom all day. It can be really overwhelming and distracting to deal with a strong, unpleasant smell for an extended period.\n\nWhat do you think might have caused the terrible smell in the classroom?"
+    },
+    {
+        "id": 27,
+        "category": "academic",
+        "message": "I went grocery shopping this afternoon.",
+        "expected_emotion": "neutral",
+        "predicted_emotion": "joy",
+        "baseline_response": "How was your shopping trip? Did you find everything you needed?",
+        "full_response": "It sounds like you're feeling joyful, and that's wonderful, perhaps the grocery shopping experience was more enjoyable than expected or you found some great deals.\n\nWhat made your grocery shopping trip so pleasant today?"
+    },
+    {
+        "id": 28,
+        "category": "academic",
+        "message": "I'm excited to start this new chapter in my life.",
+        "expected_emotion": "joy",
+        "predicted_emotion": "joy",
+        "baseline_response": "That's great to hear. Starting a new chapter can be both thrilling and intimidating, but it's often a fantastic opportunity for growth and self-discovery. What's ahead for you in this new chapter? Is there something specific that you're looking forward to or working towards?",
+        "full_response": "It sounds like you're feeling excited, and that's completely normal when embarking on a new journey. This enthusiasm can be a great motivator and help you stay positive as you navigate the ups and downs that come with change.\n\nWhat are you most looking forward to about this new chapter in your life?"
+    },
+    {
+        "id": 29,
+        "category": "social",
+        "message": "The dirty dishes had been left for days.",
+        "expected_emotion": "disgust",
+        "predicted_emotion": "disgust",
+        "baseline_response": "That sounds like a bit of a mess. It can be overwhelming to deal with a pile of dirty dishes that have been left for days. The grease and food residue can really build up, making them harder to clean. Do you need some advice on how to tackle the task, or would you like some suggestions for how to avoid letting it get that bad in the future?",
+        "full_response": "It sounds like you're feeling disgusted, and that's a completely understandable reaction to a situation like this, especially when it involves something as important as cleanliness and hygiene in your living space.\n\nWhat is it about the dirty dishes being left for days that's causing you the most distress?"
+    },
+    {
+        "id": 30,
+        "category": "career",
+        "message": "I feel lucky to have people who genuinely care about me.",
+        "expected_emotion": "love",
+        "predicted_emotion": "joy",
+        "baseline_response": "That's truly wonderful. Having people in your life who genuinely care about you can make all the difference. It's a great feeling to know that you're supported and loved, and it can really boost your sense of well-being and happiness. It's clear that you appreciate and value these relationships, and that's something to be grateful for. Do you have any special people in your life who have been particularly supportive or meaningful to you lately?",
+        "full_response": "It sounds like you're feeling joyful and grateful, which is wonderful. Having a supportive network of people who care about you can bring so much happiness and fulfillment to your life. It's great that you're acknowledging and appreciating the positive relationships you have.\n\nWhat is it about these people that makes you feel especially lucky to have them in your life?"
+    },
+    {
+        "id": 31,
+        "category": "daily_life",
+        "message": "Someone spit on the floor right in front of me.",
+        "expected_emotion": "disgust",
+        "predicted_emotion": "disgust",
+        "baseline_response": "That's really disgusting and rude. I'm so sorry you had to witness that. It's not only unhygienic, but it's also a sign of disrespect for the people around them and the space they're in. Did you say anything to the person or just try to ignore it and move on?",
+        "full_response": "It sounds like you're feeling disgusted, and that's a completely natural reaction to someone spitting on the floor, especially when it happens right in front of you. It's understandable that you would feel a strong sense of revulsion and discomfort in this situation.\n\nWhat triggered the strongest feeling of disgust for you, the act of spitting itself or the fact that it happened in a public place?"
+    },
+    {
+        "id": 32,
+        "category": "career",
+        "message": "I was surprised to realize how confident I had become.",
+        "expected_emotion": "surprise",
+        "predicted_emotion": "surprise",
+        "baseline_response": "That's great to hear. It's amazing how often we don't notice our own growth until we take a step back and reflect on it. Becoming more confident can be a really empowering experience, and it's wonderful that you've been able to recognize the change in yourself. What do you think has contributed to your increased confidence? Was there a particular experience or situation that helped you feel more self-assured?",
+        "full_response": "It sounds like you're feeling surprised, which is a great emotion to experience, especially when it's related to a positive self-discovery like gaining confidence.\n\nWhat triggered this realization about your newfound confidence?"
+    },
+    {
+        "id": 33,
+        "category": "finance",
+        "message": "I attended all my classes today.",
+        "expected_emotion": "neutral",
+        "predicted_emotion": "joy",
+        "baseline_response": "That's great to hear. It sounds like you had a productive day. How were your classes? Was there anything particularly interesting or challenging that you learned about today?",
+        "full_response": "It sounds like you're feeling joyful, and that's wonderful, especially after attending all your classes today. It's great that you're taking care of your responsibilities and staying on top of your schedule.\n\nWhat motivated you to attend all your classes today?"
+    },
+    {
+        "id": 34,
+        "category": "relationships",
+        "message": "The rotten fruit attracted flies everywhere.",
+        "expected_emotion": "disgust",
+        "predicted_emotion": "disgust",
+        "baseline_response": "That's no surprise. Rotten fruit can be a real magnet for flies. The strong smell of decay and fermentation is like a beacon, drawing them in from all directions. It's not uncommon to see a swarm of flies buzzing around overripe or spoiled fruit. They're attracted to the sugars and nutrients in the fruit, and can even lay their eggs in the soft, decaying flesh. If you don't get rid of the rotten fruit, it can quickly become a nuisance and even attract other pests. Have you thrown the fruit away yet?",
+        "full_response": "It sounds like you're feeling disgusted, and that's a natural reaction to something that's rotten and attracting flies. The smell and sight of rotting fruit can be really unpleasant and even nauseating.\n\nWhat triggered your encounter with the rotten fruit?"
+    },
+    {
+        "id": 35,
+        "category": "career",
+        "message": "I'm thankful that someone was there for me during difficult times.",
+        "expected_emotion": "love",
+        "predicted_emotion": "joy",
+        "baseline_response": "It's great to have someone to lean on when things get tough. Having a supportive person in your life can make a huge difference in helping you navigate through challenges and come out stronger on the other side. Who was it that was there for you, if you don't mind me asking? A family member, friend, or maybe someone else?",
+        "full_response": "It sounds like you're feeling joyful and grateful, which is wonderful to experience, especially when reflecting on supportive relationships.\n\nWhat specifically about the person's presence during those difficult times has stuck with you and is making you feel thankful now?"
+    },
+    {
+        "id": 36,
+        "category": "relationships",
+        "message": "The library was quiet today.",
+        "expected_emotion": "neutral",
+        "predicted_emotion": "sadness",
+        "baseline_response": "That sounds like a peaceful atmosphere. Libraries can be great places to focus and study, and the quiet can be really conducive to concentration. Did you get a lot of work done or find a good book to read while you were there?",
+        "full_response": "It sounds like you're feeling a sense of calmness, given the peaceful atmosphere of the library. The stillness can be quite soothing and conducive to focus or relaxation.\n\nWhat did you end up doing during your time at the library today?"
+    },
+    {
+        "id": 37,
+        "category": "family",
+        "message": "I feel completely hopeless about my future.",
+        "expected_emotion": "sadness",
+        "predicted_emotion": "sadness",
+        "baseline_response": "I'm so sorry to hear that you're feeling hopeless about your future. It can be really tough to feel like you're stuck or unsure about what's ahead. Can you tell me a bit more about what's been going on and how you've been feeling? Sometimes talking about it can help clarify things and give us a better idea of where to start.\n\nAlso, I want you to know that it's okay to feel this way, and it doesn't mean that you're alone or that there's anything wrong with you. Lots of people struggle with feelings of hopelessness at some point in their lives, and it's often a sign that something needs to change or that you need some support.\n\nIf you're willing, I'd like to help you explore some things that might be contributing to these feelings, and see if we can't come up with some ideas for how to start feeling more hopeful and positive about your future. Would that sound okay to you?",
+        "full_response": "It sounds like you're feeling overwhelmed with hopelessness, and that can be a really painful and difficult emotion to navigate. It's understandable to feel this way, especially when thinking about the future and all its uncertainties.\n\nI want you to know that your feelings are valid, and it's okay to feel this way. It takes a lot of courage to acknowledge and express these emotions.\n\nWhat is one thing that you feel is contributing to this sense of hopelessness about your future?"
+    },
+    {
+        "id": 38,
+        "category": "finance",
+        "message": "I appreciate having a mentor who supports my growth.",
+        "expected_emotion": "love",
+        "predicted_emotion": "joy",
+        "baseline_response": "Having a supportive mentor can make a huge difference in one's life and career. They can offer valuable guidance, share their experiences, and provide encouragement when you need it most. It's great that you have someone who believes in you and is helping you grow and develop. What specific ways has your mentor been able to support you so far?",
+        "full_response": "It sounds like you're feeling joyful and grateful, which is wonderful to experience, especially when it comes to having a supportive mentor in your life. Having someone who believes in you and helps you grow can be a truly uplifting experience.\n\nWhat specifically has your mentor done that has made such a positive impact on your life?"
+    },
+    {
+        "id": 39,
+        "category": "daily_life",
+        "message": "I completed my morning workout.",
+        "expected_emotion": "neutral",
+        "predicted_emotion": "joy",
+        "baseline_response": "That's a great way to start the day. How did your workout go? Was it a tough session or did you feel energized and ready to take on the day?",
+        "full_response": "It sounds like you're feeling joyful, and that's completely understandable after accomplishing your morning workout, which can be a great way to boost your mood and energy levels.\n\nWhat motivated you to start your day with a workout?"
+    },
+    {
+        "id": 40,
+        "category": "academic",
+        "message": "I attended all my classes today.",
+        "expected_emotion": "neutral",
+        "predicted_emotion": "joy",
+        "baseline_response": "It sounds like you had a productive day. Did any of your classes stand out to you, or was there something particularly interesting that you learned today?",
+        "full_response": "It sounds like you're feeling joyful, and that's wonderful, especially after a productive day of attending all your classes.\n\nWhat motivated you to stay on top of your schedule today?"
+    },
+    {
+        "id": 41,
+        "category": "career",
+        "message": "I never thought I'd solve such a difficult problem.",
+        "expected_emotion": "surprise",
+        "predicted_emotion": "surprise",
+        "baseline_response": "That's a great feeling, isn't it? Overcoming a challenging problem can be really satisfying. What was the problem you were working on, and how did you manage to solve it? I'm all ears if you'd like to share your success story.",
+        "full_response": "It sounds like you're feeling surprise, and that's completely understandable given the unexpected outcome of solving a difficult problem. It's great that you're experiencing this sense of accomplishment and astonishment.\n\nWhat led you to the breakthrough that helped you solve the problem?"
+    },
+    {
+        "id": 42,
+        "category": "career",
+        "message": "People keep interrupting me when I'm trying to speak.",
+        "expected_emotion": "anger",
+        "predicted_emotion": "anger",
+        "baseline_response": "That can be really frustrating. It's like, you're trying to express yourself and get your point across, but someone keeps cutting you off. It's not only annoying, but it can also make you feel like your thoughts and opinions aren't being valued or respected.\n\nHave you tried using any strategies to deal with the interrupters? Like, do you try to politely but firmly say \"excuse me, may I finish?\" or \"let me just say this\"? Sometimes, setting a clear boundary can help people realize they're interrupting and give you the space to speak.\n\nIt's also possible that the people interrupting you aren't even aware they're doing it, so it might be helpful to have an open and honest conversation with them about how it's making you feel. Maybe you can say something like, \"Hey, I feel like I'm getting interrupted a lot when I try to speak. Could you please let me finish my thoughts before responding?\"\n\nHow do you usually handle these situations? Do you have any friends or family members who are particularly prone to interrupting you?",
+        "full_response": "It sounds like you're feeling angry and frustrated, which is completely understandable when you're not being allowed to express yourself fully. Being interrupted can be really invalidating and make you feel like your thoughts and opinions aren't being valued.\n\nWhat do you think would happen if you were to calmly but firmly ask the people interrupting you to let you finish speaking?"
+    },
+    {
+        "id": 43,
+        "category": "academic",
+        "message": "I'm terrified that something will go wrong tomorrow.",
+        "expected_emotion": "fear",
+        "predicted_emotion": "fear",
+        "baseline_response": "It's completely normal to feel anxious or worried about the future, especially when it comes to upcoming events or uncertain situations. \n\nCan you tell me more about what's specifically worrying you about tomorrow? Is there something in particular that's causing you to feel this way, or is it just a general sense of unease? Sometimes talking about it can help clarify things and make you feel a bit better. I'm here to listen and offer any help or support I can.",
+        "full_response": "It sounds like you're feeling fearful, and that's completely understandable when anticipating an uncertain or potentially challenging situation. It's normal to have concerns about the future, and it takes a lot of courage to acknowledge and express those feelings.\n\nWhat is it specifically about tomorrow that's causing you the most fear?"
+    },
+    {
+        "id": 44,
+        "category": "career",
+        "message": "I feel anxious every time I have to travel alone.",
+        "expected_emotion": "fear",
+        "predicted_emotion": "fear",
+        "baseline_response": "Traveling alone can be intimidating, especially if you're not used to it. It's normal to feel anxious about navigating unfamiliar places, dealing with unexpected situations, or simply being by yourself in a new environment.\n\nCan you tell me more about what specifically makes you anxious about traveling alone? Is it the thought of getting lost, meeting new people, or something else? Sometimes sharing your concerns can help you feel better and give us a starting point to work through them together.",
+        "full_response": "It sounds like you're feeling anxious, and that's completely understandable when facing a situation that involves uncertainty and solo navigation. It's normal to feel apprehensive when traveling alone, and it's great that you're acknowledging these feelings.\n\nWhat is it about traveling alone that triggers your anxiety the most - is it the thought of navigating unfamiliar places, concerns about safety, or something else?"
+    },
+    {
+        "id": 45,
+        "category": "family",
+        "message": "I love how everything is falling into place.",
+        "expected_emotion": "joy",
+        "predicted_emotion": "joy",
+        "baseline_response": "That's great to hear. It's always a wonderful feeling when things start coming together and you can see the bigger picture unfolding. What's been falling into place for you, if you don't mind me asking? Is it related to a specific project, goal, or area of your life?",
+        "full_response": "It sounds like you're feeling joyful, and that's wonderful to hear that things are going well for you. It's great that you're experiencing a sense of fulfillment and satisfaction with how your life is unfolding.\n\nWhat is the most exciting thing that's happening right now that's contributing to this positive feeling?"
+    },
+    {
+        "id": 46,
+        "category": "career",
+        "message": "My friends make me feel accepted just as I am.",
+        "expected_emotion": "love",
+        "predicted_emotion": "joy",
+        "baseline_response": "That's wonderful. Having friends who accept and appreciate you for who you are can be a truly incredible feeling. It's like having a sense of belonging and being able to be your authentic self without fear of judgment. It's great that you have people in your life who make you feel seen, heard, and valued just as you are. That kind of support and acceptance can be really powerful and uplifting. Do you think this has had a positive impact on your self-confidence or overall well-being?",
+        "full_response": "It sounds like you're feeling joyful and appreciated, which is wonderful when you have friends who make you feel seen and accepted for who you are. That kind of support and validation can be incredibly uplifting and nurturing.\n\nWhat is it about your friends that makes you feel most accepted and valued?"
+    },
+    {
+        "id": 47,
+        "category": "academic",
+        "message": "I don't know how to move forward anymore.",
+        "expected_emotion": "sadness",
+        "predicted_emotion": "sadness",
+        "baseline_response": "It can be really tough to feel stuck and unsure about what to do next. It's like you're standing at a crossroads, and every path looks uncertain. \n\nFirst, take a deep breath and acknowledge that it's okay to feel this way. It's normal to have moments where we feel lost or unsure about our direction. \n\nCan you tell me a bit more about what's been going on and how you've been feeling? Sometimes talking about it can help clarify things and give us a better sense of what's going on. What's been on your mind lately, and what are some of the things that are making you feel stuck?",
+        "full_response": "It sounds like you're feeling overwhelmed and uncertain, which can be a really tough and frustrating place to be. It's like you're standing still and can't seem to find the momentum to move forward, and that's completely understandable given the challenges you might be facing.\n\nWhat is one thing that you feel is holding you back from moving forward right now?"
+    },
+    {
+        "id": 48,
+        "category": "daily_life",
+        "message": "I never expected such a positive response.",
+        "expected_emotion": "surprise",
+        "predicted_emotion": "surprise",
+        "baseline_response": "I'm glad to hear that I could surprise you in a good way. What was it that you were expecting, and how can I continue to assist you today?",
+        "full_response": "It sounds like you're feeling surprised, and that's completely understandable given the unexpected positive turn of events. It's great that you're experiencing a pleasant surprise, and it's okay to take a moment to process and appreciate this unexpected outcome.\n\nWhat triggered this unexpected positive response, and how are you planning to build on this momentum?"
+    },
+    {
+        "id": 49,
+        "category": "finance",
+        "message": "I'm scared I'll lose my scholarship.",
+        "expected_emotion": "fear",
+        "predicted_emotion": "fear",
+        "baseline_response": "I can totally understand why you'd feel that way. Losing a scholarship can be a huge source of stress and uncertainty. What's making you worried about losing your scholarship? Is it your grades, a specific requirement, or something else? Talking about it might help clarify things and we can try to figure out a plan to help you stay on track.",
+        "full_response": "It sounds like you're feeling fearful, and that's completely understandable given the importance of your scholarship. Losing it could have significant consequences, and it's natural to worry about the potential impact on your education and future.\n\nWhat specifically is making you worry about losing your scholarship right now?"
+    },
+    {
+        "id": 50,
+        "category": "health",
+        "message": "I'm irritated because my hard work goes unnoticed.",
+        "expected_emotion": "anger",
+        "predicted_emotion": "anger",
+        "baseline_response": "It can be really frustrating when you feel like your efforts aren't being recognized or appreciated. It's like, you're putting in all this time and energy, and nobody seems to notice or care.\n\nCan you tell me more about what's been going on? What kind of work have you been doing, and who are the people you feel should be noticing your efforts? Sometimes talking about it can help clarify things and give us a better idea of how to move forward.",
+        "full_response": "It sounds like you're feeling irritated and possibly even frustrated, which is completely understandable when you feel that your efforts are not being recognized or valued. It's natural to want to be acknowledged for your hard work and contributions.\n\nWhat specific situations or interactions have led you to feel like your hard work is going unnoticed?"
+    },
+    {
+        "id": 51,
+        "category": "finance",
+        "message": "The outcome was completely different from what I expected.",
+        "expected_emotion": "surprise",
+        "predicted_emotion": "surprise",
+        "baseline_response": "That can be really surprising and sometimes frustrating. What happened, if you don't mind me asking? Was it something that turned out better or worse than you expected?",
+        "full_response": "It sounds like you're feeling surprised, and that can be a really disorienting experience, especially when the outcome is not what you had anticipated. It's natural to feel caught off guard and unsure of how to process this new information.\n\nWhat were you expecting to happen, and how is the actual outcome affecting you right now?"
+    },
+    {
+        "id": 52,
+        "category": "finance",
+        "message": "I feel empty inside.",
+        "expected_emotion": "sadness",
+        "predicted_emotion": "sadness",
+        "baseline_response": "I'm so sorry to hear that you're feeling empty inside. That can be a really tough and isolating experience. It's like there's a hollow feeling that's hard to fill or shake off.\n\nCan you tell me more about what's been going on and how you've been feeling lately? Sometimes talking about it can help clarify things and give us a better understanding of what might be contributing to these emotions.\n\nAlso, I want you to know that you're not alone in feeling this way. Many people experience feelings of emptiness at some point in their lives, and it's often a sign that something needs to change or that you need to take care of yourself in a different way.\n\nIf you're willing, I'm here to listen and offer support. We can explore some possible reasons behind your feelings and work together to find ways to help you feel more fulfilled and connected.",
+        "full_response": "It sounds like you're feeling a deep sense of emptiness, which can be a really challenging and isolating experience. I'm here to listen and support you without judgment. It's completely understandable to feel this way, and I want you to know that your emotions are valid.\n\nWhat has been going on in your life that might be contributing to this feeling of emptiness?"
+    },
+    {
+        "id": 53,
+        "category": "social",
+        "message": "I can't believe I actually got the internship!",
+        "expected_emotion": "surprise",
+        "predicted_emotion": "surprise",
+        "baseline_response": "That's amazing news. Congratulations on landing the internship. You must be thrilled. How does it feel to have achieved this goal, and what are you most looking forward to about the experience?",
+        "full_response": "It sounds like you're feeling surprised, and that's completely understandable given the unexpected news of landing the internship. This can be a thrilling and overwhelming experience all at once.\n\nWhat are your initial thoughts about the responsibilities and challenges that come with this new internship?"
+    },
+    {
+        "id": 54,
+        "category": "social",
+        "message": "It frustrates me when people don't respect my time.",
+        "expected_emotion": "anger",
+        "predicted_emotion": "anger",
+        "baseline_response": "It can be really frustrating when people don't respect your time. It feels like they're not considering your priorities or schedule, and it can be especially annoying when it happens repeatedly. Have you found that setting clear boundaries or communicating your needs to others helps to minimize these situations, or is this something you're still working on?",
+        "full_response": "It sounds like you're feeling angry and frustrated, which is completely understandable when you feel like your time isn't being valued or respected by others. It's normal to want to have control over your schedule and have others acknowledge your boundaries.\n\nWhat specific situations or interactions have been triggering this feeling of frustration for you?"
+    },
+    {
+        "id": 55,
+        "category": "daily_life",
+        "message": "My sibling keeps invading my privacy and it makes me angry.",
+        "expected_emotion": "anger",
+        "predicted_emotion": "anger",
+        "baseline_response": "I can understand why you'd feel that way. It's really frustrating when someone, especially a sibling, doesn't respect your personal space and boundaries. It's like, you want to be able to have some things that are just yours, you know?\n\nHave you tried talking to your sibling about how you're feeling? Sometimes, people don't realize the impact their actions are having, and having an open and honest conversation can really help clear the air. You might say something like, \"Hey, I feel really disrespected when you do X, Y, Z. Can we find a way to respect each other's privacy?\"\n\nIt's also important to set clear boundaries and communicate what you're comfortable with. If you don't want your sibling going through your stuff or reading your messages, let them know that. You can say, \"I'd appreciate it if you didn't touch my things without asking me first\" or \"Please don't read my messages, that's private.\"\n\nIf talking to your sibling doesn't work, or if you're not comfortable having that conversation, you might want to consider talking to a parent or another trusted adult about what's going on. They may be able to help mediate the situation or offer some guidance",
+        "full_response": "It sounds like you're feeling angry, and that's completely understandable when someone is invading your personal space and disregarding your boundaries. It's normal to feel frustrated and upset when someone, especially a sibling, disrespects your privacy.\n\nWhat specific actions has your sibling taken that have led you to feel like your privacy is being invaded?"
+    },
+    {
+        "id": 56,
+        "category": "health",
+        "message": "I can't stop worrying about my future.",
+        "expected_emotion": "fear",
+        "predicted_emotion": "fear",
+        "baseline_response": "It can be really overwhelming and stressful to think about what's ahead, especially when there are so many unknowns. It's like your mind is constantly racing with \"what ifs\" and worries about making the right decisions.\n\nFirst of all, know that you're not alone in feeling this way. Many people struggle with anxiety about their future, and it's completely normal. It's natural to want to feel secure and certain about what's coming next.\n\nOne thing that might help is to try to focus on what you can control in the present moment. Instead of getting caught up in worries about the future, try to break things down into smaller, manageable tasks that you can tackle one step at a time. This can help you feel more grounded and in control.\n\nIt might also be helpful to remind yourself that you've navigated uncertain situations before and come out okay. You've likely overcome challenges and made it through tough times, and you can do it again.\n\nIf you're feeling really overwhelmed, it might be helpful to talk to someone you trust about how you're feeling. This could be a friend, family member, or even a professional counselor or therapist. Sometimes just sharing your worries with someone who cares about you can help you feel heard and understood",
+        "full_response": "It sounds like you're feeling fearful about what's to come, and that's completely understandable given the uncertainties of life. It's normal to have concerns about the future, and it takes a lot of courage to acknowledge and express these feelings.\n\nWhat is one specific aspect of your future that's causing you the most worry right now?"
+    },
+    {
+        "id": 57,
+        "category": "academic",
+        "message": "I feel optimistic about what's ahead.",
+        "expected_emotion": "joy",
+        "predicted_emotion": "joy",
+        "baseline_response": "That's great to hear. Having a positive outlook can make a big difference in how you approach challenges and opportunities. What's contributing to your optimism - is there something specific that's got you feeling excited about the future?",
+        "full_response": "It sounds like you're feeling optimistic, and that's a wonderful feeling to have, especially when looking forward to new experiences and opportunities. It's great that you're feeling positive and hopeful about what's to come.\n\nWhat are you most looking forward to in the upcoming days or weeks that's contributing to your optimistic outlook?"
+    },
+    {
+        "id": 58,
+        "category": "social",
+        "message": "The uncertainty about my future scares me.",
+        "expected_emotion": "fear",
+        "predicted_emotion": "fear",
+        "baseline_response": "It's completely normal to feel scared or uncertain about the future. Not knowing what's going to happen can be really overwhelming. It's like standing at a crossroads and not being sure which path to take.\n\nBut here's the thing: uncertainty is a natural part of life. Everyone faces it at some point or another. And the truth is, you can't control everything that happens in the future. But what you can control is how you respond to the uncertainty.\n\nInstead of letting fear take over, try to focus on what you can control in the present moment. What are your goals and values? What steps can you take today to move closer to where you want to be? Break down your big goals into smaller, manageable tasks, and take it one step at a time.\n\nIt might also help to remind yourself that uncertainty can be a good thing. It means you have the opportunity to create the future you want, to take risks, and to learn and grow. And even if things don't turn out exactly as you planned, you'll always have the chance to adjust and try again.\n\nLastly, don't be too hard on yourself, okay? It's okay to not have all the answers right now. You're doing the best you",
+        "full_response": "It sounds like you're feeling fearful about the uncertainty of your future, and that's a really tough and overwhelming emotion to experience. It's completely normal to feel scared when faced with unknowns, and it takes a lot of courage to acknowledge and express those feelings.\n\nWhat is one specific aspect of your future that's causing the most fear for you right now?"
+    },
+    {
+        "id": 59,
+        "category": "academic",
+        "message": "I received wonderful news this morning.",
+        "expected_emotion": "joy",
+        "predicted_emotion": "joy",
+        "baseline_response": "That sounds exciting. What's the wonderful news you received this morning? I'm all ears and would love to hear about it.",
+        "full_response": "It sounds like you're feeling joyful, and that's completely wonderful, especially when receiving great news. It's amazing how a positive update can brighten up our entire day and boost our mood.\n\nWhat was the wonderful news you received this morning?"
+    },
+    {
+        "id": 60,
+        "category": "academic",
+        "message": "I feel motivated and energetic today.",
+        "expected_emotion": "joy",
+        "predicted_emotion": "joy",
+        "baseline_response": "That's great to hear. It's awesome when you wake up feeling motivated and energetic. What are you planning to tackle first with all that energy? Got any big plans or goals you want to crush today?",
+        "full_response": "It sounds like you're feeling highly motivated and energetic, which is great to hear. This can be a wonderful feeling, full of possibility and potential for productivity and accomplishment.\n\nWhat are you most looking forward to tackling or achieving with this surge of motivation and energy?"
+    },
+    {
+        "id": 61,
+        "category": "relationships",
+        "message": "I spent an hour reading a novel.",
+        "expected_emotion": "neutral",
+        "predicted_emotion": "disgust",
+        "baseline_response": "That sounds like a lovely way to spend an hour. Did you get lost in the story, or was it a chance to relax and unwind? What's the novel about, if you don't mind me asking?",
+        "full_response": "It sounds like you're feeling somewhat neutral or possibly relaxed after spending time reading, which can be a great way to unwind and escape into a different world.\n\nWhat drew you to this particular novel, and are you enjoying the story so far?"
+    },
+    {
+        "id": 62,
+        "category": "relationships",
+        "message": "I organized my study materials.",
+        "expected_emotion": "neutral",
+        "predicted_emotion": "disgust",
+        "baseline_response": "That's great to hear. Organizing your study materials can really help you stay focused and make the most of your study time. Does it feel good to have everything tidy and in order now?",
+        "full_response": "It sounds like you're feeling a sense of accomplishment and possibly some relief now that your study materials are organized, which is a great step in preparing for your exams.\n\nWhat motivated you to take the time to organize your study materials today?"
+    },
+    {
+        "id": 63,
+        "category": "social",
+        "message": "I replied to all my emails.",
+        "expected_emotion": "neutral",
+        "predicted_emotion": "neutral",
+        "baseline_response": "You must feel pretty accomplished and organized now that you've caught up on all your emails. Is there anything else you need help with or want to tackle next?",
+        "full_response": "It sounds like you're feeling neutral, which is interesting given the high intensity of the situation, as you've just completed a significant task by replying to all your emails, which can be a relief and a sense of accomplishment.\n\nWhat motivated you to tackle your emails and get them all replied to?"
+    },
+    {
+        "id": 64,
+        "category": "career",
+        "message": "I wish things could go back to normal.",
+        "expected_emotion": "sadness",
+        "predicted_emotion": "sadness",
+        "baseline_response": "It can be really tough when things feel uncertain or disrupted. What specifically is making you wish for things to go back to normal? Is it something going on in your personal life, or more of a general feeling about the world right now?",
+        "full_response": "It sounds like you're feeling a deep sense of longing and sadness, and that's completely understandable given the challenges you're facing. It's normal to yearn for a return to familiarity and comfort when things feel uncertain or difficult.\n\nWhat specifically do you think would need to happen for things to feel like they're \"back to normal\" for you?"
+    },
+    {
+        "id": 65,
+        "category": "academic",
+        "message": "I updated my resume this evening.",
+        "expected_emotion": "neutral",
+        "predicted_emotion": "neutral",
+        "baseline_response": "That's great progress. Updating a resume can be a bit of a chore, but it's a good feeling to have it refreshed and ready to go. What prompted you to update it, are you looking for a new job or just wanting to be prepared for any opportunities that might come up?",
+        "full_response": "It sounds like you're feeling neutral about updating your resume, which is a great accomplishment. Updating a resume can be a tedious task, but it's often a necessary step in moving forward with career goals.\n\nWhat motivated you to update your resume this evening?"
+    },
+    {
+        "id": 66,
+        "category": "finance",
+        "message": "My manager keeps taking credit for my ideas.",
+        "expected_emotion": "anger",
+        "predicted_emotion": "disgust",
+        "baseline_response": "That can be really frustrating and demotivating. It's understandable that you want to receive recognition for your contributions, especially when you've come up with innovative ideas.\n\nHave you tried talking to your manager about how you feel? It's possible that they're not even aware of the impact their actions are having on you. Approaching the conversation in a non-confrontational way might help. You could say something like, \"Hey, I wanted to touch base with you about the idea I shared in the meeting last week. I'm glad it was well-received, but I did want to clarify that it was my idea. Going forward, I'd appreciate it if you could give me credit when sharing my ideas with others.\"\n\nIf talking to your manager directly doesn't work, you might consider documenting your ideas and the contributions you've made to the team. This can help you keep track of your accomplishments and provide evidence if needed. It's also a good idea to speak with HR or a trusted colleague to get their advice on how to handle the situation.\n\nRemember, you deserve to be recognized for your hard work and creativity. Don't be afraid to advocate for yourself and assert your contributions. How do you feel about approaching your manager about this issue",
+        "full_response": "It sounds like you're feeling disgusted and possibly disrespected by your manager's actions, which is completely understandable when someone takes credit for your work. It's natural to feel this way, especially if you've invested time and effort into developing those ideas.\n\nWhat have you tried so far to address this issue with your manager?"
+    },
+    {
+        "id": 67,
+        "category": "social",
+        "message": "I'm happy to have such caring classmates.",
+        "expected_emotion": "love",
+        "predicted_emotion": "joy",
+        "baseline_response": "That's wonderful to hear. Having supportive and caring classmates can make a big difference in your educational journey. It's great that you've found a positive and encouraging community. What's been the most helpful or meaningful way they've shown their support?",
+        "full_response": "It sounds like you're feeling joyful and grateful, which is wonderful to experience, especially when it comes to supportive relationships with your classmates. Having a strong sense of community and care from those around you can make a big difference in your daily life and overall well-being.\n\nWhat is it about your classmates' behavior that has made you feel so happy and appreciated?"
+    },
+    {
+        "id": 68,
+        "category": "relationships",
+        "message": "I feel terrified of making a big mistake.",
+        "expected_emotion": "fear",
+        "predicted_emotion": "fear",
+        "baseline_response": "It's completely normal to feel that way. The fear of making a big mistake can be really overwhelming and hold you back from taking action or making decisions. \n\nCan you tell me more about what's going on and what kind of mistake you're worried about making? Is it related to your work, a personal decision, or something else? Sometimes talking through your concerns can help clarify things and make the fear feel more manageable. I'm here to listen and help if I can.",
+        "full_response": "It sounds like you're feeling terrified, and that's completely understandable when faced with a situation where the stakes are high and the fear of making a mistake is overwhelming. It's normal to have these feelings, and it doesn't mean that you're not capable or competent.\n\nWhat is the specific situation or decision that's causing you to feel this intense fear of making a mistake?"
+    },
+    {
+        "id": 69,
+        "category": "daily_life",
+        "message": "I never imagined meeting someone so inspiring.",
+        "expected_emotion": "surprise",
+        "predicted_emotion": "surprise",
+        "baseline_response": "It's amazing how some people can have such a profound impact on us, isn't it? Meeting someone who inspires us can be a truly life-changing experience. Who is this person that's had such an effect on you, if you don't mind me asking?",
+        "full_response": "It sounds like you're feeling surprised, and that's completely understandable given the unexpected encounter with someone who has had a profound impact on you. It's wonderful that you've had the opportunity to meet someone who inspires you, and it's great that you're acknowledging the positive emotions that come with it.\n\nWhat was it about this person that you found particularly inspiring?"
+    },
+    {
+        "id": 70,
+        "category": "health",
+        "message": "The dirty mattress smelled terrible.",
+        "expected_emotion": "disgust",
+        "predicted_emotion": "disgust",
+        "baseline_response": "That sounds really unpleasant. A dirty mattress can harbor all sorts of odors, from sweat and body oil to mold and mildew. It's probably time to give it a good cleaning or consider replacing it if it's old and worn out. Have you thought about trying to freshen it up with some baking soda or essential oils, or is it beyond repair?",
+        "full_response": "It sounds like you're feeling disgusted, and that's a completely natural reaction to a strong, unpleasant odor like the one from the dirty mattress. It's understandable that you would feel a sense of revulsion in this situation.\n\nWhat triggered your discovery of the dirty mattress, was it something you stumbled upon or had you been noticing the smell for a while?"
+    },
+    {
+        "id": 71,
+        "category": "relationships",
+        "message": "I'm frustrated because my project keeps getting delayed by others.",
+        "expected_emotion": "anger",
+        "predicted_emotion": "anger",
+        "baseline_response": "That can be really frustrating, especially when you're relying on others to move your project forward. It's like you're ready to go, but you're waiting for someone else to catch up. \n\nHave you tried communicating with the people who are causing the delays to see what's going on and if there's anything you can do to help get things back on track? Sometimes, people don't realize the impact their delays are having on the project, and a simple conversation can help get things moving again.\n\nAlso, are there any parts of the project that you can work on independently while you're waiting for others to catch up? That way, you can still make progress and feel like you're getting something done, even if it's not the specific task you were waiting for.\n\nWhat's the project about, and who are the people causing the delays? Maybe I can help you brainstorm some ways to get things moving again.",
+        "full_response": "It sounds like you're feeling frustrated, and that's completely understandable given the circumstances. It can be really challenging to have your project delayed by factors outside of your control, especially when you're invested in its success.\n\nWhat specific aspects of the delays are causing you the most frustration right now?"
+    },
+    {
+        "id": 72,
+        "category": "family",
+        "message": "I'm scared my project will completely fail.",
+        "expected_emotion": "fear",
+        "predicted_emotion": "fear",
+        "baseline_response": "It's completely normal to feel that way, especially when you've invested a lot of time and effort into something. Failure can be a scary thought, but it's also a natural part of the learning and growth process.\n\nInstead of focusing on the possibility of failure, try to think about what you can do to mitigate those risks and improve your chances of success. What are some specific things that are worrying you about your project? Is it the timeline, the resources, or something else? Let's break it down together and see if we can identify some potential solutions.\n\nRemember, even if your project doesn't turn out exactly as you envisioned, it's not a reflection of your worth or abilities. You can always learn from the experience and use it as an opportunity to grow and improve.\n\nWhat's the project about, and what are your biggest concerns? I'm here to listen and help in any way I can.",
+        "full_response": "It sounds like you're feeling fearful, and that's completely understandable when you've invested a lot of time and effort into a project. It's normal to have concerns about its success, and it takes a lot of courage to acknowledge and express those fears.\n\nWhat specifically about your project is causing you the most fear right now?"
+    },
+    {
+        "id": 73,
+        "category": "social",
+        "message": "I'm thankful to have someone I can always talk to.",
+        "expected_emotion": "love",
+        "predicted_emotion": "joy",
+        "baseline_response": "That's really sweet of you to say. I'm here to listen and help in any way I can, so please don't hesitate to reach out whenever you need someone to talk to. It can be really helpful to have someone to share your thoughts and feelings with, and I'm happy to be that person for you. What's been on your mind lately? Is there something specific you'd like to talk about?",
+        "full_response": "It sounds like you're feeling joyful and grateful, which is wonderful. Having someone to talk to can make a big difference in our lives, and it's great that you have that support.\n\nWhat is it about having someone to talk to that brings you the most comfort and joy?"
+    },
+    {
+        "id": 74,
+        "category": "health",
+        "message": "I can't stop thinking about everything that could go wrong.",
+        "expected_emotion": "fear",
+        "predicted_emotion": "fear",
+        "baseline_response": "It sounds like you're experiencing a bit of anxiety. That can be really overwhelming and make it hard to focus on anything else. \n\nFirst, take a deep breath and try to acknowledge that these thoughts are just thoughts - they don't have to dictate your reality. It's normal to have worries and concerns, but when they start to spiral out of control, it can be really tough to manage.\n\nOne thing that might help is to try to reframe your thinking. Instead of getting caught up in all the things that could go wrong, try to focus on the things that could go right. What are some positive outcomes that you're hoping for? What are some things that you're looking forward to?\n\nIt might also be helpful to try to ground yourself in the present moment. Instead of getting caught up in worries about the future or regrets about the past, try to focus on what's happening right now. What are your five senses telling you? What do you see, hear, smell, taste, and feel?\n\nRemember, you're not alone in this. Lots of people struggle with anxiety and worries about the future. And there are things you can do to manage those feelings and take care of yourself. Would you like to talk more about what",
+        "full_response": "It sounds like you're feeling fearful, and that's completely understandable when faced with uncertainty and a sense of lack of control. It's as if your mind is racing with all the possible negative outcomes, making it hard to focus on the present moment.\n\nWhat is the one thing that you're most worried about going wrong right now?"
+    },
+    {
+        "id": 75,
+        "category": "family",
+        "message": "I can't stop smiling today.",
+        "expected_emotion": "joy",
+        "predicted_emotion": "joy",
+        "baseline_response": "That's wonderful to hear. It's always great to have one of those days where everything just feels right and you can't help but smile. What's behind the smile, if you don't mind me asking? Is it something in particular that's got you feeling so happy, or just a general feeling of contentment?",
+        "full_response": "It sounds like you're feeling joyful, and that's wonderful. It's great to see you're experiencing such a positive emotion, and I'm happy to hear that you can't stop smiling.\n\nWhat triggered this joyful feeling for you today?"
+    },
+    {
+        "id": 76,
+        "category": "daily_life",
+        "message": "Everything feels meaningless lately.",
+        "expected_emotion": "sadness",
+        "predicted_emotion": "sadness",
+        "baseline_response": "I'm so sorry to hear that you're feeling that way. It can be really tough to feel like nothing has purpose or significance. It's like you're just going through the motions, but nothing feels truly fulfilling.\n\nCan you tell me more about what's been going on and how you've been feeling? Is there something specific that's triggered these feelings, or has it been a gradual thing? Sometimes talking about it can help clarify things and give us a better idea of what's going on.\n\nAlso, I want you to know that you're not alone in feeling this way. Many people experience periods of feeling meaningless or disconnected from the world around them. It's okay to feel this way, and it doesn't mean that there's anything wrong with you.\n\nIf you're willing, we can explore some things together that might help you find more meaning and purpose in your life. Would you like that?",
+        "full_response": "It sounds like you're feeling a deep sense of sadness and emptiness, and that's a really tough and overwhelming emotion to experience. It's understandable to feel that way, especially when things that normally bring you joy or purpose don't seem to be having the same effect.\n\nWhat has changed in your life recently that might be contributing to this feeling of meaninglessness?"
+    },
+    {
+        "id": 77,
+        "category": "academic",
+        "message": "I'm thankful for every opportunity to spend time with my loved ones.",
+        "expected_emotion": "love",
+        "predicted_emotion": "joy",
+        "baseline_response": "That's so beautiful. Spending quality time with loved ones is truly one of life's greatest treasures. It's great that you appreciate and cherish those moments. Being with the people we care about can bring so much joy and fulfillment to our lives. What are some of your favorite things to do with your loved ones?",
+        "full_response": "It sounds like you're feeling joyful and grateful, which is wonderful to see, especially when it comes to nurturing relationships with your loved ones. It's great that you're appreciating the time you get to spend with them, as this can bring a lot of happiness and fulfillment to your life.\n\nWhat is it about the time you spend with your loved ones that brings you the most joy?"
+    },
+    {
+        "id": 78,
+        "category": "career",
+        "message": "Someone left food to rot inside the refrigerator.",
+        "expected_emotion": "disgust",
+        "predicted_emotion": "disgust",
+        "baseline_response": "That's not good. It's likely to cause unpleasant odors and potentially even harbor bacteria that can spread to other foods. The person who left the food in the fridge should probably throw it away as soon as possible and give the fridge a good clean to get rid of any lingering smells and bacteria. It's also a good idea to check the expiration dates of other foods in the fridge to make sure nothing else is close to spoiling. Do you need help with cleaning the fridge or checking expiration dates?",
+        "full_response": "It sounds like you're feeling disgusted, and that's completely understandable given the unpleasant situation of finding rotten food in the refrigerator. The smell and sight of spoiled food can be really overwhelming and off-putting.\n\nWhat led you to discover the rotten food, and how are you planning to address the issue with the person responsible?"
+    },
+    {
+        "id": 79,
+        "category": "daily_life",
+        "message": "I stepped into something gross on the sidewalk.",
+        "expected_emotion": "disgust",
+        "predicted_emotion": "disgust",
+        "baseline_response": "Ugh, that's disgusting. Hopefully, it's just mud or something and not, you know, something worse. Do you think you got any of it on your shoes or clothes? You might want to clean up as soon as you can to avoid tracking it anywhere else. Where are you, by the way? Are you near a place where you can clean up?",
+        "full_response": "It sounds like you're feeling disgusted, and that's a completely natural reaction when encountering something unpleasant and unexpected, especially something gross on the sidewalk.\n\nWhat did you step into that's causing you to feel this way?"
+    },
+    {
+        "id": 80,
+        "category": "relationships",
+        "message": "Knowing someone believes in me gives me strength.",
+        "expected_emotion": "love",
+        "predicted_emotion": "joy",
+        "baseline_response": "Having someone believe in you can be a powerful motivator. It's amazing how much of a difference it can make in our lives when we know that someone has faith in our abilities and thinks we're capable of achieving our goals. It's like a weight has been lifted off our shoulders, and we're filled with a sense of confidence and determination.\n\nWhen someone believes in us, it's like they're giving us permission to believe in ourselves. It's a reminder that we're not alone, and that there are people who think we're worthy of success and happiness. It can be a really uplifting feeling, and it can give us the strength and courage we need to keep moving forward, even when things get tough.\n\nIt's interesting, because sometimes all it takes is one person to believe in us to make a big difference. It could be a parent, a teacher, a friend, or a mentor – whoever it is, their belief in us can be a powerful catalyst for our growth and success.\n\nDo you have someone in your life who believes in you, and how has their support impacted you?",
+        "full_response": "It sounds like you're feeling joyful and uplifted, which is wonderful when someone's support and belief in you can be such a powerful motivator.\n\nWhat is it about knowing someone believes in you that gives you the most strength and confidence?"
+    },
+    {
+        "id": 81,
+        "category": "social",
+        "message": "I feel like I've lost all motivation.",
+        "expected_emotion": "sadness",
+        "predicted_emotion": "sadness",
+        "baseline_response": "It can be really tough to feel like you've lost your motivation. It's like you're stuck in a rut and can't seem to find the energy or enthusiasm to do anything. \n\nFirst, let's acknowledge that it's okay to feel this way. It's normal to go through periods where we feel unmotivated or disconnected from our goals and passions. It doesn't mean that there's anything wrong with you, or that you're not capable of achieving great things.\n\nCan you tell me a bit more about what's been going on and how you've been feeling? Was there a specific event or experience that might have triggered this feeling, or has it been building up over time? Sometimes talking about it can help us gain some clarity and perspective.",
+        "full_response": "It sounds like you're feeling a deep sense of demotivation, and that can be really tough to navigate. It's like the spark that drives you to take action has fizzled out, leaving you feeling stuck and uncertain about how to move forward. This can be a really frustrating and disheartening experience, especially if you're used to being motivated and driven.\n\nWhat's been going on in your life recently that you think might have contributed to this loss of motivation?"
+    },
+    {
+        "id": 82,
+        "category": "daily_life",
+        "message": "I'm scared I won't be able to pay my bills.",
+        "expected_emotion": "fear",
+        "predicted_emotion": "fear",
+        "baseline_response": "It can be really overwhelming and stressful when you're worried about paying your bills. Have you thought about making a budget or a plan to prioritize your expenses? Sometimes, just breaking it down and looking at the numbers can help you feel more in control.\n\nAlso, are there any specific bills that you're most concerned about? Is it rent/mortgage, utilities, credit cards, or something else? Talking about it can help me better understand your situation and maybe we can brainstorm some solutions together.\n\nAdditionally, there are often resources available to help with bill payments, such as payment plans or assistance programs. Would you like me to look into those options for you?",
+        "full_response": "It sounds like you're feeling fearful, and that's completely understandable when facing financial uncertainties. It's normal to worry about being able to cover your expenses, and it's great that you're acknowledging and expressing your concerns.\n\nWhat specific bills or expenses are causing you the most worry right now?"
+    },
+    {
+        "id": 83,
+        "category": "career",
+        "message": "Everything finally seems to be working out.",
+        "expected_emotion": "joy",
+        "predicted_emotion": "neutral",
+        "baseline_response": "That's great to hear. It's always a good feeling when things start falling into place and everything seems to be going smoothly. What's changed recently that's made you feel this way? Was there something specific that was causing you stress or uncertainty, and if so, how did you manage to resolve it?",
+        "full_response": "It sounds like you're feeling neutral, but with a sense of relief and possibly even optimism, now that things are falling into place.\n\nWhat are your thoughts on how you plan to maintain this positive momentum in your life?"
+    },
+    {
+        "id": 84,
+        "category": "relationships",
+        "message": "I feel broken after everything that happened.",
+        "expected_emotion": "sadness",
+        "predicted_emotion": "sadness",
+        "baseline_response": "I'm so sorry to hear that you're feeling that way. It sounds like you've been through a really tough time, and it's completely understandable to feel broken or overwhelmed. Would you like to talk about what happened and how you're feeling? Sometimes sharing your thoughts and emotions with someone who can listen without judgment can help you process and start to feel a little better. I'm here to listen and offer support if you need it.",
+        "full_response": "It sounds like you're feeling deeply hurt and shattered, and that's a completely valid emotion given the circumstances. It's understandable to feel broken after experiencing something that has had a profound impact on you.\n\nWhat is one thing that you think might help you start to feel a sense of healing or recovery from this difficult experience?"
+    },
+    {
+        "id": 85,
+        "category": "daily_life",
+        "message": "I'm annoyed that my efforts are never appreciated.",
+        "expected_emotion": "anger",
+        "predicted_emotion": "anger",
+        "baseline_response": "It can be really frustrating when you feel like your hard work and efforts are going unnoticed. It's natural to want to feel valued and recognized for what you do. \n\nCan you tell me more about what's been going on and how you've been feeling? Is it a specific situation or person that's making you feel this way, or is it a more general feeling you've been experiencing lately? Sometimes talking about it can help clarify things and give us a better idea of how to move forward.",
+        "full_response": "It sounds like you're feeling angry and frustrated, which is completely understandable when you feel like your hard work and efforts are being overlooked or undervalued. It's natural to want recognition and appreciation for what you do, and it can be really demotivating when that doesn't happen.\n\nWhat specific situations or interactions have led you to feel like your efforts are not being appreciated?"
+    },
+    {
+        "id": 86,
+        "category": "relationships",
+        "message": "I regret so many choices I've made.",
+        "expected_emotion": "sadness",
+        "predicted_emotion": "sadness",
+        "baseline_response": "It can be really tough to deal with regret. It's like having a constant companion that you wish you could shake off. But here's the thing: regret can also be a powerful teacher. It can help you learn from your mistakes and make better choices in the future.\n\nIt might be helpful to try to reframe your thinking about those past choices. Instead of beating yourself up over them, try to see them as opportunities for growth. What did you learn from each experience? How have you changed or grown as a result?\n\nIt's also important to remember that you made those choices with the resources and knowledge you had at the time. You did the best you could with what you had, and that's something to be proud of.\n\nIf you're feeling overwhelmed by regret, it might be helpful to talk to someone about it. A trusted friend, family member, or therapist can offer a fresh perspective and help you work through your feelings.\n\nRemember, you can't change the past, but you can use it to inform your present and future. You have the power to create a new path forward, one that's guided by the wisdom and experience you've gained.",
+        "full_response": "It sounds like you're feeling overwhelmed with regret, and that can be a really heavy and painful emotion to carry. It's completely understandable to have regrets about past choices, and it takes a lot of courage to acknowledge and confront them.\n\nWhat is one choice that you regret the most, and how has it been affecting you lately?"
+    },
+    {
+        "id": 87,
+        "category": "family",
+        "message": "The leftovers had gone bad and smelled awful.",
+        "expected_emotion": "disgust",
+        "predicted_emotion": "disgust",
+        "baseline_response": "It sounds like the leftovers had been sitting around for too long and had spoiled. That can be really gross and unpleasant, especially the strong smell. Did you end up throwing them away, or was there anything you could salvage?",
+        "full_response": "It sounds like you're feeling disgusted, and that's a completely natural response to something that has gone bad and has a strong, unpleasant smell. It's understandable that you would feel this way, especially when it comes to food that was supposed to be edible.\n\nWhat triggered your decision to check the leftovers, and were you planning on eating them before you discovered they had gone bad?"
+    },
+    {
+        "id": 88,
+        "category": "health",
+        "message": "The food was crawling with insects.",
+        "expected_emotion": "disgust",
+        "predicted_emotion": "disgust",
+        "baseline_response": "That sounds really unappetizing and unhygienic. It's not exactly what you want to see when you're about to eat something. Were you at a restaurant or was this at home? Did you end up eating the food or did you get a replacement?",
+        "full_response": "It sounds like you're feeling disgusted, and that's a completely natural reaction to finding insects in your food. The thought of consuming something contaminated can be really unsettling and even disturbing.\n\nWhat made you notice the insects in the food, was it the sight, smell, or something else?"
+    },
+    {
+        "id": 89,
+        "category": "relationships",
+        "message": "I never imagined meeting someone so inspiring.",
+        "expected_emotion": "surprise",
+        "predicted_emotion": "surprise",
+        "baseline_response": "That's wonderful. It's always great to meet someone who leaves a positive impact on our lives. Who is this person and what's their story that's inspired you so much? I'm all ears if you'd like to share.",
+        "full_response": "It sounds like you're feeling surprised, and that's completely understandable given the unexpected encounter with someone who has had a profound impact on you. It's great that you're open to new experiences and allowing yourself to be inspired by others.\n\nWhat was it about this person that you found particularly inspiring?"
+    },
+    {
+        "id": 90,
+        "category": "relationships",
+        "message": "I never expected such a positive response.",
+        "expected_emotion": "surprise",
+        "predicted_emotion": "surprise",
+        "baseline_response": "I'm glad to hear that I could exceed your expectations. Is there something specific that you'd like to talk about or ask for help with? I'm here to assist you in any way I can.",
+        "full_response": "It sounds like you're feeling surprised, and that's completely understandable given the unexpected positive turn of events. It's great that you're experiencing a pleasant surprise, and it's normal to feel a sense of wonder or even a bit of shock when things don't go as anticipated.\n\nWhat triggered this unexpected positive response, and how are you planning to build on this newfound momentum?"
+    },
+    {
+        "id": 91,
+        "category": "daily_life",
+        "message": "I couldn't believe how quickly everything changed.",
+        "expected_emotion": "surprise",
+        "predicted_emotion": "surprise",
+        "baseline_response": "It can be really overwhelming when things change rapidly, can't it? One minute everything seems normal, and the next, it's like the whole world has been turned upside down. What happened that was so unexpected? Was it something in your personal life, or maybe something in the world around you?",
+        "full_response": "It sounds like you're feeling surprised, and that's completely understandable given the rapid changes you've experienced. It can be overwhelming and even shocking when things don't go as expected, and it's normal to need some time to process and adjust to the new situation.\n\nWhat was the most unexpected part of the change that's left you feeling surprised?"
+    },
+    {
+        "id": 92,
+        "category": "relationships",
+        "message": "I feel angry whenever I'm compared to other people.",
+        "expected_emotion": "anger",
+        "predicted_emotion": "anger",
+        "baseline_response": "It can be really frustrating and upsetting when someone compares you to others. It's like, you're an individual with your own strengths and weaknesses, and being compared can make you feel like you're not good enough or that you're in some kind of competition.\n\nFirst of all, let me just say that it's totally normal to feel angry or annoyed in those situations. It's okay to acknowledge and validate your emotions. But if you're willing, I'd like to explore this a bit further with you. What do you think is triggering this anger when you're compared to others? Is it the fear of not measuring up, or something else entirely?",
+        "full_response": "It sounds like you're feeling angry, and that's completely understandable when you feel like you're being measured against others. Being compared can be frustrating and make you feel like your own worth and accomplishments are being diminished.\n\nWhat triggers these comparisons that lead to you feeling angry, is it something specific that people say or a particular situation?"
+    },
+    {
+        "id": 93,
+        "category": "relationships",
+        "message": "I'm tired of everyone expecting me to fix their mistakes.",
+        "expected_emotion": "anger",
+        "predicted_emotion": "sadness",
+        "baseline_response": "It can be really frustrating when others assume you'll always be there to bail them out or clean up after their errors. Not only can it be exhausting, but it can also be demotivating and make you feel like you're being taken for granted.\n\nHave you tried setting any boundaries or communicating your feelings to the people who are expecting you to fix their mistakes? Sometimes, people aren't even aware of the impact their behavior is having on you, and talking it through can help clear the air.\n\nIt's also important to remember that you can't pour from an empty cup. Taking care of yourself and prioritizing your own needs is crucial, especially when you're feeling overwhelmed by others' expectations. What are some things you've been wanting to do for yourself, but haven't had the time or energy for?",
+        "full_response": "It sounds like you're feeling overwhelmed and frustrated, which is completely understandable when you feel like you're shouldering the responsibility for others' errors. It can be really draining to constantly be expected to solve problems that aren't yours to fix.\n\nWhat is one thing you wish others would understand about your capacity to handle these situations?"
+    },
+    {
+        "id": 94,
+        "category": "career",
+        "message": "I received appreciation for my work.",
+        "expected_emotion": "joy",
+        "predicted_emotion": "joy",
+        "baseline_response": "That's great to hear. Receiving appreciation for your work can be a wonderful motivator and really boost your confidence. It's always nice to know that your efforts are recognized and valued. What kind of work did you receive appreciation for, if you don't mind me asking?",
+        "full_response": "It sounds like you're feeling joyful and appreciated, which is wonderful and well-deserved. Receiving recognition for your efforts can be a great confidence booster and motivate you to continue doing your best.\n\nWhat specifically about the appreciation you received is making you feel the most happy and fulfilled right now?"
+    },
+    {
+        "id": 95,
+        "category": "relationships",
+        "message": "I spent the afternoon organizing my notes.",
+        "expected_emotion": "neutral",
+        "predicted_emotion": "neutral",
+        "baseline_response": "That sounds like a productive way to spend the afternoon. Organizing your notes can be really helpful for clarifying your thoughts and making it easier to study or review the material later on. Did you discover anything interesting or surprising while you were going through your notes, or was it more of a straightforward organizing task?",
+        "full_response": "It sounds like you're feeling neutral about the experience, and that's completely okay, as organizing notes can be a neutral or even calming activity for some people.\n\nWhat motivated you to spend the afternoon organizing your notes?"
+    },
+    {
+        "id": 96,
+        "category": "relationships",
+        "message": "I celebrated an important milestone today.",
+        "expected_emotion": "joy",
+        "predicted_emotion": "joy",
+        "baseline_response": "That sounds exciting. What was the milestone you celebrated today? I'm all ears and would love to hear about it.",
+        "full_response": "It sounds like you're feeling joyful, and that's wonderful to hear that you have something to celebrate. Achieving important milestones can be a great source of happiness and pride.\n\nWhat was it about this milestone that made it so significant to you?"
+    },
+    {
+        "id": 97,
+        "category": "career",
+        "message": "Someone left food to rot inside the refrigerator.",
+        "expected_emotion": "disgust",
+        "predicted_emotion": "disgust",
+        "baseline_response": "That's not good. It's important to clean out the fridge regularly to prevent spoilage and bacterial growth. If food is left to rot, it can start to smell bad and even contaminate other items in the fridge.\n\nI would recommend throwing away the rotten food immediately and giving the fridge a good clean with soap and warm water. It's also a good idea to check the expiration dates of other food items in the fridge and get rid of anything that's past its prime.\n\nTo prevent this from happening again in the future, it might be helpful to establish a routine of checking the fridge every week or two to get rid of any expired or spoiled food. You could also consider labeling leftovers with the date they were stored, so you can easily keep track of how long they've been in the fridge.\n\nDo you need any help with cleaning the fridge or getting rid of the rotten food?",
+        "full_response": "It sounds like you're feeling disgusted, and that's a completely natural response to discovering rotten food, especially in a place where you store and prepare meals.\n\nWhat led you to discover the rotten food, and how are you planning to address the situation with the person responsible?"
+    },
+    {
+        "id": 98,
+        "category": "relationships",
+        "message": "I visited my grandparents over the weekend.",
+        "expected_emotion": "neutral",
+        "predicted_emotion": "joy",
+        "baseline_response": "That sounds like a lovely trip. How was your visit with your grandparents? Did you have a chance to catch up and do anything fun together?",
+        "full_response": "It sounds like you're feeling joyful, and that's wonderful, especially when it's related to spending time with loved ones like your grandparents.\n\nWhat did you do with your grandparents during the visit that brought you the most happiness?"
+    },
+    {
+        "id": 99,
+        "category": "daily_life",
+        "message": "I love spending time with the people closest to me.",
+        "expected_emotion": "love",
+        "predicted_emotion": "joy",
+        "baseline_response": "That's wonderful. There's nothing like sharing experiences and making memories with loved ones. It's great that you prioritize nurturing those relationships and cherishing the time you spend together. What are some of your favorite things to do with the people closest to you?",
+        "full_response": "It sounds like you're feeling joyful, and that's wonderful to hear that you're nurturing those special relationships with the people closest to you. It's great that you're prioritizing time with loved ones, which can bring so much happiness and fulfillment to our lives.\n\nWhat activities or moments do you cherish the most when spending time with the people you love?"
+    },
+    {
+        "id": 100,
+        "category": "academic",
+        "message": "My hard work finally paid off.",
+        "expected_emotion": "joy",
+        "predicted_emotion": "joy",
+        "baseline_response": "That's amazing to hear. It's always satisfying when our efforts pay off, isn't it? What was it that you were working towards, if you don't mind me asking?",
+        "full_response": "It sounds like you're feeling joyful, and that's completely understandable given the success you've achieved. Your hard work and dedication have led to this moment, and it's great that you're acknowledging and celebrating your accomplishment.\n\nWhat specific aspects of your hard work are you most proud of that contributed to this outcome?"
+    },
+    {
+        "id": 101,
+        "category": "health",
+        "message": "The food was crawling with insects.",
+        "expected_emotion": "disgust",
+        "predicted_emotion": "disgust",
+        "baseline_response": "That sounds really unappetizing and unhygienic. I hope you didn't eat any of it. Insects in food can be a sign of contamination and can pose health risks. Did you report the issue to the restaurant or food establishment, or was it a personal meal that had been left out?",
+        "full_response": "It sounds like you're feeling disgusted, which is a completely natural response to seeing insects crawling on your food. The thought of consuming something contaminated can be really unsettling and even disturbing.\n\nWhat triggered your strongest feeling of disgust in that moment, was it the sight of the insects or something else?"
+    },
+    {
+        "id": 102,
+        "category": "finance",
+        "message": "The bathroom was so filthy that I couldn't use it.",
+        "expected_emotion": "disgust",
+        "predicted_emotion": "disgust",
+        "baseline_response": "That sounds really unpleasant. It can be frustrating and even unhygienic to deal with a dirty bathroom. Did you end up cleaning it yourself or was it someone else's responsibility?",
+        "full_response": "It sounds like you're feeling disgusted, and that's a completely natural reaction to being faced with a filthy environment, especially somewhere as personal as a bathroom.\n\nWhat was it about the bathroom's condition that triggered your strong feeling of disgust?"
+    },
+    {
+        "id": 103,
+        "category": "daily_life",
+        "message": "The dirty dishes had been left for days.",
+        "expected_emotion": "disgust",
+        "predicted_emotion": "disgust",
+        "baseline_response": "That sounds like a bit of a mess. I'm sure it's not the most pleasant task, but someone will have to roll up their sleeves and get washing soon. Do you think they'll get around to cleaning them today, or will they be left to pile up even more?",
+        "full_response": "It sounds like you're feeling disgusted, and that's completely understandable given the unpleasant situation with the dirty dishes being left for days. The thought of all those unwashed plates and utensils can be really overwhelming and even nauseating.\n\nWhat triggered your strong reaction to the dirty dishes, was it the sight, the smell, or something else?"
+    },
+    {
+        "id": 104,
+        "category": "family",
+        "message": "My train arrived on time this morning.",
+        "expected_emotion": "neutral",
+        "predicted_emotion": "neutral",
+        "baseline_response": "That's great to hear. It's always a good start to the day when your commute goes smoothly. Did you have a busy day ahead of you or was it a relatively relaxed morning?",
+        "full_response": "It sounds like you're feeling neutral about your train arriving on time this morning, which is a good thing as it can make for a smooth start to the day.\n\nWhat are your plans for the rest of the day?"
+    },
+    {
+        "id": 105,
+        "category": "relationships",
+        "message": "Someone damaged my belongings and didn't even apologize.",
+        "expected_emotion": "anger",
+        "predicted_emotion": "anger",
+        "baseline_response": "That can be really frustrating and upsetting. It's not just the damage to your belongings that's the problem, but also the fact that the person didn't take responsibility for their actions or show any remorse. Not getting an apology can make you feel disrespected and unvalued.\n\nHave you talked to the person about what happened, or is that not an option? Sometimes, having an open and honest conversation can help clear the air and resolve the issue. But if that's not possible, it might be helpful to focus on taking care of yourself and finding ways to move forward. What do you think you'll do next?",
+        "full_response": "It sounds like you're feeling angry, and that's completely understandable given the situation. It's frustrating and upsetting when someone damages our belongings, and the lack of apology can make it even more difficult to process.\n\nWhat would you like to happen next in terms of resolving the situation or addressing the person who damaged your belongings?"
+    },
+    {
+        "id": 106,
+        "category": "daily_life",
+        "message": "I enjoyed spending time with my family today.",
+        "expected_emotion": "joy",
+        "predicted_emotion": "joy",
+        "baseline_response": "That sounds wonderful. Spending quality time with loved ones can be so uplifting and create lasting memories. What did you end up doing with your family today? Was it something you've been planning for a while or just a spontaneous get-together?",
+        "full_response": "It sounds like you're feeling joyful, and that's wonderful to hear that you had a great time with your family. It's amazing how spending quality time with loved ones can bring so much happiness and create lasting memories.\n\nWhat was the highlight of your time together today that made you feel especially joyful?"
+    },
+    {
+        "id": 107,
+        "category": "finance",
+        "message": "I feel broken after everything that happened.",
+        "expected_emotion": "sadness",
+        "predicted_emotion": "sadness",
+        "baseline_response": "I'm so sorry to hear that you're feeling that way. It can be really tough to deal with difficult emotions and experiences. It's completely normal to feel broken or overwhelmed after going through something challenging.\n\nWould you like to talk about what happened and how you're feeling? Sometimes sharing your thoughts and emotions with someone who can listen without judgment can be really helpful. I'm here to listen and offer support if you need it. What's been going on, and how are you coping with everything?",
+        "full_response": "It sounds like you're feeling deeply hurt and broken, and that's a completely valid emotion given the circumstances. It's okay to acknowledge and accept these feelings, rather than trying to suppress or deny them. Recognizing the pain you're experiencing is the first step towards healing.\n\nWhat specific aspects of what happened are still weighing heavily on your mind and heart?"
+    },
+    {
+        "id": 108,
+        "category": "academic",
+        "message": "I feel angry whenever I'm compared to other people.",
+        "expected_emotion": "anger",
+        "predicted_emotion": "anger",
+        "baseline_response": "It can be really frustrating and infuriating when someone compares you to others. It's like, you're being measured against someone else's standards or achievements, and it can make you feel like you're not good enough or that you're in competition with others.\n\nFirst of all, let me just say that it's totally normal to feel angry or upset when someone compares you to others. It's a natural response to feeling like you're being judged or evaluated unfairly.\n\nBut here's the thing: comparisons are often unfair and unhelpful. Everyone has their own unique strengths, weaknesses, and experiences, and it's not always possible to compare apples to apples. Plus, comparisons can be really damaging to our self-esteem and confidence.\n\nSo, what can you do when someone compares you to others? One thing you could try is to take a step back and remind yourself that comparisons are not always fair or accurate. You could also try to focus on your own goals and aspirations, rather than measuring yourself against someone else.\n\nIt might also be helpful to talk to the person who's making the comparisons and let them know how it's making you feel. Sometimes, people don't even realize the impact their words are having, and having an open and honest conversation",
+        "full_response": "It sounds like you're feeling angry, and that's completely understandable when you're compared to others, as it can feel like your worth and accomplishments are being diminished or judged.\n\nWhat triggers these comparisons that make you feel angry, is it from specific people or situations?"
+    },
+    {
+        "id": 109,
+        "category": "relationships",
+        "message": "I'm scared I won't be able to pay my bills.",
+        "expected_emotion": "fear",
+        "predicted_emotion": "fear",
+        "baseline_response": "It can be really stressful and overwhelming when you're worried about paying your bills. Have you thought about making a budget or a plan to help you get back on track? Sometimes, just seeing everything laid out and prioritizing your expenses can make a big difference.\n\nAlso, are there any specific bills that you're most concerned about? Is it rent/mortgage, utilities, credit cards, or something else? Talking through the details might help us come up with a solution together.\n\nAnd if you don't mind me asking, is there something that's causing the financial strain, like a job change, medical expense, or something else? Knowing the root cause might help us find a way to address the issue. I'm here to listen and help if I can.",
+        "full_response": "It sounds like you're feeling fearful, and that's a really tough and overwhelming emotion to experience, especially when it comes to something as important as financial stability. It's completely understandable that you're worried about not being able to pay your bills, and I'm here to listen and support you.\n\nWhat is the most pressing bill or financial concern that's causing you the most fear right now?"
+    },
+    {
+        "id": 110,
+        "category": "daily_life",
+        "message": "My family always encourages me to keep going.",
+        "expected_emotion": "love",
+        "predicted_emotion": "joy",
+        "baseline_response": "That's great to hear. Having a supportive family can make a huge difference in our lives. It's wonderful that they're always there to encourage you, especially when things get tough. Their support can help boost your confidence and motivation, and remind you that you're capable of overcoming any challenges that come your way. What kind of things do they encourage you to keep going with, if you don't mind me asking?",
+        "full_response": "It sounds like you're feeling joyful and uplifted, which is wonderful, especially when you have a supportive family behind you. Their encouragement can be a great motivator and help you stay positive.\n\nWhat is it about your family's encouragement that brings you the most joy and motivation?"
+    },
+    {
+        "id": 111,
+        "category": "daily_life",
+        "message": "I'm struggling to find hope again.",
+        "expected_emotion": "sadness",
+        "predicted_emotion": "sadness",
+        "baseline_response": "I'm so sorry to hear that you're feeling hopeless right now. It can be a really tough and isolating experience. But I want you to know that I'm here to listen and support you in any way I can.\n\nFirst of all, please know that it's okay to feel this way. It's normal to go through ups and downs in life, and it doesn't mean that you're flawed or that there's anything wrong with you. Sometimes, things just get tough, and it can be hard to see a way forward.\n\nCan you tell me a bit more about what's been going on and how you've been feeling? Sometimes talking about it can help clarify things and give us a better sense of what's going on. I'm here to listen without judgment, and I want to support you in finding a way to feel more hopeful again.\n\nRemember, hope is not something that we either have or we don't - it's something that can be nurtured and grown over time. And I'm here to help you do just that. We can work together to find small things that bring you joy, to identify things that are going well in your life, and to find ways to build on those positives.\n\nYou're not alone",
+        "full_response": "It sounds like you're feeling overwhelmed by sadness and possibly feeling hopeless, which can be a really tough and isolating experience. It's completely understandable to feel this way, and I'm here to listen and support you.\n\nI want you to know that it's okay to feel this way, and it doesn't mean that you're alone or that things won't get better. It might be helpful to explore some coping strategies that can help you manage these feelings, such as practicing self-care, reaching out to loved ones, or engaging in activities that bring you comfort and joy.\n\nWhat has been the most challenging part of your life recently that's making it hard for you to find hope again?"
+    },
+    {
+        "id": 112,
+        "category": "daily_life",
+        "message": "I feel appreciated and valued by my team.",
+        "expected_emotion": "love",
+        "predicted_emotion": "joy",
+        "baseline_response": "That's wonderful to hear. Feeling appreciated and valued by your team can make a huge difference in your job satisfaction and overall well-being. It's great that you have a supportive team that recognizes your contributions. Does your team show their appreciation through regular feedback, recognition, or rewards, or is it more of a general sense of camaraderie and respect?",
+        "full_response": "It sounds like you're feeling joyful and uplifted, which is wonderful to experience, especially when it comes from a sense of being appreciated and valued by your team. Being recognized and respected by your colleagues can be a great morale booster and can really make you feel like you're making a meaningful contribution.\n\nWhat specific actions or words from your team have made you feel this way?"
+    },
+    {
+        "id": 113,
+        "category": "health",
+        "message": "I'm scared I won't be able to pay my bills.",
+        "expected_emotion": "fear",
+        "predicted_emotion": "fear",
+        "baseline_response": "It can be really overwhelming and stressful when you're worried about not being able to pay your bills. First, take a deep breath and know that you're not alone. Many people have been in similar situations and have found ways to manage their finances.\n\nCan you tell me a bit more about what's going on? What bills are you struggling to pay, and when are they due? Sometimes, talking through the specifics can help us identify potential solutions. We can also explore options like creating a budget, prioritizing your expenses, or reaching out to your creditors to see if they can offer any temporary assistance.\n\nRemember, it's okay to ask for help, and there are often resources available to support you. What do you say? Should we start by making a list of your bills and seeing where we can find some breathing room?",
+        "full_response": "It sounds like you're feeling fearful, and that's completely understandable when facing financial uncertainty. It's normal to worry about being able to cover your expenses, and it's great that you're acknowledging and expressing your concerns.\n\nWhat specific bill or financial obligation is causing you the most fear right now?"
+    },
+    {
+        "id": 114,
+        "category": "relationships",
+        "message": "I read a few chapters of my textbook.",
+        "expected_emotion": "neutral",
+        "predicted_emotion": "disgust",
+        "baseline_response": "How was it? Was the material interesting or challenging to understand? Did you come across any concepts that you're having trouble with or would like to discuss?",
+        "full_response": "It sounds like you're feeling disgusted, and that's a strong emotion that can be really overwhelming.\n\nWhat triggered this feeling of disgust while you were reading your textbook?"
+    },
+    {
+        "id": 115,
+        "category": "social",
+        "message": "I'm worried about losing my job.",
+        "expected_emotion": "fear",
+        "predicted_emotion": "fear",
+        "baseline_response": "It can be really stressful and unsettling to feel uncertain about your job security. Have you been given any indication that your job might be at risk, or is it just a general feeling you're having? Maybe we can talk through some of the things that are worrying you and see if there's anything we can do to help you feel more prepared or in control of the situation.",
+        "full_response": "It sounds like you're feeling fearful and uncertain about your job security, which can be a really challenging and unsettling experience. It's completely normal to have these feelings, especially when something as important as your livelihood is at stake.\n\nWhat specific aspects of your job situation are causing you the most concern right now?"
+    },
+    {
+        "id": 116,
+        "category": "social",
+        "message": "I stepped into something gross on the sidewalk.",
+        "expected_emotion": "disgust",
+        "predicted_emotion": "disgust",
+        "baseline_response": "Ugh, that's disgusting. Hopefully, it's just mud or something that can be easily cleaned off. But if it's something worse, like gum or a mysterious substance, you might need to give your shoe a good scrub. Do you have any idea what it might be? And do you have a way to clean it off, or are you near a place where you can wash it off?",
+        "full_response": "It sounds like you're feeling disgusted, and that's a completely natural reaction when coming into contact with something unpleasant and unsanitary. It's understandable that you'd feel a strong sense of revulsion in this situation.\n\nWhat did you do immediately after stepping into whatever it was that caused your disgust?"
+    },
+    {
+        "id": 117,
+        "category": "family",
+        "message": "My family always encourages me to keep going.",
+        "expected_emotion": "love",
+        "predicted_emotion": "joy",
+        "baseline_response": "That's wonderful to hear. Having a supportive family can make a huge difference in our lives. It's great that they're always there to encourage and motivate you, even when things get tough. Their support can help give you the confidence and strength to keep pushing forward and pursuing your goals. Do you feel like their encouragement has helped you achieve anything in particular or overcome any challenges?",
+        "full_response": "It sounds like you're feeling joyful and uplifted, which is wonderful, especially when you have a supportive family behind you. Their encouragement can be a great source of motivation and comfort.\n\nWhat is it about your family's encouragement that brings you the most joy and inspiration?"
+    },
+    {
+        "id": 118,
+        "category": "social",
+        "message": "I feel like giving up sometimes.",
+        "expected_emotion": "sadness",
+        "predicted_emotion": "sadness",
+        "baseline_response": "It can be really tough when things feel overwhelming and it's like the struggles are piling up. It's normal to have those feelings, and it doesn't mean you're weak or that you're not capable. It just means you're human, and you're going through a tough time.\n\nCan you tell me a bit more about what's been going on and how you've been feeling? Sometimes talking about it can help clarify things and give us a better idea of what's going on. I'm here to listen and offer support if you need it. What's been on your mind lately?",
+        "full_response": "It sounds like you're feeling overwhelmed and hopeless, which can be a really tough and painful place to be. It's completely understandable to feel that way, and I'm here to listen and support you.\n\nWhat is it that's making you feel like giving up, is it a specific situation or a general feeling that's been building up over time?"
+    },
+    {
+        "id": 119,
+        "category": "health",
+        "message": "I'm annoyed that my efforts are never appreciated.",
+        "expected_emotion": "anger",
+        "predicted_emotion": "anger",
+        "baseline_response": "It can be really frustrating when you feel like your hard work and efforts are going unnoticed. It's natural to want to feel appreciated and recognized for what you do. \n\nCan you tell me more about what's been going on and how you've been feeling? Is it a specific situation or person that's making you feel this way, or is it a more general feeling you've been having lately? Sometimes talking about it can help clarify things and give us a better idea of how to move forward.",
+        "full_response": "It sounds like you're feeling angry and unvalued, which can be really frustrating when you're putting in a lot of effort and not receiving the recognition you deserve. It's completely understandable to feel this way, and it's okay to acknowledge and validate your emotions.\n\nWhat specific situations or interactions have led you to feel like your efforts are not being appreciated?"
+    },
+    {
+        "id": 120,
+        "category": "relationships",
+        "message": "I love how everything is falling into place.",
+        "expected_emotion": "joy",
+        "predicted_emotion": "joy",
+        "baseline_response": "That's a great feeling, isn't it? When things start coming together, it can be really exciting and motivating. It's like all the pieces of a puzzle are finally fitting into place. What's happening that's making you feel this way? Is there something specific that's going well for you?",
+        "full_response": "It sounds like you're feeling joyful, and that's wonderful to hear that things are unfolding in a positive way for you. It's great that you're experiencing a sense of satisfaction and happiness.\n\nWhat is one thing in particular that you're most excited about that's contributing to this feeling of joy?"
     }
 ]
