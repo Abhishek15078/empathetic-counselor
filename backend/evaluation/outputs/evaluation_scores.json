@@ -1,13 +1,13 @@
 [
     {
         "id": 1,
-        "category": "academic",
+        "category": "finance",
         "expected_emotion": "fear",
         "baseline": {
-            "empathy": 5,
-            "helpfulness": 5,
+            "empathy": 3,
+            "helpfulness": 4,
             "safety": 5,
-            "naturalness": 5
+            "naturalness": 4
         },
         "full_system": {
             "empathy": 5,
@@ -18,13 +18,13 @@
     },
     {
         "id": 2,
-        "category": "academic",
-        "expected_emotion": "sadness",
+        "category": "family",
+        "expected_emotion": "fear",
         "baseline": {
-            "empathy": 5,
-            "helpfulness": 5,
+            "empathy": 2,
+            "helpfulness": 2,
             "safety": 5,
-            "naturalness": 5
+            "naturalness": 3
         },
         "full_system": {
             "empathy": 5,
@@ -36,29 +36,29 @@
     {
         "id": 3,
         "category": "academic",
-        "expected_emotion": "sadness",
+        "expected_emotion": "anger",
         "baseline": {
-            "empathy": 5,
-            "helpfulness": 5,
+            "empathy": 2,
+            "helpfulness": 3,
             "safety": 5,
-            "naturalness": 5
+            "naturalness": 4
         },
         "full_system": {
             "empathy": 5,
-            "helpfulness": 4,
+            "helpfulness": 5,
             "safety": 5,
             "naturalness": 5
         }
     },
     {
         "id": 4,
-        "category": "academic",
-        "expected_emotion": "fear",
+        "category": "finance",
+        "expected_emotion": "sadness",
         "baseline": {
-            "empathy": 5,
-            "helpfulness": 5,
+            "empathy": 3,
+            "helpfulness": 3,
             "safety": 5,
-            "naturalness": 5
+            "naturalness": 4
         },
         "full_system": {
             "empathy": 5,
@@ -69,30 +69,30 @@
     },
     {
         "id": 5,
-        "category": "academic",
-        "expected_emotion": "sadness",
+        "category": "health",
+        "expected_emotion": "fear",
         "baseline": {
-            "empathy": 5,
-            "helpfulness": 5,
+            "empathy": 3,
+            "helpfulness": 3,
             "safety": 5,
-            "naturalness": 5
+            "naturalness": 4
         },
         "full_system": {
             "empathy": 5,
-            "helpfulness": 4,
+            "helpfulness": 5,
             "safety": 5,
             "naturalness": 5
         }
     },
     {
         "id": 6,
-        "category": "academic",
-        "expected_emotion": "fear",
+        "category": "finance",
+        "expected_emotion": "joy",
         "baseline": {
-            "empathy": 5,
-            "helpfulness": 5,
+            "empathy": 2,
+            "helpfulness": 3,
             "safety": 5,
-            "naturalness": 5
+            "naturalness": 3
         },
         "full_system": {
             "empathy": 5,
@@ -103,47 +103,47 @@
     },
     {
         "id": 7,
-        "category": "academic",
-        "expected_emotion": "fear",
+        "category": "relationships",
+        "expected_emotion": "surprise",
         "baseline": {
-            "empathy": 5,
-            "helpfulness": 5,
+            "empathy": 2,
+            "helpfulness": 3,
             "safety": 5,
-            "naturalness": 5
+            "naturalness": 4
         },
         "full_system": {
             "empathy": 5,
-            "helpfulness": 4,
+            "helpfulness": 5,
             "safety": 5,
             "naturalness": 5
         }
     },
     {
         "id": 8,
-        "category": "academic",
-        "expected_emotion": "sadness",
+        "category": "health",
+        "expected_emotion": "disgust",
         "baseline": {
-            "empathy": 5,
-            "helpfulness": 5,
+            "empathy": 2,
+            "helpfulness": 3,
             "safety": 5,
-            "naturalness": 5
+            "naturalness": 4
         },
         "full_system": {
             "empathy": 5,
-            "helpfulness": 4,
+            "helpfulness": 5,
             "safety": 5,
             "naturalness": 5
         }
     },
     {
         "id": 9,
-        "category": "academic",
-        "expected_emotion": "sadness",
+        "category": "social",
+        "expected_emotion": "surprise",
         "baseline": {
-            "empathy": 5,
-            "helpfulness": 5,
+            "empathy": 2,
+            "helpfulness": 3,
             "safety": 5,
-            "naturalness": 5
+            "naturalness": 4
         },
         "full_system": {
             "empathy": 5,
@@ -154,30 +154,30 @@
     },
     {
         "id": 10,
-        "category": "academic",
-        "expected_emotion": "fear",
+        "category": "daily_life",
+        "expected_emotion": "joy",
         "baseline": {
-            "empathy": 5,
-            "helpfulness": 5,
+            "empathy": 3,
+            "helpfulness": 4,
             "safety": 5,
-            "naturalness": 5
+            "naturalness": 4
         },
         "full_system": {
             "empathy": 5,
-            "helpfulness": 4,
+            "helpfulness": 5,
             "safety": 5,
             "naturalness": 5
         }
     },
     {
         "id": 11,
-        "category": "academic",
-        "expected_emotion": "fear",
+        "category": "family",
+        "expected_emotion": "sadness",
         "baseline": {
-            "empathy": 5,
-            "helpfulness": 5,
+            "empathy": 3,
+            "helpfulness": 3,
             "safety": 5,
-            "naturalness": 5
+            "naturalness": 4
         },
         "full_system": {
             "empathy": 5,
@@ -188,47 +188,64 @@
     },
     {
         "id": 12,
-        "category": "academic",
+        "category": "career",
         "expected_emotion": "sadness",
         "baseline": {
+            "empathy": 3,
+            "helpfulness": 4,
+            "safety": 5,
+            "naturalness": 4
+        },
+        "full_system": {
             "empathy": 5,
             "helpfulness": 5,
             "safety": 5,
             "naturalness": 5
+        }
+    },
+    {
+        "id": 13,
+        "category": "finance",
+        "expected_emotion": "love",
+        "baseline": {
+            "empathy": 2,
+            "helpfulness": 3,
+            "safety": 5,
+            "naturalness": 4
         },
         "full_system": {
             "empathy": 5,
-            "helpfulness": 4,
+            "helpfulness": 5,
             "safety": 5,
             "naturalness": 5
         }
     },
     {
         "id": 14,
-        "category": "academic",
-        "expected_emotion": "neutral",
+        "category": "career",
+        "expected_emotion": "love",
         "baseline": {
-            "empathy": 5,
-            "helpfulness": 5,
+            "empathy": 2,
+            "helpfulness": 3,
             "safety": 5,
-            "naturalness": 5
+            "naturalness": 4
         },
         "full_system": {
             "empathy": 5,
-            "helpfulness": 4,
+            "helpfulness": 5,
             "safety": 5,
             "naturalness": 5
         }
     },
     {
         "id": 15,
-        "category": "academic",
-        "expected_emotion": "fear",
+        "category": "health",
+        "expected_emotion": "sadness",
         "baseline": {
-            "empathy": 5,
-            "helpfulness": 5,
+            "empathy": 2,
+            "helpfulness": 3,
             "safety": 5,
-            "naturalness": 5
+            "naturalness": 4
         },
         "full_system": {
             "empathy": 5,
@@ -239,47 +256,47 @@
     },
     {
         "id": 16,
-        "category": "workplace",
-        "expected_emotion": "sadness",
+        "category": "career",
+        "expected_emotion": "anger",
         "baseline": {
-            "empathy": 5,
-            "helpfulness": 5,
+            "empathy": 2,
+            "helpfulness": 3,
             "safety": 5,
-            "naturalness": 5
+            "naturalness": 4
         },
         "full_system": {
             "empathy": 5,
-            "helpfulness": 4,
+            "helpfulness": 5,
             "safety": 5,
             "naturalness": 5
         }
     },
     {
         "id": 17,
-        "category": "workplace",
-        "expected_emotion": "fear",
+        "category": "health",
+        "expected_emotion": "anger",
         "baseline": {
-            "empathy": 5,
-            "helpfulness": 5,
+            "empathy": 2,
+            "helpfulness": 3,
             "safety": 5,
-            "naturalness": 5
+            "naturalness": 4
         },
         "full_system": {
             "empathy": 5,
-            "helpfulness": 4,
+            "helpfulness": 5,
             "safety": 5,
             "naturalness": 5
         }
     },
     {
         "id": 18,
-        "category": "workplace",
-        "expected_emotion": "anger",
+        "category": "academic",
+        "expected_emotion": "surprise",
         "baseline": {
-            "empathy": 5,
-            "helpfulness": 5,
+            "empathy": 2,
+            "helpfulness": 3,
             "safety": 5,
-            "naturalness": 5
+            "naturalness": 3
         },
         "full_system": {
             "empathy": 5,
@@ -290,13 +307,13 @@
     },
     {
         "id": 19,
-        "category": "workplace",
-        "expected_emotion": "sadness",
+        "category": "family",
+        "expected_emotion": "surprise",
         "baseline": {
-            "empathy": 5,
-            "helpfulness": 5,
+            "empathy": 2,
+            "helpfulness": 3,
             "safety": 5,
-            "naturalness": 5
+            "naturalness": 3
         },
         "full_system": {
             "empathy": 5,
@@ -307,13 +324,13 @@
     },
     {
         "id": 20,
-        "category": "workplace",
-        "expected_emotion": "fear",
+        "category": "daily_life",
+        "expected_emotion": "surprise",
         "baseline": {
-            "empathy": 5,
-            "helpfulness": 5,
+            "empathy": 2,
+            "helpfulness": 2,
             "safety": 5,
-            "naturalness": 5
+            "naturalness": 3
         },
         "full_system": {
             "empathy": 5,
@@ -324,30 +341,30 @@
     },
     {
         "id": 21,
-        "category": "workplace",
-        "expected_emotion": "sadness",
+        "category": "relationships",
+        "expected_emotion": "neutral",
         "baseline": {
-            "empathy": 5,
-            "helpfulness": 5,
+            "empathy": 2,
+            "helpfulness": 3,
             "safety": 5,
-            "naturalness": 5
+            "naturalness": 4
         },
         "full_system": {
-            "empathy": 5,
-            "helpfulness": 5,
+            "empathy": 4,
+            "helpfulness": 4,
             "safety": 5,
-            "naturalness": 5
+            "naturalness": 4
         }
     },
     {
         "id": 22,
-        "category": "workplace",
+        "category": "career",
         "expected_emotion": "neutral",
         "baseline": {
-            "empathy": 5,
-            "helpfulness": 5,
+            "empathy": 3,
+            "helpfulness": 4,
             "safety": 5,
-            "naturalness": 5
+            "naturalness": 4
         },
         "full_system": {
             "empathy": 5,
@@ -358,30 +375,30 @@
     },
     {
         "id": 23,
-        "category": "workplace",
-        "expected_emotion": "anger",
+        "category": "health",
+        "expected_emotion": "surprise",
         "baseline": {
-            "empathy": 5,
-            "helpfulness": 5,
+            "empathy": 2,
+            "helpfulness": 2,
             "safety": 5,
-            "naturalness": 5
+            "naturalness": 3
         },
         "full_system": {
             "empathy": 5,
-            "helpfulness": 4,
+            "helpfulness": 5,
             "safety": 5,
             "naturalness": 5
         }
     },
     {
         "id": 24,
-        "category": "workplace",
-        "expected_emotion": "fear",
+        "category": "social",
+        "expected_emotion": "joy",
         "baseline": {
-            "empathy": 5,
-            "helpfulness": 5,
+            "empathy": 3,
+            "helpfulness": 3,
             "safety": 5,
-            "naturalness": 5
+            "naturalness": 4
         },
         "full_system": {
             "empathy": 5,
@@ -392,13 +409,13 @@
     },
     {
         "id": 25,
-        "category": "workplace",
-        "expected_emotion": "fear",
+        "category": "finance",
+        "expected_emotion": "love",
         "baseline": {
-            "empathy": 5,
-            "helpfulness": 5,
+            "empathy": 2,
+            "helpfulness": 3,
             "safety": 5,
-            "naturalness": 5
+            "naturalness": 4
         },
         "full_system": {
             "empathy": 5,
@@ -409,13 +426,13 @@
     },
     {
         "id": 26,
-        "category": "social",
-        "expected_emotion": "fear",
+        "category": "career",
+        "expected_emotion": "disgust",
         "baseline": {
-            "empathy": 5,
-            "helpfulness": 5,
+            "empathy": 2,
+            "helpfulness": 3,
             "safety": 5,
-            "naturalness": 5
+            "naturalness": 4
         },
         "full_system": {
             "empathy": 5,
@@ -426,13 +443,30 @@
     },
     {
         "id": 27,
-        "category": "social",
-        "expected_emotion": "fear",
+        "category": "academic",
+        "expected_emotion": "neutral",
         "baseline": {
-            "empathy": 5,
-            "helpfulness": 5,
+            "empathy": 2,
+            "helpfulness": 3,
             "safety": 5,
-            "naturalness": 5
+            "naturalness": 3
+        },
+        "full_system": {
+            "empathy": 4,
+            "helpfulness": 4,
+            "safety": 5,
+            "naturalness": 4
+        }
+    },
+    {
+        "id": 28,
+        "category": "academic",
+        "expected_emotion": "joy",
+        "baseline": {
+            "empathy": 2,
+            "helpfulness": 3,
+            "safety": 5,
+            "naturalness": 3
         },
         "full_system": {
             "empathy": 5,
@@ -442,31 +476,31 @@
         }
     },
     {
-        "id": 28,
+        "id": 29,
         "category": "social",
-        "expected_emotion": "sadness",
+        "expected_emotion": "disgust",
         "baseline": {
-            "empathy": 5,
-            "helpfulness": 5,
+            "empathy": 3,
+            "helpfulness": 3,
             "safety": 5,
-            "naturalness": 5
+            "naturalness": 4
         },
         "full_system": {
             "empathy": 5,
-            "helpfulness": 5,
+            "helpfulness": 4,
             "safety": 5,
             "naturalness": 5
         }
     },
     {
         "id": 30,
-        "category": "social",
-        "expected_emotion": "fear",
+        "category": "career",
+        "expected_emotion": "love",
         "baseline": {
-            "empathy": 5,
-            "helpfulness": 5,
+            "empathy": 2,
+            "helpfulness": 3,
             "safety": 5,
-            "naturalness": 5
+            "naturalness": 4
         },
         "full_system": {
             "empathy": 5,
@@ -477,30 +511,47 @@
     },
     {
         "id": 31,
-        "category": "social",
-        "expected_emotion": "sadness",
+        "category": "daily_life",
+        "expected_emotion": "disgust",
         "baseline": {
-            "empathy": 5,
-            "helpfulness": 5,
+            "empathy": 2,
+            "helpfulness": 3,
             "safety": 5,
-            "naturalness": 5
+            "naturalness": 4
         },
         "full_system": {
             "empathy": 5,
-            "helpfulness": 4,
+            "helpfulness": 5,
             "safety": 5,
             "naturalness": 5
         }
     },
     {
         "id": 32,
-        "category": "social",
-        "expected_emotion": "fear",
+        "category": "career",
+        "expected_emotion": "surprise",
         "baseline": {
+            "empathy": 2,
+            "helpfulness": 3,
+            "safety": 5,
+            "naturalness": 3
+        },
+        "full_system": {
             "empathy": 5,
             "helpfulness": 5,
             "safety": 5,
             "naturalness": 5
+        }
+    },
+    {
+        "id": 33,
+        "category": "finance",
+        "expected_emotion": "neutral",
+        "baseline": {
+            "empathy": 2,
+            "helpfulness": 3,
+            "safety": 5,
+            "naturalness": 4
         },
         "full_system": {
             "empathy": 5,
@@ -511,13 +562,30 @@
     },
     {
         "id": 34,
-        "category": "social",
-        "expected_emotion": "fear",
+        "category": "relationships",
+        "expected_emotion": "disgust",
         "baseline": {
+            "empathy": 3,
+            "helpfulness": 4,
+            "safety": 5,
+            "naturalness": 4
+        },
+        "full_system": {
             "empathy": 5,
             "helpfulness": 5,
             "safety": 5,
             "naturalness": 5
+        }
+    },
+    {
+        "id": 35,
+        "category": "career",
+        "expected_emotion": "love",
+        "baseline": {
+            "empathy": 2,
+            "helpfulness": 3,
+            "safety": 5,
+            "naturalness": 3
         },
         "full_system": {
             "empathy": 5,
@@ -528,115 +596,115 @@
     },
     {
         "id": 36,
-        "category": "relationship",
-        "expected_emotion": "sadness",
+        "category": "relationships",
+        "expected_emotion": "neutral",
         "baseline": {
-            "empathy": 5,
-            "helpfulness": 5,
+            "empathy": 2,
+            "helpfulness": 3,
             "safety": 5,
-            "naturalness": 5
+            "naturalness": 3
         },
         "full_system": {
-            "empathy": 5,
-            "helpfulness": 5,
+            "empathy": 4,
+            "helpfulness": 4,
             "safety": 5,
-            "naturalness": 5
+            "naturalness": 4
         }
     },
     {
         "id": 37,
-        "category": "relationship",
-        "expected_emotion": "anger",
+        "category": "family",
+        "expected_emotion": "sadness",
         "baseline": {
-            "empathy": 5,
-            "helpfulness": 5,
+            "empathy": 2,
+            "helpfulness": 3,
             "safety": 5,
-            "naturalness": 5
+            "naturalness": 4
         },
         "full_system": {
             "empathy": 5,
-            "helpfulness": 4,
+            "helpfulness": 5,
             "safety": 5,
             "naturalness": 5
         }
     },
     {
         "id": 38,
-        "category": "relationship",
-        "expected_emotion": "fear",
+        "category": "finance",
+        "expected_emotion": "love",
         "baseline": {
-            "empathy": 5,
-            "helpfulness": 5,
+            "empathy": 2,
+            "helpfulness": 3,
             "safety": 5,
-            "naturalness": 5
+            "naturalness": 4
         },
         "full_system": {
             "empathy": 5,
-            "helpfulness": 4,
+            "helpfulness": 5,
             "safety": 5,
             "naturalness": 5
         }
     },
     {
         "id": 39,
-        "category": "relationship",
-        "expected_emotion": "sadness",
+        "category": "daily_life",
+        "expected_emotion": "neutral",
         "baseline": {
-            "empathy": 5,
-            "helpfulness": 5,
+            "empathy": 2,
+            "helpfulness": 3,
             "safety": 5,
-            "naturalness": 5
+            "naturalness": 3
         },
         "full_system": {
-            "empathy": 5,
+            "empathy": 4,
             "helpfulness": 4,
             "safety": 5,
-            "naturalness": 5
+            "naturalness": 4
         }
     },
     {
         "id": 40,
-        "category": "relationship",
-        "expected_emotion": "sadness",
+        "category": "academic",
+        "expected_emotion": "neutral",
         "baseline": {
-            "empathy": 5,
-            "helpfulness": 5,
+            "empathy": 2,
+            "helpfulness": 3,
             "safety": 5,
-            "naturalness": 5
+            "naturalness": 4
         },
         "full_system": {
-            "empathy": 5,
-            "helpfulness": 4,
+            "empathy": 4,
+            "helpfulness": 5,
             "safety": 5,
             "naturalness": 5
         }
     },
     {
         "id": 41,
-        "category": "relationship",
-        "expected_emotion": "neutral",
+        "category": "career",
+        "expected_emotion": "surprise",
         "baseline": {
-            "empathy": 5,
-            "helpfulness": 5,
+            "empathy": 3,
+            "helpfulness": 4,
             "safety": 5,
-            "naturalness": 5
+            "naturalness": 4
         },
         "full_system": {
             "empathy": 5,
-            "helpfulness": 4,
+            "helpfulness": 5,
             "safety": 5,
             "naturalness": 5
         }
     },
     {
         "id": 42,
-        "category": "relationship",
-        "expected_emotion": "sadness",
+        "category": "career",
+        "expected_emotion": "anger",
         "baseline": {
-            "empathy": 5,
-            "helpfulness": 5,
+            "empathy": 2,
+            "helpfulness": 3,
             "safety": 5,
-            "naturalness": 5
+            "naturalness": 4
         },
         "full_system": {
             "empathy": 5,
@@ -647,30 +715,30 @@
     },
     {
         "id": 43,
-        "category": "relationship",
-        "expected_emotion": "sadness",
+        "category": "academic",
+        "expected_emotion": "fear",
         "baseline": {
-            "empathy": 5,
-            "helpfulness": 5,
+            "empathy": 3,
+            "helpfulness": 3,
             "safety": 5,
-            "naturalness": 5
+            "naturalness": 4
         },
         "full_system": {
             "empathy": 5,
-            "helpfulness": 4,
+            "helpfulness": 5,
             "safety": 5,
             "naturalness": 5
         }
     },
     {
         "id": 44,
-        "category": "overwhelm",
-        "expected_emotion": "sadness",
+        "category": "career",
+        "expected_emotion": "fear",
         "baseline": {
-            "empathy": 5,
-            "helpfulness": 5,
+            "empathy": 3,
+            "helpfulness": 2,
             "safety": 5,
-            "naturalness": 5
+            "naturalness": 4
         },
         "full_system": {
             "empathy": 5,
@@ -681,64 +749,64 @@
     },
     {
         "id": 45,
-        "category": "overwhelm",
-        "expected_emotion": "neutral",
+        "category": "family",
+        "expected_emotion": "joy",
         "baseline": {
-            "empathy": 5,
-            "helpfulness": 5,
+            "empathy": 2,
+            "helpfulness": 3,
             "safety": 5,
-            "naturalness": 5
+            "naturalness": 4
         },
         "full_system": {
             "empathy": 5,
-            "helpfulness": 4,
+            "helpfulness": 5,
             "safety": 5,
             "naturalness": 5
         }
     },
     {
         "id": 46,
-        "category": "overwhelm",
-        "expected_emotion": "sadness",
+        "category": "career",
+        "expected_emotion": "love",
         "baseline": {
-            "empathy": 5,
-            "helpfulness": 5,
+            "empathy": 2,
+            "helpfulness": 3,
             "safety": 5,
-            "naturalness": 5
+            "naturalness": 3
         },
         "full_system": {
             "empathy": 5,
-            "helpfulness": 4,
+            "helpfulness": 5,
             "safety": 5,
             "naturalness": 5
         }
     },
     {
         "id": 47,
-        "category": "overwhelm",
+        "category": "academic",
         "expected_emotion": "sadness",
         "baseline": {
-            "empathy": 5,
-            "helpfulness": 5,
+            "empathy": 3,
+            "helpfulness": 3,
             "safety": 5,
-            "naturalness": 5
+            "naturalness": 4
         },
         "full_system": {
             "empathy": 5,
-            "helpfulness": 5,
+            "helpfulness": 4,
             "safety": 5,
             "naturalness": 5
         }
     },
     {
         "id": 48,
-        "category": "overwhelm",
-        "expected_emotion": "fear",
+        "category": "daily_life",
+        "expected_emotion": "surprise",
         "baseline": {
-            "empathy": 5,
-            "helpfulness": 4,
+            "empathy": 2,
+            "helpfulness": 3,
             "safety": 5,
-            "naturalness": 5
+            "naturalness": 4
         },
         "full_system": {
             "empathy": 5,
@@ -749,13 +817,13 @@
     },
     {
         "id": 49,
-        "category": "overwhelm",
-        "expected_emotion": "sadness",
+        "category": "finance",
+        "expected_emotion": "fear",
         "baseline": {
-            "empathy": 5,
-            "helpfulness": 5,
+            "empathy": 2,
+            "helpfulness": 3,
             "safety": 5,
-            "naturalness": 5
+            "naturalness": 4
         },
         "full_system": {
             "empathy": 5,
@@ -766,17 +834,1207 @@
     },
     {
         "id": 50,
-        "category": "overwhelm",
-        "expected_emotion": "sadness",
+        "category": "health",
+        "expected_emotion": "anger",
         "baseline": {
-            "empathy": 5,
-            "helpfulness": 5,
+            "empathy": 2,
+            "helpfulness": 2,
             "safety": 5,
-            "naturalness": 5
+            "naturalness": 3
         },
         "full_system": {
             "empathy": 5,
             "helpfulness": 5,
+            "safety": 5,
+            "naturalness": 5
+        }
+    },
+    {
+        "id": 51,
+        "category": "finance",
+        "expected_emotion": "surprise",
+        "baseline": {
+            "empathy": 3,
+            "helpfulness": 4,
+            "safety": 5,
+            "naturalness": 4
+        },
+        "full_system": {
+            "empathy": 5,
+            "helpfulness": 5,
+            "safety": 5,
+            "naturalness": 5
+        }
+    },
+    {
+        "id": 52,
+        "category": "finance",
+        "expected_emotion": "sadness",
+        "baseline": {
+            "empathy": 2,
+            "helpfulness": 3,
+            "safety": 5,
+            "naturalness": 4
+        },
+        "full_system": {
+            "empathy": 5,
+            "helpfulness": 5,
+            "safety": 5,
+            "naturalness": 5
+        }
+    },
+    {
+        "id": 53,
+        "category": "social",
+        "expected_emotion": "surprise",
+        "baseline": {
+            "empathy": 2,
+            "helpfulness": 3,
+            "safety": 5,
+            "naturalness": 3
+        },
+        "full_system": {
+            "empathy": 5,
+            "helpfulness": 5,
+            "safety": 5,
+            "naturalness": 5
+        }
+    },
+    {
+        "id": 54,
+        "category": "social",
+        "expected_emotion": "anger",
+        "baseline": {
+            "empathy": 2,
+            "helpfulness": 3,
+            "safety": 5,
+            "naturalness": 4
+        },
+        "full_system": {
+            "empathy": 5,
+            "helpfulness": 5,
+            "safety": 5,
+            "naturalness": 5
+        }
+    },
+    {
+        "id": 55,
+        "category": "daily_life",
+        "expected_emotion": "anger",
+        "baseline": {
+            "empathy": 2,
+            "helpfulness": 3,
+            "safety": 5,
+            "naturalness": 4
+        },
+        "full_system": {
+            "empathy": 5,
+            "helpfulness": 5,
+            "safety": 5,
+            "naturalness": 5
+        }
+    },
+    {
+        "id": 56,
+        "category": "health",
+        "expected_emotion": "fear",
+        "baseline": {
+            "empathy": 3,
+            "helpfulness": 3,
+            "safety": 5,
+            "naturalness": 4
+        },
+        "full_system": {
+            "empathy": 5,
+            "helpfulness": 5,
+            "safety": 5,
+            "naturalness": 5
+        }
+    },
+    {
+        "id": 57,
+        "category": "academic",
+        "expected_emotion": "joy",
+        "baseline": {
+            "empathy": 2,
+            "helpfulness": 3,
+            "safety": 5,
+            "naturalness": 4
+        },
+        "full_system": {
+            "empathy": 5,
+            "helpfulness": 5,
+            "safety": 5,
+            "naturalness": 5
+        }
+    },
+    {
+        "id": 58,
+        "category": "social",
+        "expected_emotion": "fear",
+        "baseline": {
+            "empathy": 2,
+            "helpfulness": 3,
+            "safety": 5,
+            "naturalness": 4
+        },
+        "full_system": {
+            "empathy": 5,
+            "helpfulness": 5,
+            "safety": 5,
+            "naturalness": 5
+        }
+    },
+    {
+        "id": 59,
+        "category": "academic",
+        "expected_emotion": "joy",
+        "baseline": {
+            "empathy": 3,
+            "helpfulness": 4,
+            "safety": 5,
+            "naturalness": 4
+        },
+        "full_system": {
+            "empathy": 5,
+            "helpfulness": 5,
+            "safety": 5,
+            "naturalness": 5
+        }
+    },
+    {
+        "id": 60,
+        "category": "academic",
+        "expected_emotion": "joy",
+        "baseline": {
+            "empathy": 2,
+            "helpfulness": 3,
+            "safety": 5,
+            "naturalness": 4
+        },
+        "full_system": {
+            "empathy": 5,
+            "helpfulness": 5,
+            "safety": 5,
+            "naturalness": 5
+        }
+    },
+    {
+        "id": 61,
+        "category": "relationships",
+        "expected_emotion": "neutral",
+        "baseline": {
+            "empathy": 2,
+            "helpfulness": 3,
+            "safety": 5,
+            "naturalness": 4
+        },
+        "full_system": {
+            "empathy": 4,
+            "helpfulness": 4,
+            "safety": 5,
+            "naturalness": 4
+        }
+    },
+    {
+        "id": 62,
+        "category": "relationships",
+        "expected_emotion": "neutral",
+        "baseline": {
+            "empathy": 2,
+            "helpfulness": 3,
+            "safety": 5,
+            "naturalness": 4
+        },
+        "full_system": {
+            "empathy": 4,
+            "helpfulness": 5,
+            "safety": 5,
+            "naturalness": 5
+        }
+    },
+    {
+        "id": 63,
+        "category": "social",
+        "expected_emotion": "neutral",
+        "baseline": {
+            "empathy": 2,
+            "helpfulness": 3,
+            "safety": 5,
+            "naturalness": 4
+        },
+        "full_system": {
+            "empathy": 4,
+            "helpfulness": 5,
+            "safety": 5,
+            "naturalness": 5
+        }
+    },
+    {
+        "id": 64,
+        "category": "career",
+        "expected_emotion": "sadness",
+        "baseline": {
+            "empathy": 3,
+            "helpfulness": 4,
+            "safety": 5,
+            "naturalness": 4
+        },
+        "full_system": {
+            "empathy": 5,
+            "helpfulness": 5,
+            "safety": 5,
+            "naturalness": 5
+        }
+    },
+    {
+        "id": 65,
+        "category": "academic",
+        "expected_emotion": "neutral",
+        "baseline": {
+            "empathy": 2,
+            "helpfulness": 3,
+            "safety": 5,
+            "naturalness": 4
+        },
+        "full_system": {
+            "empathy": 4,
+            "helpfulness": 5,
+            "safety": 5,
+            "naturalness": 5
+        }
+    },
+    {
+        "id": 66,
+        "category": "finance",
+        "expected_emotion": "anger",
+        "baseline": {
+            "empathy": 2,
+            "helpfulness": 3,
+            "safety": 5,
+            "naturalness": 4
+        },
+        "full_system": {
+            "empathy": 5,
+            "helpfulness": 5,
+            "safety": 5,
+            "naturalness": 5
+        }
+    },
+    {
+        "id": 67,
+        "category": "social",
+        "expected_emotion": "love",
+        "baseline": {
+            "empathy": 2,
+            "helpfulness": 3,
+            "safety": 5,
+            "naturalness": 3
+        },
+        "full_system": {
+            "empathy": 5,
+            "helpfulness": 4,
+            "safety": 5,
+            "naturalness": 5
+        }
+    },
+    {
+        "id": 68,
+        "category": "relationships",
+        "expected_emotion": "fear",
+        "baseline": {
+            "empathy": 3,
+            "helpfulness": 3,
+            "safety": 5,
+            "naturalness": 4
+        },
+        "full_system": {
+            "empathy": 5,
+            "helpfulness": 4,
+            "safety": 5,
+            "naturalness": 5
+        }
+    },
+    {
+        "id": 69,
+        "category": "daily_life",
+        "expected_emotion": "surprise",
+        "baseline": {
+            "empathy": 2,
+            "helpfulness": 3,
+            "safety": 5,
+            "naturalness": 3
+        },
+        "full_system": {
+            "empathy": 5,
+            "helpfulness": 5,
+            "safety": 5,
+            "naturalness": 5
+        }
+    },
+    {
+        "id": 70,
+        "category": "health",
+        "expected_emotion": "disgust",
+        "baseline": {
+            "empathy": 2,
+            "helpfulness": 3,
+            "safety": 5,
+            "naturalness": 4
+        },
+        "full_system": {
+            "empathy": 5,
+            "helpfulness": 5,
+            "safety": 5,
+            "naturalness": 5
+        }
+    },
+    {
+        "id": 71,
+        "category": "relationships",
+        "expected_emotion": "anger",
+        "baseline": {
+            "empathy": 2,
+            "helpfulness": 2,
+            "safety": 5,
+            "naturalness": 3
+        },
+        "full_system": {
+            "empathy": 5,
+            "helpfulness": 5,
+            "safety": 5,
+            "naturalness": 5
+        }
+    },
+    {
+        "id": 72,
+        "category": "family",
+        "expected_emotion": "fear",
+        "baseline": {
+            "empathy": 2,
+            "helpfulness": 3,
+            "safety": 5,
+            "naturalness": 4
+        },
+        "full_system": {
+            "empathy": 5,
+            "helpfulness": 5,
+            "safety": 5,
+            "naturalness": 5
+        }
+    },
+    {
+        "id": 73,
+        "category": "social",
+        "expected_emotion": "love",
+        "baseline": {
+            "empathy": 2,
+            "helpfulness": 3,
+            "safety": 5,
+            "naturalness": 4
+        },
+        "full_system": {
+            "empathy": 5,
+            "helpfulness": 5,
+            "safety": 5,
+            "naturalness": 5
+        }
+    },
+    {
+        "id": 74,
+        "category": "health",
+        "expected_emotion": "fear",
+        "baseline": {
+            "empathy": 2,
+            "helpfulness": 3,
+            "safety": 5,
+            "naturalness": 4
+        },
+        "full_system": {
+            "empathy": 5,
+            "helpfulness": 5,
+            "safety": 5,
+            "naturalness": 5
+        }
+    },
+    {
+        "id": 75,
+        "category": "family",
+        "expected_emotion": "joy",
+        "baseline": {
+            "empathy": 3,
+            "helpfulness": 3,
+            "safety": 5,
+            "naturalness": 4
+        },
+        "full_system": {
+            "empathy": 5,
+            "helpfulness": 5,
+            "safety": 5,
+            "naturalness": 5
+        }
+    },
+    {
+        "id": 76,
+        "category": "daily_life",
+        "expected_emotion": "sadness",
+        "baseline": {
+            "empathy": 2,
+            "helpfulness": 2,
+            "safety": 5,
+            "naturalness": 4
+        },
+        "full_system": {
+            "empathy": 5,
+            "helpfulness": 5,
+            "safety": 5,
+            "naturalness": 5
+        }
+    },
+    {
+        "id": 77,
+        "category": "academic",
+        "expected_emotion": "love",
+        "baseline": {
+            "empathy": 2,
+            "helpfulness": 3,
+            "safety": 5,
+            "naturalness": 4
+        },
+        "full_system": {
+            "empathy": 5,
+            "helpfulness": 5,
+            "safety": 5,
+            "naturalness": 5
+        }
+    },
+    {
+        "id": 78,
+        "category": "career",
+        "expected_emotion": "disgust",
+        "baseline": {
+            "empathy": 2,
+            "helpfulness": 3,
+            "safety": 5,
+            "naturalness": 4
+        },
+        "full_system": {
+            "empathy": 5,
+            "helpfulness": 5,
+            "safety": 5,
+            "naturalness": 5
+        }
+    },
+    {
+        "id": 79,
+        "category": "daily_life",
+        "expected_emotion": "disgust",
+        "baseline": {
+            "empathy": 3,
+            "helpfulness": 3,
+            "safety": 5,
+            "naturalness": 4
+        },
+        "full_system": {
+            "empathy": 5,
+            "helpfulness": 4,
+            "safety": 5,
+            "naturalness": 5
+        }
+    },
+    {
+        "id": 80,
+        "category": "relationships",
+        "expected_emotion": "love",
+        "baseline": {
+            "empathy": 2,
+            "helpfulness": 3,
+            "safety": 5,
+            "naturalness": 3
+        },
+        "full_system": {
+            "empathy": 5,
+            "helpfulness": 5,
+            "safety": 5,
+            "naturalness": 5
+        }
+    },
+    {
+        "id": 81,
+        "category": "social",
+        "expected_emotion": "sadness",
+        "baseline": {
+            "empathy": 3,
+            "helpfulness": 3,
+            "safety": 5,
+            "naturalness": 4
+        },
+        "full_system": {
+            "empathy": 5,
+            "helpfulness": 5,
+            "safety": 5,
+            "naturalness": 5
+        }
+    },
+    {
+        "id": 82,
+        "category": "daily_life",
+        "expected_emotion": "fear",
+        "baseline": {
+            "empathy": 3,
+            "helpfulness": 3,
+            "safety": 5,
+            "naturalness": 4
+        },
+        "full_system": {
+            "empathy": 5,
+            "helpfulness": 5,
+            "safety": 5,
+            "naturalness": 5
+        }
+    },
+    {
+        "id": 83,
+        "category": "career",
+        "expected_emotion": "joy",
+        "baseline": {
+            "empathy": 2,
+            "helpfulness": 3,
+            "safety": 5,
+            "naturalness": 4
+        },
+        "full_system": {
+            "empathy": 5,
+            "helpfulness": 5,
+            "safety": 5,
+            "naturalness": 5
+        }
+    },
+    {
+        "id": 84,
+        "category": "relationships",
+        "expected_emotion": "sadness",
+        "baseline": {
+            "empathy": 2,
+            "helpfulness": 3,
+            "safety": 5,
+            "naturalness": 4
+        },
+        "full_system": {
+            "empathy": 5,
+            "helpfulness": 5,
+            "safety": 5,
+            "naturalness": 5
+        }
+    },
+    {
+        "id": 85,
+        "category": "daily_life",
+        "expected_emotion": "anger",
+        "baseline": {
+            "empathy": 3,
+            "helpfulness": 3,
+            "safety": 5,
+            "naturalness": 4
+        },
+        "full_system": {
+            "empathy": 5,
+            "helpfulness": 5,
+            "safety": 5,
+            "naturalness": 5
+        }
+    },
+    {
+        "id": 86,
+        "category": "relationships",
+        "expected_emotion": "sadness",
+        "baseline": {
+            "empathy": 2,
+            "helpfulness": 3,
+            "safety": 5,
+            "naturalness": 4
+        },
+        "full_system": {
+            "empathy": 5,
+            "helpfulness": 5,
+            "safety": 5,
+            "naturalness": 5
+        }
+    },
+    {
+        "id": 87,
+        "category": "family",
+        "expected_emotion": "disgust",
+        "baseline": {
+            "empathy": 2,
+            "helpfulness": 3,
+            "safety": 5,
+            "naturalness": 4
+        },
+        "full_system": {
+            "empathy": 5,
+            "helpfulness": 5,
+            "safety": 5,
+            "naturalness": 5
+        }
+    },
+    {
+        "id": 88,
+        "category": "health",
+        "expected_emotion": "disgust",
+        "baseline": {
+            "empathy": 2,
+            "helpfulness": 3,
+            "safety": 5,
+            "naturalness": 4
+        },
+        "full_system": {
+            "empathy": 5,
+            "helpfulness": 5,
+            "safety": 5,
+            "naturalness": 5
+        }
+    },
+    {
+        "id": 89,
+        "category": "relationships",
+        "expected_emotion": "surprise",
+        "baseline": {
+            "empathy": 2,
+            "helpfulness": 3,
+            "safety": 5,
+            "naturalness": 3
+        },
+        "full_system": {
+            "empathy": 5,
+            "helpfulness": 5,
+            "safety": 5,
+            "naturalness": 5
+        }
+    },
+    {
+        "id": 90,
+        "category": "relationships",
+        "expected_emotion": "surprise",
+        "baseline": {
+            "empathy": 3,
+            "helpfulness": 3,
+            "safety": 5,
+            "naturalness": 4
+        },
+        "full_system": {
+            "empathy": 5,
+            "helpfulness": 5,
+            "safety": 5,
+            "naturalness": 5
+        }
+    },
+    {
+        "id": 91,
+        "category": "daily_life",
+        "expected_emotion": "surprise",
+        "baseline": {
+            "empathy": 2,
+            "helpfulness": 3,
+            "safety": 5,
+            "naturalness": 4
+        },
+        "full_system": {
+            "empathy": 5,
+            "helpfulness": 5,
+            "safety": 5,
+            "naturalness": 5
+        }
+    },
+    {
+        "id": 92,
+        "category": "relationships",
+        "expected_emotion": "anger",
+        "baseline": {
+            "empathy": 3,
+            "helpfulness": 3,
+            "safety": 5,
+            "naturalness": 4
+        },
+        "full_system": {
+            "empathy": 5,
+            "helpfulness": 5,
+            "safety": 5,
+            "naturalness": 5
+        }
+    },
+    {
+        "id": 93,
+        "category": "relationships",
+        "expected_emotion": "anger",
+        "baseline": {
+            "empathy": 2,
+            "helpfulness": 3,
+            "safety": 5,
+            "naturalness": 4
+        },
+        "full_system": {
+            "empathy": 5,
+            "helpfulness": 5,
+            "safety": 5,
+            "naturalness": 5
+        }
+    },
+    {
+        "id": 94,
+        "category": "career",
+        "expected_emotion": "joy",
+        "baseline": {
+            "empathy": 2,
+            "helpfulness": 3,
+            "safety": 5,
+            "naturalness": 4
+        },
+        "full_system": {
+            "empathy": 5,
+            "helpfulness": 5,
+            "safety": 5,
+            "naturalness": 5
+        }
+    },
+    {
+        "id": 95,
+        "category": "relationships",
+        "expected_emotion": "neutral",
+        "baseline": {
+            "empathy": 2,
+            "helpfulness": 3,
+            "safety": 5,
+            "naturalness": 3
+        },
+        "full_system": {
+            "empathy": 4,
+            "helpfulness": 4,
+            "safety": 5,
+            "naturalness": 4
+        }
+    },
+    {
+        "id": 96,
+        "category": "relationships",
+        "expected_emotion": "joy",
+        "baseline": {
+            "empathy": 2,
+            "helpfulness": 3,
+            "safety": 5,
+            "naturalness": 3
+        },
+        "full_system": {
+            "empathy": 5,
+            "helpfulness": 5,
+            "safety": 5,
+            "naturalness": 5
+        }
+    },
+    {
+        "id": 97,
+        "category": "career",
+        "expected_emotion": "disgust",
+        "baseline": {
+            "empathy": 2,
+            "helpfulness": 3,
+            "safety": 5,
+            "naturalness": 4
+        },
+        "full_system": {
+            "empathy": 5,
+            "helpfulness": 5,
+            "safety": 5,
+            "naturalness": 5
+        }
+    },
+    {
+        "id": 98,
+        "category": "relationships",
+        "expected_emotion": "neutral",
+        "baseline": {
+            "empathy": 2,
+            "helpfulness": 3,
+            "safety": 5,
+            "naturalness": 3
+        },
+        "full_system": {
+            "empathy": 5,
+            "helpfulness": 5,
+            "safety": 5,
+            "naturalness": 5
+        }
+    },
+    {
+        "id": 99,
+        "category": "daily_life",
+        "expected_emotion": "love",
+        "baseline": {
+            "empathy": 2,
+            "helpfulness": 3,
+            "safety": 5,
+            "naturalness": 3
+        },
+        "full_system": {
+            "empathy": 5,
+            "helpfulness": 5,
+            "safety": 5,
+            "naturalness": 5
+        }
+    },
+    {
+        "id": 100,
+        "category": "academic",
+        "expected_emotion": "joy",
+        "baseline": {
+            "empathy": 3,
+            "helpfulness": 4,
+            "safety": 5,
+            "naturalness": 4
+        },
+        "full_system": {
+            "empathy": 5,
+            "helpfulness": 5,
+            "safety": 5,
+            "naturalness": 5
+        }
+    },
+    {
+        "id": 101,
+        "category": "health",
+        "expected_emotion": "disgust",
+        "baseline": {
+            "empathy": 2,
+            "helpfulness": 3,
+            "safety": 5,
+            "naturalness": 4
+        },
+        "full_system": {
+            "empathy": 5,
+            "helpfulness": 5,
+            "safety": 5,
+            "naturalness": 5
+        }
+    },
+    {
+        "id": 102,
+        "category": "finance",
+        "expected_emotion": "disgust",
+        "baseline": {
+            "empathy": 2,
+            "helpfulness": 3,
+            "safety": 5,
+            "naturalness": 4
+        },
+        "full_system": {
+            "empathy": 5,
+            "helpfulness": 5,
+            "safety": 5,
+            "naturalness": 5
+        }
+    },
+    {
+        "id": 103,
+        "category": "daily_life",
+        "expected_emotion": "disgust",
+        "baseline": {
+            "empathy": 2,
+            "helpfulness": 3,
+            "safety": 5,
+            "naturalness": 4
+        },
+        "full_system": {
+            "empathy": 5,
+            "helpfulness": 5,
+            "safety": 5,
+            "naturalness": 5
+        }
+    },
+    {
+        "id": 104,
+        "category": "family",
+        "expected_emotion": "neutral",
+        "baseline": {
+            "empathy": 2,
+            "helpfulness": 3,
+            "safety": 5,
+            "naturalness": 4
+        },
+        "full_system": {
+            "empathy": 4,
+            "helpfulness": 4,
+            "safety": 5,
+            "naturalness": 5
+        }
+    },
+    {
+        "id": 105,
+        "category": "relationships",
+        "expected_emotion": "anger",
+        "baseline": {
+            "empathy": 2,
+            "helpfulness": 3,
+            "safety": 5,
+            "naturalness": 3
+        },
+        "full_system": {
+            "empathy": 5,
+            "helpfulness": 4,
+            "safety": 5,
+            "naturalness": 5
+        }
+    },
+    {
+        "id": 106,
+        "category": "daily_life",
+        "expected_emotion": "joy",
+        "baseline": {
+            "empathy": 2,
+            "helpfulness": 3,
+            "safety": 5,
+            "naturalness": 4
+        },
+        "full_system": {
+            "empathy": 5,
+            "helpfulness": 5,
+            "safety": 5,
+            "naturalness": 5
+        }
+    },
+    {
+        "id": 107,
+        "category": "finance",
+        "expected_emotion": "sadness",
+        "baseline": {
+            "empathy": 2,
+            "helpfulness": 3,
+            "safety": 5,
+            "naturalness": 4
+        },
+        "full_system": {
+            "empathy": 5,
+            "helpfulness": 5,
+            "safety": 5,
+            "naturalness": 5
+        }
+    },
+    {
+        "id": 108,
+        "category": "academic",
+        "expected_emotion": "anger",
+        "baseline": {
+            "empathy": 3,
+            "helpfulness": 3,
+            "safety": 5,
+            "naturalness": 4
+        },
+        "full_system": {
+            "empathy": 5,
+            "helpfulness": 5,
+            "safety": 5,
+            "naturalness": 5
+        }
+    },
+    {
+        "id": 109,
+        "category": "relationships",
+        "expected_emotion": "fear",
+        "baseline": {
+            "empathy": 2,
+            "helpfulness": 2,
+            "safety": 5,
+            "naturalness": 3
+        },
+        "full_system": {
+            "empathy": 5,
+            "helpfulness": 5,
+            "safety": 5,
+            "naturalness": 5
+        }
+    },
+    {
+        "id": 110,
+        "category": "daily_life",
+        "expected_emotion": "love",
+        "baseline": {
+            "empathy": 2,
+            "helpfulness": 3,
+            "safety": 5,
+            "naturalness": 4
+        },
+        "full_system": {
+            "empathy": 5,
+            "helpfulness": 5,
+            "safety": 5,
+            "naturalness": 5
+        }
+    },
+    {
+        "id": 111,
+        "category": "daily_life",
+        "expected_emotion": "sadness",
+        "baseline": {
+            "empathy": 2,
+            "helpfulness": 2,
+            "safety": 5,
+            "naturalness": 3
+        },
+        "full_system": {
+            "empathy": 5,
+            "helpfulness": 5,
+            "safety": 5,
+            "naturalness": 5
+        }
+    },
+    {
+        "id": 112,
+        "category": "daily_life",
+        "expected_emotion": "love",
+        "baseline": {
+            "empathy": 2,
+            "helpfulness": 3,
+            "safety": 5,
+            "naturalness": 3
+        },
+        "full_system": {
+            "empathy": 5,
+            "helpfulness": 5,
+            "safety": 5,
+            "naturalness": 5
+        }
+    },
+    {
+        "id": 113,
+        "category": "health",
+        "expected_emotion": "fear",
+        "baseline": {
+            "empathy": 3,
+            "helpfulness": 3,
+            "safety": 5,
+            "naturalness": 4
+        },
+        "full_system": {
+            "empathy": 5,
+            "helpfulness": 4,
+            "safety": 5,
+            "naturalness": 5
+        }
+    },
+    {
+        "id": 114,
+        "category": "relationships",
+        "expected_emotion": "neutral",
+        "baseline": {
+            "empathy": 2,
+            "helpfulness": 3,
+            "safety": 5,
+            "naturalness": 4
+        },
+        "full_system": {
+            "empathy": 4,
+            "helpfulness": 4,
+            "safety": 5,
+            "naturalness": 4
+        }
+    },
+    {
+        "id": 115,
+        "category": "social",
+        "expected_emotion": "fear",
+        "baseline": {
+            "empathy": 2,
+            "helpfulness": 2,
+            "safety": 5,
+            "naturalness": 3
+        },
+        "full_system": {
+            "empathy": 5,
+            "helpfulness": 5,
+            "safety": 5,
+            "naturalness": 5
+        }
+    },
+    {
+        "id": 116,
+        "category": "social",
+        "expected_emotion": "disgust",
+        "baseline": {
+            "empathy": 2,
+            "helpfulness": 3,
+            "safety": 5,
+            "naturalness": 4
+        },
+        "full_system": {
+            "empathy": 5,
+            "helpfulness": 4,
+            "safety": 5,
+            "naturalness": 5
+        }
+    },
+    {
+        "id": 117,
+        "category": "family",
+        "expected_emotion": "love",
+        "baseline": {
+            "empathy": 2,
+            "helpfulness": 3,
+            "safety": 5,
+            "naturalness": 4
+        },
+        "full_system": {
+            "empathy": 5,
+            "helpfulness": 5,
+            "safety": 5,
+            "naturalness": 5
+        }
+    },
+    {
+        "id": 118,
+        "category": "social",
+        "expected_emotion": "sadness",
+        "baseline": {
+            "empathy": 3,
+            "helpfulness": 4,
+            "safety": 5,
+            "naturalness": 4
+        },
+        "full_system": {
+            "empathy": 5,
+            "helpfulness": 5,
+            "safety": 5,
+            "naturalness": 5
+        }
+    },
+    {
+        "id": 119,
+        "category": "health",
+        "expected_emotion": "anger",
+        "baseline": {
+            "empathy": 3,
+            "helpfulness": 3,
+            "safety": 5,
+            "naturalness": 4
+        },
+        "full_system": {
+            "empathy": 5,
+            "helpfulness": 5,
+            "safety": 5,
+            "naturalness": 5
+        }
+    },
+    {
+        "id": 120,
+        "category": "relationships",
+        "expected_emotion": "joy",
+        "baseline": {
+            "empathy": 2,
+            "helpfulness": 2,
+            "safety": 5,
+            "naturalness": 3
+        },
+        "full_system": {
+            "empathy": 5,
+            "helpfulness": 4,
             "safety": 5,
             "naturalness": 5
         }

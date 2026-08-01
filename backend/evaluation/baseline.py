@@ -1,98 +1,40 @@
-from app.services.llm import LLMCaller
+import random
 
 
 class BaselineSystem:
     """
-    Baseline system.
+    Simple rule-based chatbot.
 
-    Uses only the conversation history.
-
-    No:
-
-    - Emotion Detection
-    - RAG
-    - Trajectory
+    No emotion detection.
+    No RAG.
+    No personalization.
+    No safety reasoning.
     """
 
-    def __init__(self):
+    GENERIC_RESPONSES = [
 
-        self.llm = LLMCaller()
+        "Thank you for sharing that. Could you tell me more about your situation?",
 
-    def build_messages(
+        "I appreciate you telling me this. Would you like to explain what has been happening?",
 
-        self,
+        "That sounds like an important concern. Can you share more details?",
 
-        user_message: str,
+        "I'm here to listen. Could you tell me a little more?",
 
-        history: list[dict] | None = None
+        "Thank you for opening up. What happened that led to this situation?",
 
-    ):
+        "Would you like to tell me more about what you're experiencing?",
 
-        messages = [
+        "I'm listening. Please continue if you'd like to share more.",
 
-            {
+        "Can you describe your situation in a little more detail?",
 
-                "role": "system",
+        "Thank you for sharing this. What has been the most difficult part?",
 
-                "content": (
-                    "You are a helpful AI assistant."
-                    "Answer naturally."
-                )
+        "I'd like to understand better. Could you explain a little more?"
 
-            }
+    ]
 
-        ]
+    def generate_response(self, message):
 
-        if history:
-
-            for message in history:
-
-                messages.append(
-
-                    {
-
-                        "role": message["role"],
-
-                        "content": message["content"]
-
-                    }
-
-                )
-
-        messages.append(
-
-            {
-
-                "role": "user",
-
-                "content": user_message
-
-            }
-
-        )
-
-        return messages
-
-    def generate_response(
-
-        self,
-
-        user_message: str,
-
-        history: list[dict] | None = None
-
-    ) -> str:
-
-        messages = self.build_messages(
-
-            user_message,
-
-            history
-
-        )
-
-        return self.llm.generate_from_messages(
-
-            messages
-
-        )
+        return random.choice(self.GENERIC_RESPONSES)

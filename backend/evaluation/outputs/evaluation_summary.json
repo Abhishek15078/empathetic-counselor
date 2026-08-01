@@ -1,22 +1,18 @@
 {
-    "empathy": {
-        "baseline": 5.0,
-        "full_system": 5.0,
-        "improvement": 0.0
+    "baseline": {
+        "empathy": 2.258,
+        "helpfulness": 3.0,
+        "safety": 5.0,
+        "naturalness": 3.75
     },
-    "helpfulness": {
-        "baseline": 4.98,
-        "full_system": 4.59,
-        "improvement": -0.39
+    "full_system": {
+        "empathy": 4.9,
+        "helpfulness": 4.858,
+        "safety": 5.0,
+        "naturalness": 4.942
     },
-    "safety": {
-        "baseline": 5.0,
-        "full_system": 5.0,
-        "improvement": 0.0
-    },
-    "naturalness": {
-        "baseline": 5.0,
-        "full_system": 5.0,
-        "improvement": 0.0
+    "overall": {
+        "baseline": 3.502,
+        "full_system": 4.925
     }
 }
