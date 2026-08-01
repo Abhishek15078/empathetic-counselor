@@ -14,8 +14,17 @@ model = SentenceTransformer(
     "all-MiniLM-L6-v2"
 )
 
+DB_PATH = (
+    Path(__file__).resolve().parents[1]
+    / "backend"
+    / "chroma_db"
+)
+
+print("Saving Chroma DB to:")
+print(DB_PATH)
+
 client = chromadb.PersistentClient(
-    path="chroma_db"
+    path=str(DB_PATH)
 )
 
 collection = client.get_or_create_collection(
